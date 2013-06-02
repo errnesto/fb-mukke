@@ -1,6 +1,9 @@
 ENV["RAILS_ENV"] ||= "test"
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
+require 'capybara/rails'
+include Capybara::DSL
+Capybara.default_driver = :selenium
 
 class ActiveSupport::TestCase
   ActiveRecord::Migration.check_pending!
