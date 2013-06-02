@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  uid: MyString
-  first_name: MyString
-  oauth_token: MyString
+  uid: 12345678
+  first_name: tom
+  oauth_token: xyz
   oauth_expires_at: 2013-06-01 17:56:19
 
 two:
-  uid: MyString
-  first_name: MyString
-  oauth_token: MyString
+  uid: 123456789
+  first_name: lisa
+  oauth_token: efgh
   oauth_expires_at: 2013-06-01 17:56:19

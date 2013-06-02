@@ -77,4 +77,7 @@ FbMukke::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  ENV['FACEBOOK_APP_ID'] = "508198249241730";
+  ENV['FACEBOOK_SECRET'] = "f46bf41be7ee4e8de0c8269079e68a85";
 end
