@@ -48,7 +48,7 @@ FbMukke::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index', :via => :all
+  root :to => 'home#index'
 
   #match routes for facebook authentication
   match 'auth/:provider/callback' => 'sessions#create', :via => :all
