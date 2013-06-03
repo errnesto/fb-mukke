@@ -4,6 +4,7 @@ require 'rails/test_help'
 require 'capybara/rails'
 include Capybara::DSL
 
+
 #Capybara.default_driver = :selenium
 #set OmniAuth (used for facebook integration) to test mode
 OmniAuth.config.test_mode = true

@@ -13,6 +13,7 @@ describe "Get User Information from fabebook Test" do
     end
 
     it "displays the correct user id" do
+      #change this test later so it just checks the user is logged in
       page.must_have_content('your user id:100003562633226')
     end
   end

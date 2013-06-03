@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+	has_many :songs
 	
 	#write user to database or update existing user
 	def self.from_omniauth(auth)
@@ -17,7 +18,8 @@ class User < ActiveRecord::Base
 		all_links = user.links(:fields => 'link')
 		song_links = []
 		all_links.each do |url|
-			if (url.link.include? "youtube")
+			#when url contains youtube or soundclous add it to result array
+			if (url.link.include? 'youtube' or url.link.include? 'soundcloud')
 				song_links.push(url.link)
 			end
 		end
