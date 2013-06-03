@@ -13,7 +13,7 @@ describe "Get User Information from fabebook Test" do
     end
 
     it "displays the correct user id" do
-      page.must_have_content('your user id:1234567')
+      page.must_have_content('your user id:100003562633226')
     end
   end
 end

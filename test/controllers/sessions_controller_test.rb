@@ -7,7 +7,7 @@ describe SessionsController do
 
 	it "creates a session and redirects to root" do
 		get :create
-		session[:user_id].wont_be_nil
+		session[:user_id].must_be_kind_of Integer
 		assert_redirected_to('/')
 	end
 

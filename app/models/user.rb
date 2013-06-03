@@ -10,4 +10,17 @@ class User < ActiveRecord::Base
 			user.save!
 		end
 	end
+
+	def getSongsFromFacebook
+		#me = FbGraph::User.me(self.oauth_token)
+		user = FbGraph::User.fetch(self.uid, :access_token => self.oauth_token)
+		all_links = user.links(:fields => 'link')
+		song_links = []
+		all_links.each do |url|
+			if (url.link.include? "youtube")
+				song_links.push(url.link)
+			end
+		end
+		song_links
+	end
 end

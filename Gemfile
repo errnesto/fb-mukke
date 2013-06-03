@@ -45,8 +45,8 @@ end
 # gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
+gem 'debugger'
 
 # gems to work with facebook api
 gem 'omniauth-facebook'
-gem "koala", "~> 1.7.0rc1"
+gem 'fb_graph'

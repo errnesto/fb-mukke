@@ -3,6 +3,8 @@ class HomeController < ApplicationController
 		#if user is not logged in open facebook login dialog
 		if(!current_user)			
 			redirect_to('/auth/facebook/')
+		else
+			@feed = current_user.getSongsFromFacebook
 		end
 	end
 

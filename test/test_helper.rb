@@ -8,18 +8,19 @@ include Capybara::DSL
 #set OmniAuth (used for facebook integration) to test mode
 OmniAuth.config.test_mode = true
 
+
 class ActiveSupport::TestCase
   ActiveRecord::Migration.check_pending!
 
   #set up a test facebook user 
   OmniAuth.config.mock_auth[:facebook] = OmniAuth::AuthHash.new({
     :provider => 'facebook',
-    :uid => '1234567',
+    :uid => '100003562633226',
     :info => {
       :nickname => 'jbloggs',
       :email => 'joe@bloggs.com',
       :name => 'Joe Bloggs',
-      :first_name => 'Joe',
+      :first_name => 'Wunderundfitzig',
       :last_name => 'Bloggs',
       :image => 'http://graph.facebook.com/1234567/picture?type=square',
       :urls => { :Facebook => 'http://www.facebook.com/jbloggs' },
@@ -27,7 +28,7 @@ class ActiveSupport::TestCase
       :verified => true
     },
     :credentials => {
-      :token => 'ABCDEF...', # OAuth 2.0 access_token, which you may wish to store
+      :token => 'CAAHONCAfHIIBAJRLmroOYudfZCWRDnKktde73YYNNCooHZCMqHfuTvi6sylmKOPbgseXQZBSAprXz7w2yxFB9ZA36elbR0RgOggp741rZBCeMn8Er1dMI4NmZCaymVJC22bc8UcT1KlIKJ2LZBdy3SISvJqbU1wFREZD', # OAuth 2.0 access_token, which you may wish to store
       :expires_at => 1321747205, # when the access token expires (it always will)
       :expires => true # this will always be true
     },
