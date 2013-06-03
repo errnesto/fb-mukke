@@ -1,4 +1,9 @@
 FbMukke::Application.routes.draw do
+  # You can have the root of your site routed with "root"
+  # just remember to delete public/index.html.
+  root :to => 'home#index'
+  
+  get "home/index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -45,10 +50,6 @@ FbMukke::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-  root :to => 'home#index'
 
   #match routes for facebook authentication
   match 'auth/:provider/callback' => 'sessions#create', :via => :all
