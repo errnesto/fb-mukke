@@ -15,15 +15,15 @@ We now are working on fb-mukke as a project for our university class so we are r
 where we're at
 ---
 
-  -[] Port exiting features to Rails
-    -[x] Log in with facebook and store Access Token
-    -[x] get links (url to youtube soundcloud songs) from user
-    -[ ] check youtube metadata for cathegory music
-    -[ ] built players
+* Port exiting features to Rails
+  * Log in with facebook and store Access Token
+  * get links (url to youtube soundcloud songs) from user
+  * check youtube metadata for cathegory music
+  * built players
   
-    -[ ] Add search for Users
+  * Add search for Users
   
-  -[ ] Invite friends
-  -[ ] save and name lists
-  -[ ] view and search for lists
-  -[ ] beatiful design
+* Invite friends
+  * save and name lists
+  * view and search for lists
+  * beatiful design
