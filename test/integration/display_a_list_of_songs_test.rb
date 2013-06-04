@@ -17,7 +17,7 @@ describe "Display A List Of Songs Test" do
     end
 
     it "renders The youtube and the soundcloud Player" do
-      visit '/user/someoneWioutYoutube and soundcloud songs'
+      visit '/user/someoneWioutYoutubeAndSoundcloudSongs'
       page.must_have_content('<a href="http://www.youtube')
       page.must_have_content('<a href="http://www.soundcloud')
     end
