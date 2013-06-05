@@ -18,7 +18,7 @@ where we're at
 * Port exiting features to Rails
   * __Log in with facebook and store Access Token__
   * __get links (url to youtube soundcloud songs) from user__
-  * check youtube metadata for cathegory music
+  * __check youtube metadata for cathegory music__
   * built players
   
   * Add search for Users
