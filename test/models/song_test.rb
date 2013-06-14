@@ -38,12 +38,12 @@ describe Song do
 			@song.name.must_equal 'Metronomy - The Bay'
 		end
 
-		it "dont needs to find out its name from its soundcloud url" do
+		it "can find out its name from its soundcloud url" do
 			@song.url = 'https://soundcloud.com/fineripp/fineripps-downbeat-menu'
 			if (@song.isSong?)
 				@song.set_atributes
 			end
-			@song.name.must_be_nil
+			@song.name.must_equal "FineRipp's Downbeat Menu"
 		end
 
 		it "can get an image from its youtube url" do
@@ -54,12 +54,12 @@ describe Song do
 			@song.image.must_equal 'https://i.ytimg.com/vi/9PnOG67flRA/mqdefault.jpg'
 		end
 
-		it "dont needs to get an image from its soundcloud url" do
+		it "can get an image from its soundcloud url" do
 			@song.url = 'https://soundcloud.com/fineripp/fineripps-downbeat-menu'
 			if (@song.isSong?)
 				@song.set_atributes
 			end
-			@song.image.must_be_nil
+			@song.image.must_equal 'http://i1.sndcdn.com/artworks-000046589747-3ubydb-t300x300.jpg?0c5f27c'
 		end
 
 	end
