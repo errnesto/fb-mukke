@@ -1,12 +1,15 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 
-gem 'rails', '4.0.0.rc1'
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.0.0.rc2'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
-
+group :development, :test do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -30,6 +33,7 @@ group :test do
   gem 'minitest-spec-rails' # adds the describe / it test dsl as used in second & third example
   gem 'capybara_minitest_spec' # adds the capybara expectations as used in the third example
   gem 'selenium-webdriver'
+
 end
 
 # To use ActiveModel has_secure_password

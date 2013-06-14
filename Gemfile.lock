@@ -104,6 +104,7 @@ GEM
     omniauth-oauth2 (1.1.1)
       oauth2 (~> 0.8.0)
       omniauth (~> 1.0)
+    pg (0.12.2)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-oauth2 (1.0.5)
@@ -179,6 +180,7 @@ DEPENDENCIES
   launchy
   minitest-spec-rails
   omniauth-facebook
+  pg
   rails (= 4.0.0.rc1)
   rake
   sass-rails (~> 4.0.0.rc1)
