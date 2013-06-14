@@ -1,1 +1,3 @@
-console.log('search');
+$.getJSON('/user/getData',function(data){
+	console.log(data);
+});

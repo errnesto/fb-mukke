@@ -13,8 +13,7 @@ class User < ActiveRecord::Base
 	end
 
 	def getSongsFromFacebook
-		#me = FbGraph::User.me(self.oauth_token)
-		user = FbGraph::User.fetch(self.uid, :access_token => self.oauth_token)
+		user = @fbUser||callFbApi
 		all_links = user.links(:fields => 'link')
 		songs = []
 		all_links.each do |url|
@@ -26,5 +25,14 @@ class User < ActiveRecord::Base
 			end
 		end
 		songs
+	end
+
+	def getFriends
+		user = @fbUser||callFbApi
+		user.friends(:fields => 'identifier,name')
+	end
+
+	def callFbApi
+		@fbUser = FbGraph::User.fetch(self.uid, :access_token => self.oauth_token)
 	end
 end
