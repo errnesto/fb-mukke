@@ -19,7 +19,7 @@ where we're at
   * __Log in with facebook and store Access Token__
   * __get links (url to youtube soundcloud songs) from user__
   * __check youtube metadata for cathegory music__
-  * built players
+  * __built players__
   
   * Add search for Users
 * Invite friends
