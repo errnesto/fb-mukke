@@ -6,17 +6,20 @@ class Song < ActiveRecord::Base
 
 	#after the constructor is called do:
 	def set_atributes
-	  if(isSong?)
 	  	if( (self.source||= isFrom) == 'youtube')
+	  		#store metaddata from youtube
 	  		self.name = @metadata['media$title']['$t']
 	  		self.image = @metadata['media$thumbnail'][1]['url']
 	  	elsif( (self.source||= isFrom) == 'soundcloud')
-	  		json = open('http://soundcloud.com/oembed?format=json&url='+self.url)
+	  		#get metadata from soundcloud api
+	  		json = open('http://api.soundcloud.com/resolve.json?url='+self.url+'&client_id=978f352c112cb02aa31166a4824dd0da')
 	  		@metadata = JSON.parse(json.read)
+	  		self.identifier = @metadata['stream_url']
 	  		self.name = @metadata['title']
-	  		self.image = @metadata['thumbnail_url']
+	  		self.image = @metadata['artwork_url']
+	  		#replace small artwork image url with bigger one
+	  		self.image.sub!('large','t300x300')
 	  	end
-	  end
 	end
 
 	def isSong?
@@ -24,9 +27,9 @@ class Song < ActiveRecord::Base
 			true
 		elsif( (self.source||= isFrom) == 'youtube')
 			#extract the video ID from the youtube url
-			videoID = self.url.match(/[\\?\\&]v=([^\\?\\&]+)/)[1]
+			self.identifier = self.url.match(/[\\?\\&]v=([^\\?\\&]+)/)[1]
 			#get the medata of the video from the youtube api
-			json = open('https://gdata.youtube.com/feeds/api/videos/'+videoID+'?v=2&alt=json')
+			json = open('https://gdata.youtube.com/feeds/api/videos/'+self.identifier+'?v=2&alt=json')
 			@metadata = JSON.parse(json.read)['entry']['media$group']
 			if(@metadata['media$category'][0]['$t'] == "Music")
 				true

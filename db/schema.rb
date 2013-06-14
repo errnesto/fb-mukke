@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20130603205044) do
     t.string   "image"
     t.string   "url"
     t.string   "source"
+    t.string   "identifier"
     t.integer  "user_id"
     t.integer  "list_id"
     t.datetime "created_at"

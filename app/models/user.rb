@@ -16,13 +16,15 @@ class User < ActiveRecord::Base
 		#me = FbGraph::User.me(self.oauth_token)
 		user = FbGraph::User.fetch(self.uid, :access_token => self.oauth_token)
 		all_links = user.links(:fields => 'link')
-		song_links = []
+		songs = []
 		all_links.each do |url|
-			#when url contains youtube or soundclous add it to result array
-			if (url.link.include? 'youtube' or url.link.include? 'soundcloud')
-				song_links.push(url.link)
+			#when url is a song add it to output
+			song = Song.new(:url => url.link)
+			if (song.isSong?)
+				song.set_atributes
+				songs.push(song)
 			end
 		end
-		song_links
+		songs
 	end
 end

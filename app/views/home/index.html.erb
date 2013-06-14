@@ -1,4 +1,29 @@
-<h1>fb-mukke</h1>
-<p>your user id:<%= current_user.uid %></p>
 
-<%=@feed %>
+<p>your user id:<%= current_user.uid %></p>
+<iframe id="ytPlayer" type="text/html" width="0" height="0"
+	  	src="http://www.youtube.com/embed/?enablejsapi=1"
+	  	frameborder="0"></iframe>
+<header class="header">
+	<h1 class="logo">fb-mukke</h1>
+	<input type="text" id="searchFriend" placeholder="nach Freunden Suchen"></input>
+	<div class="headerLine">
+		<div class="mask"></div>
+	</div>
+</header>
+<% @songs.each_with_index do |song, i| %>
+	<div class="player from_<%= song.source %>">
+		<a class="trigger" name="<%= song.source %>" href="<%= song.identifier %>">
+			<div class="artwork" style="background-image: url('<%= song.image %>;')">
+				<p class="show play">play</p>
+				<p class="pause">pause</p>
+			</div>
+			<h2 class="name"><%= song.name %></h2>
+		</a>
+		<div class="seekBar">
+			<div class="waiting"></div>
+			<div class="bufferd"></div>
+			<div class="played"></div>
+			<div class="mask"></div>
+		</div>
+	</div>
+<% end %>

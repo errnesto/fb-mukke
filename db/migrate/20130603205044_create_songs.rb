@@ -5,6 +5,7 @@ class CreateSongs < ActiveRecord::Migration
       t.string :image
       t.string :url
       t.string :source
+      t.string :identifier
       t.integer :user_id
       t.integer :list_id
 
