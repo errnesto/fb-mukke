@@ -19854,3 +19854,131 @@ FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
   Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
   Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
   Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-16 13:12:42 +0200
+
+Gem::LoadError (Specified 'postgresql' for database adapter, but the gem is not loaded. Add `gem 'pg'` to your Gemfile.):
+  activerecord (4.0.0.rc2) lib/active_record/connection_adapters/connection_specification.rb:58:in `rescue in resolve_hash_connection'
+  activerecord (4.0.0.rc2) lib/active_record/connection_adapters/connection_specification.rb:55:in `resolve_hash_connection'
+  activerecord (4.0.0.rc2) lib/active_record/connection_adapters/connection_specification.rb:46:in `resolve_string_connection'
+  activerecord (4.0.0.rc2) lib/active_record/connection_adapters/connection_specification.rb:30:in `spec'
+  activerecord (4.0.0.rc2) lib/active_record/connection_handling.rb:39:in `establish_connection'
+  activerecord (4.0.0.rc2) lib/active_record/railtie.rb:170:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.0.0.rc2) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.0.0.rc2) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.0.0.rc2) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.0.0.rc2) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.0.0.rc2) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.0.0.rc2) lib/active_record/base.rb:322:in `<module:ActiveRecord>'
+  activerecord (4.0.0.rc2) lib/active_record/base.rb:22:in `<top (required)>'
+  activesupport (4.0.0.rc2) lib/active_support/dependencies.rb:228:in `require'
+  activesupport (4.0.0.rc2) lib/active_support/dependencies.rb:228:in `block in require'
+  activesupport (4.0.0.rc2) lib/active_support/dependencies.rb:213:in `load_dependency'
+  activesupport (4.0.0.rc2) lib/active_support/dependencies.rb:228:in `require'
+  activerecord (4.0.0.rc2) lib/active_record/schema_migration.rb:3:in `<top (required)>'
+  activerecord (4.0.0.rc2) lib/active_record/migration.rb:783:in `schema_migrations_table_name'
+  activerecord (4.0.0.rc2) lib/active_record/migration.rb:791:in `current_version'
+  activerecord (4.0.0.rc2) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.0.rc2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.0.rc2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0.rc2) lib/active_support/callbacks.rb:373:in `_run__2284567865624875217__call__callbacks'
+  activesupport (4.0.0.rc2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc2) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc2) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-16 13:13:57 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (2.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4222ms (Views: 193.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-16 13:14:02 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-16 13:14:02 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-16 13:14:02 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-16 13:14:02 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-16 13:14:02 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-16 13:14:02 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-16 13:14:02 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-16 13:14:02 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-16 13:14:02 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-16 13:14:02 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-16 13:14:02 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 545ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:32:in `getFriends'
+  app/controllers/user_controller.rb:3:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.9ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-16 13:14:02 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-16 13:14:02 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-16 13:14:03 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-16 13:14:03 +0200

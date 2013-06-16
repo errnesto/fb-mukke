@@ -12,7 +12,7 @@
 	width: 100%; height: 100%;
 	position: absolute; top: 0; left:0;
 	z-index: 20;
-	background-image: url('mask.png');
+	background-image: url(<%=asset_path 'mask.png' %>);
 	background-size: 100% 100%;
 }
 
@@ -42,11 +42,11 @@ $line_h: 5px;
     			text-indent: -9999px;
 			}
 			.play{
-				background-image: url('play.png');
+				background-image: url(<%=asset_path 'play.png' %>);
 				background-position: 62px center;
 			}
 			.pause{
-				background-image: url('pause.png');
+				background-image: url(<%=asset_path 'pause.png' %>);
 				background-position: center center;
 			}
 		}
