@@ -8,7 +8,6 @@ class UserController < ApplicationController
 			if user.oauth_expires_at > Time.now
 				#user exist in database and oauth_token is valid
 				@songs = user.getSongsFromFacebook
-				render "home/index"
 			else
 				#user exist in database but oauth_token is expired
 				flash[:error] = "oAuthExpired"
