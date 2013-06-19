@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130603205044) do
+ActiveRecord::Schema.define(version: 20130619225246) do
 
   create_table "songs", force: true do |t|
     t.string   "name"
@@ -26,12 +26,13 @@ ActiveRecord::Schema.define(version: 20130603205044) do
   end
 
   create_table "users", force: true do |t|
-    t.string   "uid"
-    t.string   "first_name"
+    t.string   "name"
     t.string   "oauth_token"
     t.datetime "oauth_expires_at"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "picture"
+    t.integer  "uid",              limit: 8
   end
 
 end

@@ -22988,3 +22988,367 @@ Processing by UserController#show as
   [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
   Rendered home/index.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 647ms (Views: 13.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 00:34:54 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4804ms (Views: 194.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 00:34:59 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 909ms (Views: 51.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-20 00:35:00 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-20 00:35:00 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 00:35:35 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3415ms (Views: 9.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 00:35:38 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 00:35:38 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 00:35:38 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 00:35:38 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 00:35:38 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 00:35:38 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 00:35:38 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 00:35:38 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 00:35:38 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 00:35:38 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 00:35:38 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 991ms (Views: 60.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 00:35:40 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 00:35:40 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-20 00:35:40 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-20 00:35:40 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 00:36:12 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3775ms (Views: 10.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 00:36:16 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 00:36:16 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 00:36:16 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 00:36:16 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 00:36:16 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 00:36:16 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 00:36:16 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 00:36:16 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 00:36:16 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 00:36:16 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 00:36:16 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 562ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: thumbnail.):
+  app/models/user.rb:36:in `getFriends'
+  app/controllers/user_controller.rb:27:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.9ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 00:36:17 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 00:36:17 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-20 00:36:17 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-20 00:36:17 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 00:38:26 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3791ms (Views: 9.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 00:38:30 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 00:38:30 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 00:38:30 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 00:38:30 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 00:38:30 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 00:38:30 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 00:38:30 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 00:38:30 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 00:38:30 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 00:38:30 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 00:38:30 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1235ms (Views: 191.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 00:38:31 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 00:38:32 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-20 00:38:32 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-20 00:38:32 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RenameFirstNameToNameInUser (20130619224252)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" varchar(255), "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "users"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "ausers" ("id","uid","name","oauth_token","oauth_expires_at","created_at","updated_at") VALUES (1, '100003562633226', 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912')[0m
+  [1m[35m (0.5ms)[0m  DROP TABLE "users"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" varchar(255), "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "users" ("id","uid","name","oauth_token","oauth_expires_at","created_at","updated_at") VALUES (1, '100003562633226', 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912')[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "ausers"
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20130619224252"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Migrating to AddPictureToUser (20130619224314)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (18.9ms)[0m  ALTER TABLE "users" ADD "picture" varchar(255)
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20130619224314"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Migrating to ChangeUidFormatInUsers (20130619225246)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" varchar(255), "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "users"[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "ausers" ("id","uid","name","oauth_token","oauth_expires_at","created_at","updated_at","picture") VALUES (1, '100003562633226', 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL)
+  [1m[36m (0.5ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" int, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "users" ("id","uid","name","oauth_token","oauth_expires_at","created_at","updated_at","picture") VALUES (1, '100003562633226', 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL)
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130619225246"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to ChangeUidFormatInUsers (20130619225246)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" integer, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "users"[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "ausers" ("id","uid","name","oauth_token","oauth_expires_at","created_at","updated_at","picture") VALUES (1, 100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL)
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" int, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "users" ("id","uid","name","oauth_token","oauth_expires_at","created_at","updated_at","picture") VALUES (1, 100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL)
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130619225246'
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeUidFormatInUsers (20130619225246)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "uid" integer(8)[0m
+SQLite3::SQLException: duplicate column name: uid: ALTER TABLE "users" ADD "uid" integer(8)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeUidFormatInUsers (20130619225246)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" integer, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "users"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "ausers" ("id","uid","name","oauth_token","oauth_expires_at","created_at","updated_at","picture") VALUES (1, 100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL)[0m
+  [1m[35m (0.5ms)[0m  DROP TABLE "users"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" int, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "users" ("id","uid","name","oauth_token","oauth_expires_at","created_at","updated_at","picture") VALUES (1, 100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL)[0m
+  [1m[35m (0.5ms)[0m  DROP TABLE "ausers"
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20130619225246"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to ChangeUidFormatInUsers (20130619225246)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" integer, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "users"[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "ausers" ("id","uid","name","oauth_token","oauth_expires_at","created_at","updated_at","picture") VALUES (1, 100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL)
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" bigint, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "users" ("id","uid","name","oauth_token","oauth_expires_at","created_at","updated_at","picture") VALUES (1, 100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL)
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130619225246'
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeUidFormatInUsers (20130619225246)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" integer, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "users"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "ausers" ("id","uid","name","oauth_token","oauth_expires_at","created_at","updated_at","picture") VALUES (1, 100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL)[0m
+  [1m[35m (0.5ms)[0m  DROP TABLE "users"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" int, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "users" ("id","uid","name","oauth_token","oauth_expires_at","created_at","updated_at","picture") VALUES (1, 100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL)[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "ausers"
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20130619225246"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to ChangeUidFormatInUsers (20130619225246)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" integer, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "users"[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "ausers" ("id","uid","name","oauth_token","oauth_expires_at","created_at","updated_at","picture") VALUES (1, 100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL)
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "users" ("id","name","oauth_token","oauth_expires_at","created_at","updated_at","picture") VALUES (1, 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL)
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to ChangeUidFormatInUsers (20130619225246)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" integer, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "users"[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "ausers" ("id","uid","name","oauth_token","oauth_expires_at","created_at","updated_at","picture") VALUES (1, 100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL)
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "users" ("id","name","oauth_token","oauth_expires_at","created_at","updated_at","picture") VALUES (1, 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL)
+  [1m[36m (0.5ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "uid" int
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130619225246'[0m
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeUidFormatInUsers (20130619225246)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255), "uid" integer) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "users"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "ausers" ("id","name","oauth_token","oauth_expires_at","created_at","updated_at","picture","uid") VALUES (1, 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL, NULL)[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "users"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "users" ("id","name","oauth_token","oauth_expires_at","created_at","updated_at","picture") VALUES (1, 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL)[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "ausers"
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "uid" int[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130619225246"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to ChangeUidFormatInUsers (20130619225246)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255), "uid" integer) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "users"[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "ausers" ("id","name","oauth_token","oauth_expires_at","created_at","updated_at","picture","uid") VALUES (1, 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL, NULL)
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "users" ("id","name","oauth_token","oauth_expires_at","created_at","updated_at","picture") VALUES (1, 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL)
+  [1m[36m (0.6ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "uid" int
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130619225246'[0m
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeUidFormatInUsers (20130619225246)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255), "uid" integer) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "users"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "ausers" ("id","name","oauth_token","oauth_expires_at","created_at","updated_at","picture","uid") VALUES (1, 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL, NULL)[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "users"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "users" ("id","name","oauth_token","oauth_expires_at","created_at","updated_at","picture") VALUES (1, 'Wunderundfitzig', 'CAAHONCAfHIIBAEB6OKpuz1ZBKUiDKTA6hXEa7GT9tYZB0Yu5oKzbi2t7jk7mcPg09fNuDxu02VBAnUh1GugAmFhBDdCZB1FZCNqLJUvhSMfA58hOr0xBPDzmGffUrfZATkY2I1U85hEIXvfJ1o37rNl7mRZAVLDp4ZD', '2013-08-13 16:07:48.000000', '2013-06-01 16:58:13.543520', '2013-06-14 16:07:49.910912', NULL)[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "ausers"
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "uid" integer(8)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130619225246"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"

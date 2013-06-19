@@ -33,7 +33,7 @@ class User < ActiveRecord::Base
 	def getFriends
 		#if we already have the user data use it elese get them from facebook
 		user = @fbUser||callFbApi
-		friendsObject = user.friends(:fields => 'id,name')
+		friendsObject = user.friends(:fields => 'id,name,picture')
 		friends = []
 		friendsObject.each do |friend|
 			friends.push friend.raw_attributes
