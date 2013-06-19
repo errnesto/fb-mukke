@@ -5,7 +5,7 @@ class UserController < ApplicationController
 		#TODO check if AuthToken has expired
 		#wehen cant find user in Database get him from facebook
 		if user
-			if user.oauth_expires_at < Time.now
+			if user.oauth_expires_at > Time.now
 				@songs = user.getSongsFromFacebook
 				render "home/index"
 			else
