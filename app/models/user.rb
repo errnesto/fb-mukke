@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
 	def self.from_omniauth(auth)
 		where(auth.slice(:uid)).first_or_initialize.tap do |user|
 			user.uid = auth.uid
-			user.first_name = auth.info.name
+			user.name = auth.info.name
 			user.oauth_token = auth.credentials.token
 			user.oauth_expires_at = Time.at(auth.credentials.expires_at)
 			user.save!
@@ -39,7 +39,7 @@ class User < ActiveRecord::Base
 			friends.push friend.raw_attributes
 		end
 		#add the user itself to the list of its friends
-		friends.push( {'id' => self.uid, 'name' => self.first_name} )
+		friends.push( {'id' => self.uid, 'name' => self.name} )
 		friends
 	end
 
