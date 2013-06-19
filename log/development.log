@@ -20992,3 +20992,1930 @@ Processing by UserController#show as
   [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = 'favicon') ORDER BY "users"."id" ASC LIMIT 1
   Rendered user/show.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/u/100000327676852" for 127.0.0.1 at 2013-06-19 22:47:10 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100000327676852"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '100000327676852') ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 29ms
+
+NameError (undefined local variable or method `current_user' for #<User:0x007fb311e10188>):
+  app/models/user.rb:39:in `callFbApi'
+  app/models/user.rb:16:in `getSongsFromFacebook'
+  app/controllers/user_controller.rb:16:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.4ms)
+
+
+Started GET "/u/100000327676852" for 127.0.0.1 at 2013-06-19 22:49:53 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100000327676852"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '100000327676852') ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 35ms
+
+NameError (undefined local variable or method `session' for #<User:0x007fb3162ca468>):
+  app/models/user.rb:39:in `callFbApi'
+  app/models/user.rb:16:in `getSongsFromFacebook'
+  app/controllers/user_controller.rb:16:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.1ms)
+
+
+Started GET "/u/100000327676852" for 127.0.0.1 at 2013-06-19 22:50:07 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100000327676852"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '100000327676852') ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 3ms
+
+NameError (undefined local variable or method `session' for #<User:0x007fb313bb2308>):
+  app/models/user.rb:39:in `callFbApi'
+  app/models/user.rb:16:in `getSongsFromFacebook'
+  app/controllers/user_controller.rb:16:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.9ms)
+
+
+Started GET "/u/100003562633226" for 127.0.0.1 at 2013-06-19 22:50:10 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100003562633226"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '100003562633226') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 4936ms (Views: 27.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:15 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 22:50:15 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 22:50:15 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 22:50:15 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:15 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:15 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:15 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:15 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:15 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:15 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 22:50:15 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 2637ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:32:in `getFriends'
+  app/controllers/user_controller.rb:23:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-19 22:50:18 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-19 22:50:18 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-19 22:50:18 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-19 22:50:18 +0200
+
+
+Started GET "/u/favicon.ico" for 127.0.0.1 at 2013-06-19 22:50:18 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"favicon"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = 'favicon') ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 3ms
+
+NameError (undefined local variable or method `session' for #<User:0x007fb3163d79f0>):
+  app/models/user.rb:39:in `callFbApi'
+  app/models/user.rb:16:in `getSongsFromFacebook'
+  app/controllers/user_controller.rb:16:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
+
+
+Started GET "/u/100000327676852" for 127.0.0.1 at 2013-06-19 22:50:20 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100000327676852"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '100000327676852') ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+NameError (undefined local variable or method `session' for #<User:0x007fb313434068>):
+  app/models/user.rb:39:in `callFbApi'
+  app/models/user.rb:16:in `getSongsFromFacebook'
+  app/controllers/user_controller.rb:16:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.8ms)
+
+
+Started GET "/u/100003562633226" for 127.0.0.1 at 2013-06-19 22:50:21 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100003562633226"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '100003562633226') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 2805ms (Views: 8.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 22:50:24 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 22:50:24 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 22:50:24 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:24 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:24 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:24 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:24 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:24 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:24 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:24 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 22:50:25 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 1815ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:32:in `getFriends'
+  app/controllers/user_controller.rb:23:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.9ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-19 22:50:26 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-19 22:50:26 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-19 22:50:26 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-19 22:50:26 +0200
+
+
+Started GET "/u/favicon.ico" for 127.0.0.1 at 2013-06-19 22:50:27 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"favicon"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = 'favicon') ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 3ms
+
+NameError (undefined local variable or method `session' for #<User:0x007fb313bb0be8>):
+  app/models/user.rb:39:in `callFbApi'
+  app/models/user.rb:16:in `getSongsFromFacebook'
+  app/controllers/user_controller.rb:16:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.9ms)
+
+
+Started GET "/u/100000327676852" for 127.0.0.1 at 2013-06-19 22:50:31 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100000327676852"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '100000327676852') ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 3ms
+
+NameError (undefined local variable or method `session' for #<User:0x007fb311e12730>):
+  app/models/user.rb:39:in `callFbApi'
+  app/models/user.rb:16:in `getSongsFromFacebook'
+  app/controllers/user_controller.rb:16:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.3ms)
+
+
+Started GET "/u/100003562633226" for 127.0.0.1 at 2013-06-19 22:50:37 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100003562633226"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '100003562633226') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9501ms (Views: 94.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-19 22:50:47 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2612ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:49 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 22:50:49 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 22:50:49 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:49 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:49 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 22:50:49 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:49 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:49 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:49 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 22:50:49 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 22:50:49 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 2614ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:32:in `getFriends'
+  app/controllers/user_controller.rb:23:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.5ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-19 22:50:52 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-19 22:50:52 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-19 22:50:52 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-19 22:50:52 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-19 22:50:57 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3817ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 22:51:01 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 22:51:01 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 22:51:01 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 22:51:01 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 22:51:01 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 22:51:01 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 22:51:01 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 22:51:01 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 22:51:01 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 22:51:01 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 22:51:01 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 2703ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:32:in `getFriends'
+  app/controllers/user_controller.rb:23:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-19 22:51:03 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-19 22:51:03 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-19 22:51:03 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-19 22:51:03 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-19 22:54:50 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3128ms (Views: 6.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 22:54:53 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 22:54:53 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 22:54:53 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 22:54:53 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 22:54:53 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 22:54:53 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 22:54:53 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 22:54:53 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 22:54:53 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 22:54:53 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 22:54:53 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 1791ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:47:in `getFriends'
+  app/controllers/user_controller.rb:23:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.8ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-19 22:54:55 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-19 22:54:55 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-19 22:54:55 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-19 22:54:55 +0200
+
+
+Started GET "/u/100000327676852" for 127.0.0.1 at 2013-06-19 22:55:06 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100000327676852"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '100000327676852') ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 3ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/models/user.rb:30:in `getPublicSongs'
+  app/controllers/user_controller.rb:16:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.1ms)
+
+
+Started GET "/u/100000327676852" for 127.0.0.1 at 2013-06-19 22:56:12 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100000327676852"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '100000327676852') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 557ms
+
+NameError (undefined local variable or method `user' for #<User:0x007fb3164b2aa0>):
+  app/models/user.rb:32:in `getPublicSongs'
+  app/controllers/user_controller.rb:16:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.5ms)
+
+
+Started GET "/u/100000327676852" for 127.0.0.1 at 2013-06-19 22:56:33 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100000327676852"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '100000327676852') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4472ms (Views: 7.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 22:56:38 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 22:56:38 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 22:56:38 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 22:56:38 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 22:56:38 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 22:56:38 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 22:56:38 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 22:56:38 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 22:56:38 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 22:56:38 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 22:56:38 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 1978ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:47:in `getFriends'
+  app/controllers/user_controller.rb:23:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.4ms)
+
+
+Started GET "/u/favicon.ico" for 127.0.0.1 at 2013-06-19 22:56:40 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"favicon"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = 'favicon') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1728ms (Views: 10.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/u/100000327676852" for 127.0.0.1 at 2013-06-19 22:57:35 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100000327676852"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '100000327676852') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4274ms (Views: 6.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 22:57:40 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 22:57:40 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 22:57:40 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 22:57:40 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 22:57:40 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 22:57:40 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 22:57:40 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 22:57:40 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 22:57:40 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 22:57:40 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 22:57:40 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 4931ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:47:in `getFriends'
+  app/controllers/user_controller.rb:23:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.1ms)
+
+
+Started GET "/u/favicon.ico" for 127.0.0.1 at 2013-06-19 22:57:45 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"favicon"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = 'favicon') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2712ms (Views: 8.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/u/100000327676852" for 127.0.0.1 at 2013-06-19 22:58:00 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100000327676852"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '100000327676852') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+
+
+Started GET "/u/100000327676852" for 127.0.0.1 at 2013-06-19 22:59:30 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100000327676852"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '100000327676852') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (4.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 33860ms (Views: 372.6ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 23:00:04 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 23:00:04 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 23:00:04 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 23:00:04 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 23:00:04 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 23:00:04 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 23:00:04 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 23:00:04 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 23:00:04 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 23:00:04 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:00:04 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 2612ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:48:in `getFriends'
+  app/controllers/user_controller.rb:23:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.3ms)
+
+
+Started GET "/u/favicon.ico" for 127.0.0.1 at 2013-06-19 23:00:07 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"favicon"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = 'favicon') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 203567ms (Views: 18.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-19 23:03:31 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4440ms (Views: 9.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 23:03:35 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 23:03:35 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 23:03:35 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 23:03:35 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 23:03:35 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 23:03:35 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 23:03:35 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 23:03:35 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 23:03:35 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 23:03:35 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:03:36 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 1676ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:48:in `getFriends'
+  app/controllers/user_controller.rb:23:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-19 23:04:23 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5827ms (Views: 11.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 23:04:29 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 23:04:29 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 23:04:29 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 23:04:30 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 23:04:30 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 23:04:30 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 23:04:30 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 23:04:30 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 23:04:30 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 23:04:30 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:04:30 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 2855ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:48:in `getFriends'
+  app/controllers/user_controller.rb:23:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.6ms)
+
+
+Started GET "/u/100003562633226" for 127.0.0.1 at 2013-06-19 23:04:44 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100003562633226"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '100003562633226') ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `user' for #<User:0x007f999b581a88>):
+  app/controllers/user_controller.rb:9:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.4ms)
+
+
+Started GET "/u/100003562633226" for 127.0.0.1 at 2013-06-19 23:05:02 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100003562633226"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '100003562633226') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 63542ms (Views: 9.5ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 23:06:06 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 23:06:06 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 23:06:06 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 23:06:06 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 23:06:06 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 23:06:06 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 23:06:06 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 23:06:06 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 23:06:06 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 23:06:06 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:06:06 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 1753ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:48:in `getFriends'
+  app/controllers/user_controller.rb:23:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.1ms)
+
+
+Started GET "/u/favicon.ico" for 127.0.0.1 at 2013-06-19 23:06:07 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"favicon"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = 'favicon') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 1394ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: limit=10.):
+  app/models/user.rb:32:in `getPublicSongs'
+  app/controllers/user_controller.rb:16:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.2ms)
+
+
+Started GET "/u/100003562633226" for 127.0.0.1 at 2013-06-19 23:06:11 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100003562633226"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '100003562633226') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 2531ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: limit=10.):
+  app/models/user.rb:32:in `getPublicSongs'
+  app/controllers/user_controller.rb:9:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.9ms)
+
+
+Started GET "/u/100003562633226" for 127.0.0.1 at 2013-06-19 23:06:37 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100003562633226"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '100003562633226') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 1084ms
+
+FbGraph::InvalidRequest (OAuthException :: Syntax error "Expected end of string instead of "&"." at character 4: link&limit=10):
+  app/models/user.rb:32:in `getPublicSongs'
+  app/controllers/user_controller.rb:9:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.0ms)
+
+
+Started GET "/u/100003562633226" for 127.0.0.1 at 2013-06-19 23:07:02 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100003562633226"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '100003562633226') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 72537ms (Views: 9.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 23:08:15 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 23:08:15 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 23:08:15 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 23:08:15 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 23:08:15 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 23:08:15 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 23:08:15 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 23:08:15 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 23:08:15 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 23:08:15 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:08:15 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 1290ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:48:in `getFriends'
+  app/controllers/user_controller.rb:23:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.9ms)
+
+
+Started GET "/u/favicon.ico" for 127.0.0.1 at 2013-06-19 23:08:16 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"favicon"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE (uid = 'favicon') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 622833ms (Views: 26.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/u/100003562633226" for 127.0.0.1 at 2013-06-19 23:18:39 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100003562633226"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '100003562633226') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 5558ms (Views: 115.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/u/100003562633226" for 127.0.0.1 at 2013-06-19 23:18:45 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100003562633226"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '100003562633226') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4198ms (Views: 10.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 23:18:49 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 23:18:49 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 23:18:49 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 23:18:49 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 23:18:49 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 23:18:49 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 23:18:49 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 23:18:49 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 23:18:49 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 23:18:49 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:18:49 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 997ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:36:in `getFriends'
+  app/controllers/user_controller.rb:23:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.2ms)
+
+
+Started GET "/u/favicon.ico" for 127.0.0.1 at 2013-06-19 23:18:50 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"favicon"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = 'favicon') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 949ms (Views: 12.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/u/100003562633226" for 127.0.0.1 at 2013-06-19 23:19:01 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100003562633226"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '100003562633226') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4173ms (Views: 10.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 23:19:05 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 23:19:05 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 23:19:05 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 23:19:05 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 23:19:05 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 23:19:05 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 23:19:05 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 23:19:05 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 23:19:05 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 23:19:05 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:19:05 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 862ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:36:in `getFriends'
+  app/controllers/user_controller.rb:23:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.9ms)
+
+
+Started GET "/u/favicon.ico" for 127.0.0.1 at 2013-06-19 23:19:06 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"favicon"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE (uid = 'favicon') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 916ms (Views: 10.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/u/100003562633226" for 127.0.0.1 at 2013-06-19 23:19:32 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100003562633226"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '100003562633226') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 3535ms (Views: 14.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 23:19:36 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 23:19:36 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 23:19:36 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 23:19:36 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 23:19:36 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 23:19:36 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 23:19:36 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 23:19:36 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 23:19:36 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 23:19:36 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:19:36 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 858ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:36:in `getFriends'
+  app/controllers/user_controller.rb:23:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.4ms)
+
+
+Started GET "/u/favicon.ico" for 127.0.0.1 at 2013-06-19 23:19:37 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"favicon"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = 'favicon') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 927ms (Views: 10.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/u/100003562633226" for 127.0.0.1 at 2013-06-19 23:20:37 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100003562633226"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '100003562633226') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 3328ms (Views: 30.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 23:20:41 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 23:20:41 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 23:20:41 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 23:20:41 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 23:20:41 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 23:20:41 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 23:20:41 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 23:20:41 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 23:20:41 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 23:20:41 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:20:41 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 757ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:36:in `getFriends'
+  app/controllers/user_controller.rb:23:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.8ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-19 23:20:42 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-19 23:20:42 +0200
+
+
+Started GET "/u/favicon.ico" for 127.0.0.1 at 2013-06-19 23:20:42 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"favicon"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE (uid = 'favicon') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 738ms (Views: 17.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-19 23:20:43 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-19 23:20:43 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-19 23:20:50 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3067ms (Views: 10.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 23:20:53 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 23:20:53 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 23:20:53 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 23:20:53 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 23:20:53 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 23:20:53 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 23:20:53 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 23:20:53 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 23:20:53 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 23:20:53 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:20:53 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 752ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:36:in `getFriends'
+  app/controllers/user_controller.rb:23:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.7ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-19 23:20:54 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-19 23:20:54 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-19 23:20:54 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-19 23:20:54 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-19 23:21:03 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2755ms (Views: 117.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 23:21:06 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 23:21:06 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 23:21:06 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 23:21:06 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 23:21:06 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 23:21:06 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 23:21:06 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 23:21:06 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 23:21:06 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 23:21:06 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:21:06 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 793ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:36:in `getFriends'
+  app/controllers/user_controller.rb:23:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.1ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-19 23:21:07 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-19 23:21:07 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-19 23:21:07 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-19 23:21:07 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-19 23:21:26 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3392ms (Views: 12.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 23:21:30 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 23:21:30 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 23:21:30 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 23:21:30 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 23:21:30 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 23:21:30 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 23:21:30 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 23:21:30 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 23:21:30 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 23:21:30 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:21:30 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 762ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:36:in `getFriends'
+  app/controllers/user_controller.rb:23:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.5ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-19 23:21:31 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-19 23:21:31 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-19 23:21:31 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-19 23:21:31 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:30:06 +0200
+Processing by UserController#getData as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 786ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: identifier.):
+  app/models/user.rb:36:in `getFriends'
+  app/controllers/user_controller.rb:28:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.1ms)
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:30:45 +0200
+Processing by UserController#getData as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 731ms
+
+FbGraph::InvalidRequest (OAuthException :: (#100) Unknown fields: uid.):
+  app/models/user.rb:36:in `getFriends'
+  app/controllers/user_controller.rb:28:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.7ms)
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:30:52 +0200
+Processing by UserController#getData as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 42762ms (Views: 446.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:32:25 +0200
+Processing by UserController#getData as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 348397ms (Views: 451.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/u/100003562633226" for 127.0.0.1 at 2013-06-19 23:38:13 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100003562633226"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '100003562633226') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 4930ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/user_controller.rb:24:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.8ms)
+
+
+Started GET "/u/100003562633226" for 127.0.0.1 at 2013-06-19 23:38:22 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100003562633226"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '100003562633226') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 4110ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/user_controller.rb:24:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-19 23:38:26 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3236ms (Views: 11.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 23:38:29 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 23:38:29 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 23:38:29 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 23:38:29 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 23:38:29 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 23:38:29 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 23:38:29 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 23:38:29 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 23:38:29 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 23:38:29 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:38:29 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 29121ms (Views: 478.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-19 23:38:58 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-19 23:38:58 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-19 23:38:58 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-19 23:38:58 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-19 23:38:58 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4434ms (Views: 9.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 23:39:03 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 23:39:03 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 23:39:03 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:03 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:03 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:03 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:03 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:03 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:03 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:03 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:39:03 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 39799ms (Views: 521.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-19 23:39:43 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-19 23:39:43 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-19 23:39:43 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-19 23:39:43 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-19 23:39:43 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4610ms (Views: 10.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 23:39:48 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 23:39:48 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:48 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:48 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:48 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 23:39:48 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:48 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:48 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:48 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:48 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:39:48 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1622ms (Views: 521.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-19 23:39:50 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-19 23:39:50 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-19 23:39:50 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-19 23:39:50 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-19 23:39:54 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3256ms (Views: 9.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 23:39:57 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:57 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 23:39:57 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:57 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 23:39:57 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:57 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:57 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:57 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:57 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 23:39:57 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:39:57 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 2491ms (Views: 678.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-19 23:48:18 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4675ms (Views: 10.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 23:48:23 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 23:48:23 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 23:48:23 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 23:48:23 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 23:48:23 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 23:48:23 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 23:48:23 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 23:48:23 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 23:48:23 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 23:48:23 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:48:23 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 1001ms
+
+NoMethodError (undefined method `[]' for #<FbGraph::User:0x007f999b609910>):
+  app/models/user.rb:39:in `block in getFriends'
+  app/models/user.rb:38:in `each'
+  app/models/user.rb:38:in `getFriends'
+  app/controllers/user_controller.rb:28:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (101.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (121.2ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-19 23:48:25 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-19 23:48:25 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:48:25 +0200
+Processing by UserController#getData as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 791ms
+
+NoMethodError (undefined method `[]' for #<FbGraph::User:0x007f999cce3168>):
+  app/models/user.rb:39:in `block in getFriends'
+  app/models/user.rb:38:in `each'
+  app/models/user.rb:38:in `getFriends'
+  app/controllers/user_controller.rb:28:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.5ms)
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-19 23:48:27 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-19 23:48:27 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-19 23:48:27 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:49:09 +0200
+Processing by UserController#getData as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 997ms
+
+NoMethodError (undefined method `push' for {}:Hash):
+  app/models/user.rb:39:in `block in getFriends'
+  app/models/user.rb:38:in `each'
+  app/models/user.rb:38:in `getFriends'
+  app/controllers/user_controller.rb:28:in `getData'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.2ms)
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:51:56 +0200
+Processing by UserController#getData as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1207ms (Views: 121.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:58:11 +0200
+Processing by UserController#getData as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1040ms (Views: 62.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-19 23:59:45 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4947ms (Views: 10.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-19 23:59:50 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-19 23:59:50 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-19 23:59:50 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-19 23:59:50 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-19 23:59:50 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-19 23:59:50 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-19 23:59:50 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-19 23:59:50 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-19 23:59:50 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-19 23:59:50 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-19 23:59:50 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1081ms (Views: 46.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-19 23:59:51 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-19 23:59:51 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-19 23:59:51 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-19 23:59:51 +0200
