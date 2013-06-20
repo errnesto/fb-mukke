@@ -24895,3 +24895,5 @@ Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-20 02:12:06 +0200
 
 
 Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-20 02:12:06 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
