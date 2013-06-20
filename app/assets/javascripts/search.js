@@ -1,7 +1,74 @@
 $.getJSON('/user/getData',function(friends){
 	$(function() { //document is ready
 		foundFriends = searchFriends('eim',friends);
-		listFriends(foundFriends,$('.searchresults') );
+		
+		//the behavior of the search panel
+		var $searchbar =  $('#searchFriend');
+		var $resultsContainer = $('.searchresults');
+		var orgVal = $searchbar.val();
+
+		//empty input onClick
+		$searchbar.click(function(){
+			$searchbar.val('');
+			return false;
+		});
+		//clear search bar on click outside
+		$(window).click(function(){
+			//restore user name in input //hide results //set selected to first element
+			$searchbar.val(orgVal);
+			$resultsContainer.hide();
+			selected = 0;
+		});
+		//on user Input
+		var selected = 0;
+		$searchbar.keyup(function(key){
+			var input = $searchbar.val();
+			if(input.length > 0){
+				//user input exist empty the results from before
+				$resultsContainer.empty();
+				$resultsContainer.show();
+				//search friends matching the user input
+				var foundFriends = searchFriends(input,friends);
+				if(foundFriends.length > 0){
+					//list result in searchresults tag
+					listFriends(foundFriends,$resultsContainer);
+
+					var $results = $resultsContainer.children('a');
+					$results[selected].className ='focus';
+					//respond to the follwing keys
+					switch (key.which){
+					case 40: //down arrow
+						if(selected < foundFriends.length -1){
+							selected++;
+							$results.removeClass('focus');
+							$results[selected].className ='focus';
+						}
+						break;
+					case 38:  //up arrow
+						if(selected > 0){
+							selected--;
+							$results.removeClass('focus');
+							$results[selected].className ='focus';
+						}
+						break;
+					case 13: //enter key
+						var link = $($results[selected]).attr('href');
+						location.href = link;
+						break;
+					case 27: //escape key
+						//remove focus and hide results Container
+						$searchbar.blur();
+						$resultsContainer.hide();
+					}
+				}
+			}
+			else{
+				console.log(input.length);
+				//no user iput hide the search bar and set selected back to first item
+				$resultsContainer.hide();
+				selected = 0;
+			}
+		});
 	});
 });
 

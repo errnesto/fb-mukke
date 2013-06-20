@@ -1,5 +1,5 @@
 
-<p>your user id:<%= current_user.uid %></p>
+<p>your user id: <%= @user.uid %></p>
 <iframe id="ytPlayer" type="text/html" width="0" height="0"
 	  	src="http://www.youtube.com/embed/?enablejsapi=1"
 	  	frameborder="0"></iframe>
@@ -7,7 +7,7 @@
 	<a href="/">
 		<h1 class="logo">fb-mukke</h1>
 	</a>
-	<input type="text" id="searchFriend" placeholder="nach Freunden Suchen"></input>
+	<input type="text" id="searchFriend" value="<%= @user.name %>"></input>
 	<p class="searchresults"></p>
 	<div class="headerLine">
 		<div class="mask"></div>

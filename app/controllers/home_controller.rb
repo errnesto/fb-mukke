@@ -4,6 +4,7 @@ class HomeController < ApplicationController
 		if(!current_user)			
 			redirect_to('/auth/facebook/')
 		else
+			@user = current_user
 			@songs = current_user.getSongsFromFacebook
 		end
 	end
