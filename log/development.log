@@ -23352,3 +23352,1546 @@ Migrating to ChangeUidFormatInUsers (20130619225246)
   [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130619225246"]]
   [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:14:13 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (2.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 460ms
+
+FbGraph::InvalidRequest (GraphMethodException :: Unsupported get request.):
+  app/models/user.rb:48:in `callFbApi'
+  app/models/user.rb:20:in `getSongsFromFacebook'
+  app/controllers/home_controller.rb:7:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:15:34 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 629ms
+
+FbGraph::InvalidRequest (GraphMethodException :: Unsupported get request.):
+  app/models/user.rb:48:in `callFbApi'
+  app/models/user.rb:20:in `getSongsFromFacebook'
+  app/controllers/home_controller.rb:7:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:15:43 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 286ms
+
+FbGraph::InvalidRequest (GraphMethodException :: Unsupported get request.):
+  app/models/user.rb:48:in `callFbApi'
+  app/models/user.rb:20:in `getSongsFromFacebook'
+  app/controllers/home_controller.rb:7:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:16:10 +0200
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.0.rc2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.0.rc2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0.rc2) lib/active_support/callbacks.rb:373:in `_run__52089654051038454__call__callbacks'
+  activesupport (4.0.0.rc2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc2) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc2) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.5ms)
+  [1m[36m (3.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20130601155619)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" varchar(255), "first_name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130601155619"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSongs (20130603205044)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "image" varchar(255), "url" varchar(255), "source" varchar(255), "identifier" varchar(255), "user_id" integer, "list_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130603205044"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Migrating to RenameFirstNameToNameInUser (20130619224252)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" varchar(255), "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "users"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" varchar(255), "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "ausers"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "ausers"
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20130619224252"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Migrating to AddPictureToUser (20130619224314)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "users" ADD "picture" varchar(255)
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20130619224314"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Migrating to ChangeUidFormatInUsers (20130619225246)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" varchar(255), "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "users"[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "users"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "uid" integer(8)
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20130619225246"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:16:48 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (2.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 63ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1):
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/controllers/home_controller.rb:4:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:17:18 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (2.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 43ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1):
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/controllers/home_controller.rb:4:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:18:14 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1):
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/controllers/home_controller.rb:4:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (53.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (68.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:18:42 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1):
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/controllers/home_controller.rb:4:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (12.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (49.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:18:56 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1):
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/controllers/home_controller.rb:4:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:20:28 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1):
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/controllers/home_controller.rb:4:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:22:06 +0200
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/auth/facebook/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook/" for 127.0.0.1 at 2013-06-20 01:22:06 +0200
+(facebook) Request phase initiated.
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:24:02 +0200
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/auth/facebook/
+Completed 302 Found in 54ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook/" for 127.0.0.1 at 2013-06-20 01:24:02 +0200
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQBKYQ-dzXP7E1X_JFJEiAxCWLAyruXta_YbBOvo6BpEZ03GYuzxzWZb1LO7k9ZiTdifna9hvQ2GkYy3h23RwfYtJBfimD-V60Aq-dVXVFjCVSLqs2yNFhNZJA_NCBro-uahn-8RcdZAoMsV77lWDCfM-lRdRd9QBtm9PpBJLr4LLwEjg9EU055ayMDGbhvp9TJirKC2wF5dq58-f-yzu5vg-maLhcRcYRCAKdApUNOhEuiftJUsg7-HqSNObs2hye8uafnaQuFv1GX0SbCAFgw8r1wpszYKoft2pgJQY1dFh0E_IshbRJERk_xXb4UjxsY&state=ae5fb0b9b6b7d70b5d9489425989d3c6a4107d653115451b" for 127.0.0.1 at 2013-06-20 01:24:28 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBKYQ-dzXP7E1X_JFJEiAxCWLAyruXta_YbBOvo6BpEZ03GYuzxzWZb1LO7k9ZiTdifna9hvQ2GkYy3h23RwfYtJBfimD-V60Aq-dVXVFjCVSLqs2yNFhNZJA_NCBro-uahn-8RcdZAoMsV77lWDCfM-lRdRd9QBtm9PpBJLr4LLwEjg9EU055ayMDGbhvp9TJirKC2wF5dq58-f-yzu5vg-maLhcRcYRCAKdApUNOhEuiftJUsg7-HqSNObs2hye8uafnaQuFv1GX0SbCAFgw8r1wpszYKoft2pgJQY1dFh0E_IshbRJERk_xXb4UjxsY", "state"=>"ae5fb0b9b6b7d70b5d9489425989d3c6a4107d653115451b", "provider"=>"facebook"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (42.6ms)[0m  [1mINSERT INTO "users" ("created_at", "oauth_expires_at", "oauth_token", "uid", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Wed, 19 Jun 2013 23:24:29 UTC +00:00], ["oauth_expires_at", Sun, 18 Aug 2013 23:24:29 UTC +00:00], ["oauth_token", "CAAHONCAfHIIBAEP8NU62aHwiyZAbOQTYzha3lZBXSwfIj09mU8swzKFPQF9nPvtiAXR7LusPdNmFo9UiOZAlpc5vaymF7mYUAV98JBQAZAXstegmA97QkClr2QQ1RPhxtDRVPetopAF3BtiW0rbEEkjAje2CXCkZD"], ["uid", 100003562633226], ["updated_at", Wed, 19 Jun 2013 23:24:29 UTC +00:00]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 81ms (ActiveRecord: 44.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:24:29 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 5227ms (Views: 224.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 01:24:34 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 01:24:34 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 01:24:34 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 01:24:34 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 01:24:34 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 01:24:34 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 01:24:34 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 01:24:34 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 01:24:34 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 01:24:34 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 01:24:34 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 904ms (Views: 77.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 01:24:35 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 01:24:35 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-20 01:24:36 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-20 01:24:36 +0200
+
+
+Started GET "/u/100003562633226" for 127.0.0.1 at 2013-06-20 01:25:51 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100003562633226"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '100003562633226') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 4057ms (Views: 8.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 01:25:55 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 01:25:55 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 01:25:55 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 01:25:55 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 01:25:55 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 01:25:55 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 01:25:55 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 01:25:55 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 882ms (Views: 45.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/u/favicon.ico" for 127.0.0.1 at 2013-06-20 01:25:56 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"favicon"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = 'favicon') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 261ms
+
+FbGraph::InvalidRequest (GraphMethodException :: Unsupported get request.):
+  app/models/user.rb:48:in `callFbApi'
+  app/models/user.rb:20:in `getSongsFromFacebook'
+  app/controllers/user_controller.rb:21:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:27:00 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3828ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 01:27:04 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 01:27:04 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 01:27:04 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 01:27:04 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 01:27:04 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 01:27:04 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 01:27:04 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 01:27:04 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 01:27:04 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 01:27:04 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 01:27:04 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1011ms (Views: 68.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 01:27:05 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 01:27:05 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:27:05 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3323ms (Views: 7.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-20 01:27:08 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:27:08 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4352ms (Views: 7.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 01:27:13 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 01:27:13 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 01:27:13 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 01:27:13 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 01:27:13 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 01:27:13 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 01:27:13 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 01:27:13 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 01:27:13 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 01:27:13 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 01:27:13 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 858ms (Views: 53.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 01:27:14 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 01:27:14 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-20 01:27:14 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-20 01:27:14 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:28:00 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3631ms (Views: 6.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 01:28:04 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 01:28:04 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 01:28:04 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 01:28:04 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 01:28:04 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 01:28:04 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 01:28:04 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 01:28:04 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 01:28:04 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 01:28:04 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 01:28:04 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1056ms (Views: 123.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 01:28:05 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 01:28:05 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-20 01:28:05 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-20 01:28:05 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:32:20 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5104ms (Views: 114.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 01:32:25 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 01:32:25 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 01:32:25 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 01:32:25 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 01:32:25 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 01:32:25 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 01:32:25 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 01:32:25 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 01:32:25 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 01:32:25 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 01:32:25 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 928ms (Views: 141.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 01:32:26 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 01:32:26 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-20 01:32:26 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-20 01:32:26 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:33:24 +0200
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.0.rc2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.0.rc2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0.rc2) lib/active_support/callbacks.rb:373:in `_run__2213703560254009124__call__callbacks'
+  activesupport (4.0.0.rc2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc2) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc2) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.5ms)
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20130601155619)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" varchar(255), "first_name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130601155619"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSongs (20130603205044)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "image" varchar(255), "url" varchar(255), "source" varchar(255), "identifier" varchar(255), "user_id" integer, "list_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130603205044"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Migrating to RenameFirstNameToNameInUser (20130619224252)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" varchar(255), "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "users"
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" varchar(255), "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "ausers"[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "ausers"
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20130619224252"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Migrating to AddPictureToUser (20130619224314)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "users" ADD "picture" varchar(255)
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20130619224314"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Migrating to ChangeUidFormatInUsers (20130619225246)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" varchar(255), "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "users"[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "users"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "uid" integer(8)
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20130619225246"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:33:45 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (3.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 39ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1):
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/controllers/home_controller.rb:4:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:34:14 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/auth/facebook/
+Completed 302 Found in 36ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook/" for 127.0.0.1 at 2013-06-20 01:34:14 +0200
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQD2ayEKp56sIxFhUeJqhMhbGp_w0Jfc3X9kENEWpB-9bkWL8F-cAjaHhghztUkn_TBh9oWp253EktNb8xoZkfyUQuf3xrgiMyYkC6D9S1_IfWG7YhHqZnVa-j9wIwTDGEPKHEcZYW8NZkurgrXPsvOMwtDpzBAqjdr-Gm6a3rMkxLMI3baLj-8gQ50Nuvyyl82cusHzD6x9xjrLO41rmBHqfgGYTJ3uT89N9HFCBaVeAjH6N-mrjAH7RO2yg066erd8yp59F_gzJ_KP0i9yIzwMdtoWSEICArA-aXCAxmAUCacc3RfpAmmFSEgApQ7qGyY&state=c3cea58752d2e1434b37248708f0d3f4d0a0851689b56a95" for 127.0.0.1 at 2013-06-20 01:34:39 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQD2ayEKp56sIxFhUeJqhMhbGp_w0Jfc3X9kENEWpB-9bkWL8F-cAjaHhghztUkn_TBh9oWp253EktNb8xoZkfyUQuf3xrgiMyYkC6D9S1_IfWG7YhHqZnVa-j9wIwTDGEPKHEcZYW8NZkurgrXPsvOMwtDpzBAqjdr-Gm6a3rMkxLMI3baLj-8gQ50Nuvyyl82cusHzD6x9xjrLO41rmBHqfgGYTJ3uT89N9HFCBaVeAjH6N-mrjAH7RO2yg066erd8yp59F_gzJ_KP0i9yIzwMdtoWSEICArA-aXCAxmAUCacc3RfpAmmFSEgApQ7qGyY", "state"=>"c3cea58752d2e1434b37248708f0d3f4d0a0851689b56a95", "provider"=>"facebook"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO "users" ("created_at", "name", "oauth_expires_at", "oauth_token", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 19 Jun 2013 23:34:40 UTC +00:00], ["name", "Wunderundfitzig Berlin"], ["oauth_expires_at", Sun, 18 Aug 2013 23:24:28 UTC +00:00], ["oauth_token", "CAAHONCAfHIIBANy8CG3OrlmDMaq5M2pZARVfS9ZAUbTWb3ArKZAZCHt0GBAsZAPhtEY4KCN4XmdZCZBNGZA0epYpMse07FRszXaEf2hc2qhKLeuHEP7ehROyMuensMGAM7ZCxtikEbOsHRH4vZCdTYptRqhECymwKaZBlgZD"], ["uid", 100003562633226], ["updated_at", Wed, 19 Jun 2013 23:34:40 UTC +00:00]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 48ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:34:40 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 4576ms (Views: 160.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 01:34:45 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 01:34:45 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 01:34:45 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 01:34:45 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 01:34:45 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 01:34:45 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 01:34:45 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 01:34:45 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 01:34:45 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 01:34:45 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 01:34:45 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 940ms (Views: 121.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 01:34:46 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 01:34:46 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-20 01:34:46 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 01:34:46 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-20 01:34:46 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:36:33 +0200
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/auth/facebook/
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 302 Found in 3808ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/auth/facebook/" for 127.0.0.1 at 2013-06-20 01:36:36 +0200
+(facebook) Request phase initiated.
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:41:53 +0200
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/auth/facebook/
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `getSongsFromFacebook' for nil:NilClass):
+  app/controllers/home_controller.rb:5:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:42:20 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/auth/facebook/
+Completed 500 Internal Server Error in 29ms
+
+NoMethodError (undefined method `getSongsFromFacebook' for nil:NilClass):
+  app/controllers/home_controller.rb:5:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:42:45 +0200
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/auth/facebook/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook/" for 127.0.0.1 at 2013-06-20 01:42:45 +0200
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQBIvBu0sOIp4WRMAf2U-TnNJKrSYnVK6SaxcIZVOS3FXhAUE2udP_YTT7ZFa6UQ_49sbJA4dTdTTexaIQNRcMyAC7qo8hF-_lZnV2AcH2idCo6guGDf0FT-CPizBl3ZQAVR-Kqw-lMoZ1-AiEfcBFDiRDRFZI6pl2Ywz373VlELvQUKrvOi7fWW5Vxb2T0sS78jBPERHv7YAIwUm9XGi3valSUQS5hrrwKjj5kGOLaKLUSogQCxlO3-mBg4VZc_2QJyRh19HoimPacfqdkls-wWEr0G_zT6JCjU8fzFROzflT8UQJDhPpely45Bkg61MIc&state=a25b0bf6b6462e4a87a87882476d87d11bcdb85499084339" for 127.0.0.1 at 2013-06-20 01:42:46 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBIvBu0sOIp4WRMAf2U-TnNJKrSYnVK6SaxcIZVOS3FXhAUE2udP_YTT7ZFa6UQ_49sbJA4dTdTTexaIQNRcMyAC7qo8hF-_lZnV2AcH2idCo6guGDf0FT-CPizBl3ZQAVR-Kqw-lMoZ1-AiEfcBFDiRDRFZI6pl2Ywz373VlELvQUKrvOi7fWW5Vxb2T0sS78jBPERHv7YAIwUm9XGi3valSUQS5hrrwKjj5kGOLaKLUSogQCxlO3-mBg4VZc_2QJyRh19HoimPacfqdkls-wWEr0G_zT6JCjU8fzFROzflT8UQJDhPpely45Bkg61MIc", "state"=>"a25b0bf6b6462e4a87a87882476d87d11bcdb85499084339", "provider"=>"facebook"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.0ms)[0m  UPDATE "users" SET "picture" = ?, "oauth_token" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["picture", "http://graph.facebook.com/100003562633226/picture?type=square"], ["oauth_token", "CAAHONCAfHIIBABpBqmQLGMgP3wtpOoqrlUTmNZBy7pPpw1sVbgu4tkvyOlM5EQyxMiVKE1jcYgTkZBDbccdO7mAlEqwOt94SuPdDhVJJ2jcN1N7YZBP3RA38Se52btD6ZAzv4ZADy6o6B7XN2eG0ZBpUcy5CP0QX8ZD"], ["updated_at", Wed, 19 Jun 2013 23:42:47 UTC +00:00]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 68ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:42:47 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4800ms (Views: 193.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 01:42:51 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 01:42:51 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 01:42:51 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 01:42:52 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 01:42:52 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 01:42:52 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 01:42:52 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 01:42:52 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 01:42:52 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 01:42:52 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 01:42:52 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 967ms (Views: 128.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 01:42:53 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 01:42:53 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-20 01:42:53 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-20 01:42:53 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 01:42:53 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:45:09 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4041ms (Views: 6.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 01:45:13 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 01:45:13 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 01:45:13 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 01:45:13 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 01:45:13 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 01:45:13 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 01:45:13 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 01:45:13 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 01:45:13 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 01:45:13 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 01:45:14 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 01:45:14 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 01:45:14 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 878ms (Views: 63.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-20 01:45:15 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-20 01:45:15 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:56:03 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4713ms (Views: 145.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 01:56:08 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 01:56:08 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 01:56:08 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 01:56:08 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 01:56:08 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 01:56:08 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 01:56:08 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 01:56:08 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 01:56:08 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 01:56:08 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 01:56:08 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 821ms (Views: 52.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 01:56:09 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 01:56:09 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-20 01:56:09 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-20 01:56:09 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:59:24 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4372ms (Views: 135.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 01:59:28 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 01:59:28 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 01:59:28 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 01:59:28 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 01:59:28 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 01:59:28 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 01:59:28 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 01:59:28 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 01:59:28 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 01:59:28 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 01:59:28 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1174ms (Views: 45.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 01:59:30 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 01:59:30 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-20 01:59:30 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-20 01:59:30 +0200
+
+
+Started GET "/100000327676852" for 127.0.0.1 at 2013-06-20 01:59:36 +0200
+
+ActionController::RoutingError (No route matches [GET] "/100000327676852"):
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc2) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc2) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (36.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 01:59:53 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4430ms (Views: 143.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 01:59:57 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 01:59:57 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 01:59:57 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 01:59:57 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 01:59:57 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 01:59:57 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 01:59:57 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 01:59:57 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 01:59:57 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 01:59:57 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 01:59:57 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1004ms (Views: 107.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 01:59:58 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 01:59:58 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-20 01:59:58 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-20 01:59:58 +0200
+
+
+Started GET "/u/100000327676852" for 127.0.0.1 at 2013-06-20 02:00:02 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100000327676852"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '100000327676852') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2335ms (Views: 7.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 02:00:05 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 02:00:05 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 02:00:05 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:05 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:05 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:05 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:05 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:05 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:05 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:05 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 02:00:05 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 973ms (Views: 39.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 02:00:06 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 02:00:06 +0200
+
+
+Started GET "/u/favicon.ico" for 127.0.0.1 at 2013-06-20 02:00:06 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"favicon"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = 'favicon') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 246ms
+
+FbGraph::InvalidRequest (GraphMethodException :: Unsupported get request.):
+  app/models/user.rb:48:in `callFbApi'
+  app/models/user.rb:20:in `getSongsFromFacebook'
+  app/controllers/user_controller.rb:21:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 02:00:12 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3821ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 02:00:16 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 02:00:16 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 02:00:16 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:16 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:16 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:16 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:16 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:16 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:16 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:16 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 02:00:18 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3468ms (Views: 6.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 02:00:21 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 02:00:22 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 02:00:22 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:22 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:22 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:22 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:22 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:22 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:22 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 02:00:22 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 02:00:22 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 989ms (Views: 149.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 02:00:23 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 02:00:23 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-20 02:00:23 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-20 02:00:23 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 02:01:41 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4136ms (Views: 35.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 02:01:46 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 02:01:46 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 02:01:46 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 02:01:46 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 02:01:46 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 02:01:46 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 02:01:46 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 02:01:46 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 02:01:46 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 02:01:46 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 02:01:46 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 980ms (Views: 136.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 02:01:47 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 02:01:47 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-20 02:01:47 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-20 02:01:47 +0200
+
+
+Started GET "/100000327676852/Eimfach%20Nur%20Zyrene" for 127.0.0.1 at 2013-06-20 02:01:53 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100000327676852", "name"=>"Eimfach Nur Zyrene"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '100000327676852') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2294ms (Views: 7.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 02:01:55 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 02:01:55 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 02:01:55 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 02:01:55 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 02:01:55 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 02:01:55 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 02:01:55 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 02:01:55 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 02:01:55 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 02:01:55 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 02:01:56 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (5.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1798ms (Views: 117.2ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 02:01:57 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 02:01:57 +0200
+
+
+Started GET "/100000327676852/favicon.ico" for 127.0.0.1 at 2013-06-20 02:01:57 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"100000327676852", "name"=>"favicon"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '100000327676852') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 2344ms (Views: 12.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/100000327676852/Eimfach%20Nur%20Zyrene" for 127.0.0.1 at 2013-06-20 02:11:54 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100000327676852", "name"=>"Eimfach Nur Zyrene"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '100000327676852') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 2328ms (Views: 7.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 02:11:56 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 02:11:56 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 02:11:56 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 02:11:56 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 02:11:56 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 02:11:56 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 02:11:56 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 02:11:56 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 02:11:56 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 02:11:56 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 02:11:57 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 841ms (Views: 62.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 02:11:57 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 02:11:57 +0200
+
+
+Started GET "/100000327676852/favicon.ico" for 127.0.0.1 at 2013-06-20 02:11:58 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"100000327676852", "name"=>"favicon"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '100000327676852') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2460ms (Views: 10.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-20 02:12:00 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4835ms (Views: 6.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-20 02:12:05 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-20 02:12:05 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-20 02:12:05 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-20 02:12:05 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-20 02:12:05 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-20 02:12:05 +0200
+
+
+Started GET "/assets/song.css?body=1" for 127.0.0.1 at 2013-06-20 02:12:05 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-20 02:12:05 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-20 02:12:05 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 02:12:05 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-20 02:12:05 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 976ms (Views: 51.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-20 02:12:06 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-20 02:12:06 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-20 02:12:06 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-20 02:12:06 +0200

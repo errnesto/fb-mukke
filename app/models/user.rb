@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
 		where(auth.slice(:uid)).first_or_initialize.tap do |user|
 			user.uid = auth.uid
 			user.name = auth.info.name
+			user.picture = auth.info.image
 			user.oauth_token = auth.credentials.token
 			user.oauth_expires_at = Time.at(auth.credentials.expires_at)
 			user.save!
@@ -38,8 +39,8 @@ class User < ActiveRecord::Base
 		friendsObject.each do |friend|
 			friends.push friend.raw_attributes
 		end
-		#add the user itself to the list of its friends
-		friends.push( {'id' => self.uid, 'name' => self.name} )
+		#add the user itself to the list of its friends #in the same format as we get it from facebook
+		friends.push( {'id' => self.uid, 'name' => self.name, 'picture' => {'data' => {'url' => self.picture}} } )
 		friends
 	end
 

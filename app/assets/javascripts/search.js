@@ -1,5 +1,8 @@
-$.getJSON('/user/getData',function(data){
-	console.log(data);
+$.getJSON('/user/getData',function(friends){
+	$(function() { //document is ready
+		foundFriends = searchFriends('eim',friends);
+		listFriends(foundFriends,$('.searchresults') );
+	});
 });
 
 //searches for a fb friend by its name in an array of friends and returns all found friends plus their id
@@ -32,7 +35,7 @@ function listFriends(friendArray,$element){
 		$picture = $img.clone();
 		$picture.attr({'src':friendArray[i].picture.data.url});
 		$link = $a.clone();
-		$link.attr({'id':friendArray[i].id,'class':friendArray[i].name});
+		$link.attr('href','/'+friendArray[i].id+'/'+friendArray[i].name);
 		$link.append($picture);
 		$link.append($name);
 		$element.append($link);

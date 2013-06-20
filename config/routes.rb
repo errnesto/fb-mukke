@@ -8,7 +8,7 @@ FbMukke::Application.routes.draw do
   get "song/unstar"
   get "user/getData"
   #match a user by its fb uid
-  match 'u/:uid' => 'user#show', :via => :get
+  match '/:uid/:name' => 'user#show', :via => :get
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
