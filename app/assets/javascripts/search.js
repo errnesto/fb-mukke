@@ -96,13 +96,16 @@ function listFriends(friendArray,$element){
 	var $p = $('<p></p>');
 	var $a = $('<a></a>');
 	var $img = $('<img />');
+	var name;
 	for(var i=0;i<friendArray.length;i++){
 		$name = $p.clone();
 		$name.text(friendArray[i].name);
 		$picture = $img.clone();
 		$picture.attr({'src':friendArray[i].picture.data.url});
 		$link = $a.clone();
-		$link.attr('href','/'+friendArray[i].id+'/'+friendArray[i].name);
+		//convert whitespace in links to make them look more beatiful
+		name = friendArray[i].name.replace(/ /g,'_');
+		$link.attr('href','/'+friendArray[i].id+'/'+name);
 		$link.append($picture);
 		$link.append($name);
 		$element.append($link);

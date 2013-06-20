@@ -17,7 +17,10 @@ class UserController < ApplicationController
 		else
 			#user does not exist in database and therefore has no oauth_token
 			flash[:error] = "notAuser"
-			user = User.new(:uid => params[:uid],:name => params[:name])
+			#replace underscores with whitespace
+			name = params[:name].gsub(/_/,' ')
+			#create a tempprayry user
+			user = User.new(:uid => params[:uid],:name => name)
 			@songs = user.getSongsFromFacebook(current_user.oauth_token)
 		end
 		@user = user;
