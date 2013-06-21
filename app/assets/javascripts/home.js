@@ -43,7 +43,7 @@ soundManager.onready(function() {
 });
 
 //play a song based on its numer in the playlist no matter where its from
-var playedBar,bufferdBar, nowPlaying = -1, ytIsStarting;
+var playedBar,bufferdBar, nowPlaying = -1, isStarting;
 function loadSong(trigger_number){
 	resetPlayer(nowPlaying); //skip the state of the previous player
 	nowPlaying = trigger_number;
@@ -68,11 +68,7 @@ function loadSong(trigger_number){
 	if(song.source == 'youtube'){
 		ytPlayer.loadVideoById(song.sid);
 		//the youtube seekbar is updated by the onStateChange function of the Player (see above)
-		//youtube videos might wont start due to gema restrictions just play the next song after a timeout
-		ytIsStarting = window.setTimeout(function(){
-			playlist[nowPlaying].addClass('restricted');
-			loadSong(nowPlaying+1);
-		},5000);
+		
 	}
 	else if(song.source == 'soundcloud'){
 		//create Song and update seek Bars
@@ -86,6 +82,7 @@ function loadSong(trigger_number){
 			whileplaying: function(){
 				var percent = this.position / this.durationEstimate * 100;
 				playedBar.width(percent+'%');
+				window.clearTimeout(isStarting);
 			},
 			//when song is finished Play the next one
 			onfinish: function(){
@@ -95,6 +92,12 @@ function loadSong(trigger_number){
 		//start playing
 		soundManager.play('nowPlaying');
 	}
+	//songs might wont start just play the next song and grey thiss one out after a timeout
+	isStarting = window.setTimeout(function(){
+		playlist[nowPlaying].parent().addClass('restricted');
+		loadSong(nowPlaying+1);
+	},5000);
+
 
 	//switch to pause button
 	trigger.off('click');//remove all click events
@@ -130,7 +133,7 @@ function pause(trigger,source){
 	});
 
 	//clear timeout for ytPlay next on restricted
-	window.clearTimeout(ytIsStarting);
+	window.clearTimeout(isStarting);
 }
 
 function play(trigger,source){
@@ -168,7 +171,7 @@ function resetPlayer(i){
 		playlist[i].find('.play').addClass('show');
 		playlist[i].find('.pause').removeClass('show');
 		//clear timeout for ytPlay next on restricted
-		window.clearTimeout(ytIsStarting);
+		window.clearTimeout(isStarting);
 	}
 }
 
@@ -186,7 +189,7 @@ function updateYTSeekBar(){
 		if(ytState > 0 && ytState < 3){
 			t = window.setTimeout(updateYTSeekBar,200);
 			//youtube video loads clear timeout for playing next songs
-			window.clearTimeout(ytIsStarting);
+			window.clearTimeout(isStarting);
 		}
 	}
 	//when song is finished play next //youtoube stachange may fires twice check for that 

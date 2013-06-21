@@ -75,11 +75,6 @@ $line_h: 5px;
 			color: #534741; text-decoration: none;
 		}
 	}
-	.restricted{
-		.artwork, .name{
-			@include opacity(0.2);
-		}
-	}
 
 	.seekBar{
 		width: 100%; height: $line_h;
@@ -105,6 +100,11 @@ $line_h: 5px;
 		}
 	}
 }
+.restricted{
+	.artwork, .name, .seekBar{
+		@include opacity(0.2);
+	}
+}
 //source specific css
 .from_youtube{
 	.seekBar{
@@ -123,28 +123,33 @@ $line_h: 5px;
 	}
 }
 .header{
-	width: $player_w; height:80px + $line_h;
-	margin: 40px auto;
-
-	.logo{
-		width: 140px; height: 65px;
-		margin: 0 0 15px $player_leftspace;
-		direction: ltr;
-		float: left;
-		text-indent: -9999px;
-		background-image: url(<%=asset_path 'fb-mukke-logo.svg' %>);
-		background-size: auto 100%;
-		background-repeat: no-repeat;
-		background-position: center;
-	}
-	.headerLine{
-		clear: both;
-		position: relative;
-		width: 100%; height: $line_h;
-		background-color: #0071BC;
-		@include linear_gradient(#29ABE2,#0071BC);
-		.mask{
-			@include mask;
+	position: fixed; top: 0;
+	background-color: #fff;
+	width:100%;
+	z-index: 200;
+	.hBox{
+		width: $player_w; height:80px + $line_h;
+		margin: 40px auto;
+		.logo{
+			width: 140px; height: 65px;
+			margin: 0 0 15px $player_leftspace;
+			direction: ltr;
+			float: left;
+			text-indent: -9999px;
+			background-image: url(<%=asset_path 'fb-mukke-logo.svg' %>);
+			background-size: auto 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.headerLine{
+			clear: both;
+			position: relative;
+			width: 100%; height: $line_h;
+			background-color: #0071BC;
+			@include linear_gradient(#29ABE2,#0071BC);
+			.mask{
+				@include mask;
+			}
 		}
 	}
 }
