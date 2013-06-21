@@ -12,7 +12,7 @@ class Song < ActiveRecord::Base
 	  		self.image = @metadata['media$thumbnail'][1]['url']
 	  	elsif( (self.source||= isFrom) == 'soundcloud')
 	  		#get metadata from soundcloud api
-	  		json = open('http://api.soundcloud.com/resolve.json?url='+self.url+'&client_id=978f352c112cb02aa31166a4824dd0da')
+	  		json = open('https://api.soundcloud.com/resolve.json?url='+self.url+'&client_id=978f352c112cb02aa31166a4824dd0da')
 	  		@metadata = JSON.parse(json.read)
 	  		self.identifier = @metadata['stream_url']
 	  		self.name = @metadata['title']
