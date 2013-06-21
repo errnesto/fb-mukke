@@ -63,7 +63,6 @@ $.getJSON('/user/getData',function(friends){
 				}
 			}
 			else{
-				console.log(input.length);
 				//no user iput hide the search bar and set selected back to first item
 				$resultsContainer.hide();
 				selected = 0;

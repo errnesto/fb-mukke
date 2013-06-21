@@ -33242,3 +33242,420 @@ Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-21 15:41:35 +0200
 
 
 Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-21 15:41:35 +0200
+
+
+Started GET "/1263334900/Lessu_U%C5%A1elis" for 127.0.0.1 at 2013-06-21 16:04:39 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1263334900", "name"=>"Lessu_Ušelis"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 9158ms
+
+OpenURI::HTTPError (404 Not Found):
+  app/models/song.rb:15:in `set_atributes'
+  app/models/user.rb:27:in `block in getSongsFromFacebook'
+  app/models/user.rb:23:in `each'
+  app/models/user.rb:23:in `getSongsFromFacebook'
+  app/controllers/user_controller.rb:24:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.4ms)
+
+
+Started GET "/1263334900/Lessu_U%C5%A1elis" for 127.0.0.1 at 2013-06-21 16:08:58 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1263334900", "name"=>"Lessu_Ušelis"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+
+
+Started GET "/1263334900/Lessu_U%C5%A1elis" for 127.0.0.1 at 2013-06-21 16:13:52 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1263334900", "name"=>"Lessu_Ušelis"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+
+
+Started GET "/1263334900/Lessu_U%C5%A1elis" for 127.0.0.1 at 2013-06-21 16:16:29 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1263334900", "name"=>"Lessu_Ušelis"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (2.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+
+
+Started GET "/1263334900/Lessu_U%C5%A1elis" for 127.0.0.1 at 2013-06-21 16:24:18 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1263334900", "name"=>"Lessu_Ušelis"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (2.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed   in 421130ms
+
+
+Started GET "/1263334900/Lessu_U%C5%A1elis" for 127.0.0.1 at 2013-06-21 16:31:34 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1263334900", "name"=>"Lessu_Ušelis"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (56.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 310651ms
+
+OpenURI::HTTPError (404 Not Found):
+  app/models/song.rb:15:in `set_atributes'
+  app/models/user.rb:28:in `block in getSongsFromFacebook'
+  app/models/user.rb:23:in `each'
+  app/models/user.rb:23:in `getSongsFromFacebook'
+  app/controllers/user_controller.rb:24:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.0ms)
+
+
+Started GET "/1263334900/Lessu_U%C5%A1elis" for 127.0.0.1 at 2013-06-21 16:41:34 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1263334900", "name"=>"Lessu_Ušelis"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 74068ms (Views: 167.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-21 16:42:48 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-21 16:42:48 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-21 16:42:48 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-21 16:42:48 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-21 16:42:49 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-21 16:42:49 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-21 16:42:49 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-21 16:42:49 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-21 16:42:49 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-21 16:42:49 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1109ms (Views: 162.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-21 16:42:50 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-21 16:42:50 +0200
+
+
+Started GET "/1263334900/favicon.ico" for 127.0.0.1 at 2013-06-21 16:42:50 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1263334900", "name"=>"favicon"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9249ms (Views: 9.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/1263334900/Lessu_U%C5%A1elis" for 127.0.0.1 at 2013-06-21 16:43:32 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1263334900", "name"=>"Lessu_Ušelis"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (3.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8776ms (Views: 190.5ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-21 16:43:42 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-21 16:43:42 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-21 16:43:42 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-21 16:43:42 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-21 16:43:42 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-21 16:43:42 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-21 16:43:42 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-21 16:43:42 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-21 16:43:42 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-21 16:43:42 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1333ms (Views: 42.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-21 16:43:43 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-21 16:43:43 +0200
+
+
+Started GET "/1263334900/favicon.ico" for 127.0.0.1 at 2013-06-21 16:43:43 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1263334900", "name"=>"favicon"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 7702ms (Views: 9.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/1263334900/Lessu_U%C5%A1elis" for 127.0.0.1 at 2013-06-21 16:44:33 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1263334900", "name"=>"Lessu_Ušelis"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed   in 149636ms
+
+
+Started GET "/1263334900/Lessu_U%C5%A1elis" for 127.0.0.1 at 2013-06-21 16:48:00 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1263334900", "name"=>"Lessu_Ušelis"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+
+
+Started GET "/1263334900/Lessu_U%C5%A1elis" for 127.0.0.1 at 2013-06-21 16:50:00 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1263334900", "name"=>"Lessu_Ušelis"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (148.4ms)
+Completed 200 OK in 9663ms (Views: 195.6ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-21 16:50:10 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-21 16:50:10 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-21 16:50:10 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-21 16:50:10 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-21 16:50:10 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-21 16:50:10 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-21 16:50:10 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-21 16:50:10 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-21 16:50:10 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-21 16:50:11 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1115ms (Views: 39.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-21 16:50:12 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-21 16:50:12 +0200
+
+
+Started GET "/1263334900/favicon.ico" for 127.0.0.1 at 2013-06-21 16:50:12 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1263334900", "name"=>"favicon"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 9187ms (Views: 11.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/1263334900/Lessu_U%C5%A1elis" for 127.0.0.1 at 2013-06-21 16:50:32 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1263334900", "name"=>"Lessu_Ušelis"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 167ms
+
+NoMethodError (undefined method `fetch' for #<User:0x007fec68d8cd20>):
+  app/controllers/user_controller.rb:23:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.6ms)
+
+
+Started GET "/1263334900/Lessu_U%C5%A1elis" for 127.0.0.1 at 2013-06-21 16:52:49 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1263334900", "name"=>"Lessu_Ušelis"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/1263334900/Lessu_U%C5%A1elis" for 127.0.0.1 at 2013-06-21 16:53:59 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1263334900", "name"=>"Lessu_Ušelis"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (2.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 79712ms (Views: 160.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-21 16:55:19 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-21 16:55:19 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-21 16:55:19 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-21 16:55:19 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-21 16:55:19 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-21 16:55:19 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-21 16:55:19 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-21 16:55:19 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-21 16:55:19 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-21 16:55:19 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 995ms (Views: 98.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-21 16:55:20 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-21 16:55:20 +0200
+
+
+Started GET "/1263334900/favicon.ico" for 127.0.0.1 at 2013-06-21 16:55:20 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1263334900", "name"=>"favicon"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 116487ms
+
+RuntimeError (ActiveRecord::Querying#find delegated to all.find, but all is nil: User(id: integer, name: string, oauth_token: string, oauth_expires_at: datetime, created_at: datetime, updated_at: datetime, picture: string, uid: integer)):
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/controllers/user_controller.rb:25:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.9ms)
+
+
+Started GET "/1263334900/Lessu_U%C5%A1elis" for 127.0.0.1 at 2013-06-21 16:57:42 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1263334900", "name"=>"Lessu_Ušelis"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed   in 42219ms
+
+
+Started GET "/1263334900/Lessu_U%C5%A1elis" for 127.0.0.1 at 2013-06-21 16:58:36 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1263334900", "name"=>"Lessu_Ušelis"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (3.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 71474ms (Views: 111.9ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-21 16:59:48 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-21 16:59:48 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-21 16:59:48 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-21 16:59:48 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-21 16:59:48 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-21 16:59:48 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-21 16:59:48 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-21 16:59:48 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-21 16:59:48 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-21 16:59:48 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 937ms (Views: 52.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-21 16:59:49 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-21 16:59:49 +0200
+
+
+Started GET "/1263334900/favicon.ico" for 127.0.0.1 at 2013-06-21 16:59:49 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1263334900", "name"=>"favicon"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1263334900') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed   in 67324ms

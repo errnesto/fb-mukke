@@ -50,7 +50,9 @@ end
 # gem 'capistrano'
 
 # To use debugger
+gem 'pry'
 gem 'debugger'
+gem 'pry-debugger'
 
 # gems to work with facebook api
 gem 'omniauth-facebook'
