@@ -32,7 +32,7 @@ $player_w: 90%;
 $player_leftspace: 20%;
 $line_h: 5px;
 .player{
-	width: $player_w; height: 220px;
+	width: $player_w; height: 180px;
 	position: relative;
 	margin: 0px auto;
 	display: none;
@@ -42,20 +42,20 @@ $line_h: 5px;
 			float: left;
 			margin-left: $player_leftspace;
 			position: relative;
-			width: 180px; height: 180px;
+			width: 140px; height: 140px;
 			background-size: auto 100%;
 			background-position: center;
 
 			.play, .pause{
 				display: none;
-				width: 180px; height: 180px;
+				width: 140px; height: 140px;
 				background-repeat: no-repeat;
 				direction: ltr;
     			text-indent: -9999px;
 			}
 			.play{
 				background-image: url(<%=asset_path 'play.png' %>);
-				background-position: 62px center;
+				background-position: 45px center;
 			}
 			.pause{
 				background-image: url(<%=asset_path 'pause.png' %>);
@@ -69,9 +69,9 @@ $line_h: 5px;
 		}
 		.name{
 			padding: 10px 0px 50px 40px;
-			width: 40%; height: 120px;
+			width: 40%; height: 80px;
 			overflow: hidden;
-			font-size: 40px;
+			font-size: 30px;
 			color: #534741; text-decoration: none;
 		}
 	}
@@ -127,7 +127,7 @@ $line_h: 5px;
 	margin: 40px auto;
 
 	.logo{
-		width: 180px; height: 65px;
+		width: 140px; height: 65px;
 		margin: 0 0 15px $player_leftspace;
 		direction: ltr;
 		float: left;
