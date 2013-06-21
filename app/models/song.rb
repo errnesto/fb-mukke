@@ -10,6 +10,7 @@ class Song < ActiveRecord::Base
 	  		#store metaddata from youtube
 	  		self.name = @metadata['media$title']['$t']
 	  		self.image = @metadata['media$thumbnail'][1]['url']
+	  		#TODO: look for media$restriction and do something about it
 	  	elsif( (self.source||= isFrom) == 'soundcloud')
 	  		#get metadata from soundcloud api
 	  		json = open('https://api.soundcloud.com/resolve.json?url='+self.url+'&client_id=978f352c112cb02aa31166a4824dd0da')

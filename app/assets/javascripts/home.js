@@ -43,7 +43,7 @@ soundManager.onready(function() {
 });
 
 //play a song based on its numer in the playlist no matter where its from
-var playedBar,bufferdBar, nowPlaying;
+var playedBar,bufferdBar, nowPlaying = -1, ytIsStarting;
 function loadSong(trigger_number){
 	resetPlayer(nowPlaying); //skip the state of the previous player
 	nowPlaying = trigger_number;
@@ -68,6 +68,11 @@ function loadSong(trigger_number){
 	if(song.source == 'youtube'){
 		ytPlayer.loadVideoById(song.sid);
 		//the youtube seekbar is updated by the onStateChange function of the Player (see above)
+		//youtube videos might wont start due to gema restrictions just play the next song after a timeout
+		ytIsStarting = window.setTimeout(function(){
+			playlist[nowPlaying].addClass('restricted');
+			loadSong(nowPlaying+1);
+		},5000);
 	}
 	else if(song.source == 'soundcloud'){
 		//create Song and update seek Bars
@@ -123,6 +128,9 @@ function pause(trigger,source){
 		play(trigger,source);
 		return false;
 	});
+
+	//clear timeout for ytPlay next on restricted
+	window.clearTimeout(ytIsStarting);
 }
 
 function play(trigger,source){
@@ -147,7 +155,7 @@ function play(trigger,source){
 }
 
 function resetPlayer(i){
-	if(typeof(i) !== 'undefined'){
+	if(typeof(playlist[i]) !== 'undefined'){
 		//set playBar to full width
 		playlist[i].parent().find('.played').width('100%').show();
 		//append the loadSong method to the trigger
@@ -159,6 +167,8 @@ function resetPlayer(i){
 		});
 		playlist[i].find('.play').addClass('show');
 		playlist[i].find('.pause').removeClass('show');
+		//clear timeout for ytPlay next on restricted
+		window.clearTimeout(ytIsStarting);
 	}
 }
 
@@ -175,9 +185,11 @@ function updateYTSeekBar(){
 		ytState = ytPlayer.getPlayerState(); //? ytPlayer.getPlayerState(): 1;
 		if(ytState > 0 && ytState < 3){
 			t = window.setTimeout(updateYTSeekBar,200);
+			//youtube video loads clear timeout for playing next songs
+			window.clearTimeout(ytIsStarting);
 		}
 	}
-	//when song is finished play next //youtoube stachange my fires twice check for that 
+	//when song is finished play next //youtoube stachange may fires twice check for that 
 	if (ytPlayer.getPlayerState() === 0 && prevState != ytState) {
 		window.clearTimeout(t);
 		loadSong(nowPlaying+1);

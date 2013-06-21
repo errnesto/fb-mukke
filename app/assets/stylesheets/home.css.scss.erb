@@ -15,6 +15,18 @@
 	background-image: url(<%=asset_path 'mask.png' %>);
 	background-size: 100% 100%;
 }
+@mixin opacity($op){
+	/* IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$op*100})";
+	/* IE 5-7 */
+	filter: alpha(opacity=$op*100);
+	/* Netscape */
+	-moz-opacity: $op;
+	/* Safari 1.x */
+	-khtml-opacity: $op;
+	/* Good browsers */
+	opacity: $op;
+}
 
 $player_w: 90%;
 $player_leftspace: 20%;
@@ -61,6 +73,11 @@ $line_h: 5px;
 			overflow: hidden;
 			font-size: 40px;
 			color: #534741; text-decoration: none;
+		}
+	}
+	.restricted{
+		.artwork, .name{
+			@include opacity(0.2);
 		}
 	}
 
