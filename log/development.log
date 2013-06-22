@@ -51392,3 +51392,1053 @@ Processing by UserController#show as
   [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
   Rendered home/index.html.erb within layouts/application (2.8ms)
 Completed 200 OK in 6309ms (Views: 9.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-22 18:02:42 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 4695ms
+
+RuntimeError (Circular dependency detected while autoloading constant Song):
+  app/models/user.rb:28:in `block (2 levels) in getSongsFromFacebook'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.0ms)
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-22 18:02:55 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 5297ms (Views: 20.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 18:03:01 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 18:03:01 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 18:03:01 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 18:03:01 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 18:03:01 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 18:03:01 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 18:03:01 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 18:03:01 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 18:03:01 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 18:03:01 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 18:03:01 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 18:03:01 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1324ms (Views: 200.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/592578945/favicon.ico" for 127.0.0.1 at 2013-06-22 18:03:02 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"592578945", "name"=>"favicon"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 5448ms (Views: 9.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:28:48 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 2668ms
+
+ActionView::Template::Error (undefined method `source' for "https://i1.ytimg.com/vi/FYEVvUPBjWA/mqdefault.jpg":String):
+    18: 	</div>
+    19: </header>
+    20: <% @songs.each_with_index do |song, i| %>
+    21: 	<div class="player from_<%= song.source %>">
+    22: 		<a class="trigger" name="<%= song.source %>" href="<%= song.identifier %>">
+    23: 			<div class="artwork" style="background-image: url('<%= song.image %>;')">
+    24: 				<p class="show play">play</p>
+  app/views/home/index.html.erb:21:in `block in _app_views_home_index_html_erb__40606318443353176_70265452128720'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `each_with_index'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb__40606318443353176_70265452128720'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:30:24 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 1907ms
+
+ActionView::Template::Error (undefined method `source' for "https://i1.ytimg.com/vi/FYEVvUPBjWA/mqdefault.jpg":String):
+    19: </header>
+    20: <% @songs.each_with_index do |song, i| %>
+    21: 	<div class="player from_<%= song['source'] %>">
+    22: 		<a class="trigger" name="<%= song.source %>" href="<%= song.identifier %>">
+    23: 			<div class="artwork" style="background-image: url('<%= song.image %>;')">
+    24: 				<p class="show play">play</p>
+    25: 				<p class="pause">pause</p>
+  app/views/home/index.html.erb:22:in `block in _app_views_home_index_html_erb__40606318443353176_70265410680760'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `each_with_index'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb__40606318443353176_70265410680760'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:32:12 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1679ms (Views: 6.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 18:32:14 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 18:32:14 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 18:32:14 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 18:32:14 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 18:32:14 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 18:32:14 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 18:32:14 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 18:32:14 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 18:32:14 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 18:32:14 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1193ms (Views: 130.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 18:32:16 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 18:32:16 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:32:27 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 1843ms
+
+ActionView::Template::Error (undefined method `name' for #<Hash:0x007fcfe28d4730>):
+    24: 				<p class="show play">play</p>
+    25: 				<p class="pause">pause</p>
+    26: 			</div>
+    27: 			<h2 class="name"><%= song.name %></h2>
+    28: 		</a>
+    29: 		<a class="sourceLink" href="<%= song['url'] %>" target="_blank"><img src="<%=asset_path song['source']+'_logo.png' %>"></a>
+    30: 		<div class="seekBar">
+  app/views/home/index.html.erb:27:in `block in _app_views_home_index_html_erb__40606318443353176_70265410648160'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `each_with_index'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb__40606318443353176_70265410648160'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:33:06 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 2343ms
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    26: 			</div>
+    27: 			<h2 class="name"><%= song['name'] %></h2>
+    28: 		</a>
+    29: 		<a class="sourceLink" href="<%= song['url'] %>" target="_blank"><img src="<%=asset_path song['source']+'_logo.png' %>"></a>
+    30: 		<div class="seekBar">
+    31: 			<div class="waiting"></div>
+    32: 			<div class="bufferd"></div>
+  app/views/home/index.html.erb:29:in `block in _app_views_home_index_html_erb__40606318443353176_70265444755300'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `each_with_index'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb__40606318443353176_70265444755300'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:33:20 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 3221ms
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    26: 			</div>
+    27: 			<h2 class="name"><%= song['name'] %></h2>
+    28: 		</a>
+    29: 		<a class="sourceLink" href="<%= song['url'] %>" target="_blank"><img src="<%=asset_path song['source']+'_logo.png' %>"></a>
+    30: 		<div class="seekBar">
+    31: 			<div class="waiting"></div>
+    32: 			<div class="bufferd"></div>
+  app/views/home/index.html.erb:29:in `block in _app_views_home_index_html_erb__40606318443353176_70265444755300'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `each_with_index'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb__40606318443353176_70265444755300'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:33:50 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 1870ms
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    26: 			</div>
+    27: 			<h2 class="name"><%= song['name'] %></h2>
+    28: 		</a>
+    29: 		<a class="sourceLink" href="<%= song['url'] %>" target="_blank"><img src="<%=asset_path song['source']+'_logo.png' %>"></a>
+    30: 		<div class="seekBar">
+    31: 			<div class="waiting"></div>
+    32: 			<div class="bufferd"></div>
+  app/views/home/index.html.erb:29:in `block in _app_views_home_index_html_erb__40606318443353176_70265444755300'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `each_with_index'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb__40606318443353176_70265444755300'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:34:21 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 2127ms
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    26: 			</div>
+    27: 			<h2 class="name"><%= song['name'] %></h2>
+    28: 		</a>
+    29: 		<a class="sourceLink" href="<%= song['url'] %>" target="_blank"><img src="<%=asset_path song['source'] +'_logo.png' %>"></a>
+    30: 		<div class="seekBar">
+    31: 			<div class="waiting"></div>
+    32: 			<div class="bufferd"></div>
+  app/views/home/index.html.erb:29:in `block in _app_views_home_index_html_erb__40606318443353176_70265418928620'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `each_with_index'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb__40606318443353176_70265418928620'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:35:23 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 213179ms (Views: 8.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 18:38:56 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 18:38:56 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 18:38:56 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 18:38:56 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 18:38:56 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 18:38:56 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 18:38:56 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 18:38:56 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 18:38:56 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 18:38:56 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1388ms (Views: 56.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:39:40 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 13208ms (Views: 7.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 18:39:54 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 18:39:54 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 18:39:54 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 18:39:54 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 18:39:54 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 18:39:54 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 18:39:54 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 18:39:54 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 18:39:54 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 18:39:54 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1665ms (Views: 98.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:40:10 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:43:10 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (22.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 75100ms
+
+ActionView::Template::Error (undefined method `each_with_index' for nil:NilClass):
+    17: 		</div>
+    18: 	</div>
+    19: </header>
+    20: <% @songs.each_with_index do |song, i| %>
+    21: 	<div class="player from_<%= song['source'] %>">
+    22: 		<a class="trigger" name="<%= song['source'] %>" href="<%= song['identifier'] %>">
+    23: 			<div class="artwork" style="background-image: url('<%= song['image'] %>;')">
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb___610542083082459295_70290397782520'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:46:01 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 7567ms
+
+ActionView::Template::Error (undefined method `each_with_index' for nil:NilClass):
+    17: 		</div>
+    18: 	</div>
+    19: </header>
+    20: <% @songs.each do |song| %>
+    21: 	<div class="player from_<%= song['source'] %>">
+    22: 		<a class="trigger" name="<%= song['source'] %>" href="<%= song['identifier'] %>">
+    23: 			<div class="artwork" style="background-image: url('<%= song['image'] %>;')">
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb___610542083082459295_70290397782520'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:46:36 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 10911ms
+
+ActionView::Template::Error (undefined method `each_with_index' for nil:NilClass):
+    17: 		</div>
+    18: 	</div>
+    19: </header>
+    20: <% @songs.each do |song| %>
+    21: 	<div class="player from_<%= song['source'] %>">
+    22: 		<a class="trigger" name="<%= song['source'] %>" href="<%= song['identifier'] %>">
+    23: 			<div class="artwork" style="background-image: url('<%= song['image'] %>;')">
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb___610542083082459295_70290397782520'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:47:10 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (2.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 2425ms
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    26: 			</div>
+    27: 			<h2 class="name"><%= song['name'] %></h2>
+    28: 		</a>
+    29: 		<a class="sourceLink" href="<%= song['url'] %>" target="_blank"><img src="<%=asset_path song['source'] +'_logo.png' %>"></a>
+    30: 		<div class="seekBar">
+    31: 			<div class="waiting"></div>
+    32: 			<div class="bufferd"></div>
+  app/views/home/index.html.erb:29:in `block in _app_views_home_index_html_erb__4480568671020862624_70284733411140'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb__4480568671020862624_70284733411140'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:48:52 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 2210ms
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    26: 			</div>
+    27: 			<h2 class="name"><%= song['name'] %></h2>
+    28: 		</a>
+    29: 		<a class="sourceLink" href="<%= song['url'] %>" target="_blank"><img src="<%=asset_path song['source'] +'_logo.png' %>"></a>
+    30: 		<div class="seekBar">
+    31: 			<div class="waiting"></div>
+    32: 			<div class="bufferd"></div>
+  app/views/home/index.html.erb:29:in `block in _app_views_home_index_html_erb__4480568671020862624_70284733411140'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb__4480568671020862624_70284733411140'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:49:20 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 2673ms
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    26: 			</div>
+    27: 			<h2 class="name"><%= song['name'] %></h2>
+    28: 		</a>
+    29: 		<a class="sourceLink" href="<%= song['url'] %>" target="_blank"></a>
+    30: 		<div class="seekBar">
+    31: 			<div class="waiting"></div>
+    32: 			<div class="bufferd"></div>
+  app/views/home/index.html.erb:29:in `block in _app_views_home_index_html_erb__4480568671020862624_70284733411140'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb__4480568671020862624_70284733411140'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:49:36 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 2027ms
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    26: 			</div>
+    27: 			<h2 class="name"><%= song['name'] %></h2>
+    28: 		</a>
+    29: 		<a class="sourceLink" href="<%= song['url'] %>" target="_blank"></a>
+    30: 		<div class="seekBar">
+    31: 			<div class="waiting"></div>
+    32: 			<div class="bufferd"></div>
+  app/views/home/index.html.erb:29:in `block in _app_views_home_index_html_erb__4480568671020862624_70284733411140'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb__4480568671020862624_70284733411140'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:50:16 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (2.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 2166ms (Views: 265.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 18:50:19 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 18:50:19 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 18:50:19 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 18:50:19 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 18:50:19 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 18:50:19 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 18:50:19 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 18:50:19 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 18:50:19 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 18:50:19 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 974ms (Views: 44.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:50:49 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (129.6ms)
+Completed 500 Internal Server Error in 2756ms
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    26: 			</div>
+    27: 			<h2 class="name"><%= song['name'] %></h2>
+    28: 		</a>
+    29: 		<a class="sourceLink" href="<%= song['url'] %>" target="_blank"><img src="<%=asset_path song['source'] +'_logo.png' %>"></a>
+    30: 		<div class="seekBar">
+    31: 			<div class="waiting"></div>
+    32: 			<div class="bufferd"></div>
+  app/views/home/index.html.erb:29:in `block in _app_views_home_index_html_erb___3057171068336148949_70337347483160'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb___3057171068336148949_70337347483160'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:51:01 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 2401ms
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    26: 			</div>
+    27: 			<h2 class="name"><%= song['name'] %></h2>
+    28: 		</a>
+    29: 		<a class="sourceLink" href="<%= song['url'] %>" target="_blank"><img src="<%=asset_path song['source']+'_logo.png' %>"></a>
+    30: 		<div class="seekBar">
+    31: 			<div class="waiting"></div>
+    32: 			<div class="bufferd"></div>
+  app/views/home/index.html.erb:29:in `block in _app_views_home_index_html_erb___3057171068336148949_70337373048560'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb___3057171068336148949_70337373048560'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:51:33 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 2285ms
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    26: 			</div>
+    27: 			<h2 class="name"><%= song['name'] %></h2>
+    28: 		</a>
+    29: 		<a class="sourceLink" href="<%= song['url'] %>" target="_blank"><img src="<%=asset_path song['source']+'_logo.png' %>"></a>
+    30: 		<div class="seekBar">
+    31: 			<div class="waiting"></div>
+    32: 			<div class="bufferd"></div>
+  app/views/home/index.html.erb:29:in `block in _app_views_home_index_html_erb___3057171068336148949_70337373048560'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb___3057171068336148949_70337373048560'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:53:37 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 2894ms
+
+ActionView::Template::Error (undefined method `Class' for #<Array:0x007ff1645ac230>):
+    17: 		</div>
+    18: 	</div>
+    19: </header>
+    20: <%= @songs.Class.name %>
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb___3057171068336148949_70337373003660'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:53:56 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 2180ms
+
+ActionView::Template::Error (undefined method `Class' for #<Hash:0x007ff160b38608>):
+    17: 		</div>
+    18: 	</div>
+    19: </header>
+    20: <%= @songs[0].Class.name %>
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb___3057171068336148949_70337373000940'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:54:06 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 2083ms (Views: 6.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 18:54:08 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 18:54:08 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 18:54:08 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 18:54:08 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 18:54:08 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 18:54:08 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 18:54:08 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 18:54:08 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 18:54:08 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 18:54:08 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1052ms (Views: 43.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 18:54:10 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 18:54:10 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:54:27 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2231ms (Views: 9.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 18:54:29 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 18:54:29 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 18:54:29 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 18:54:29 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 18:54:29 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 18:54:30 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 18:54:30 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 18:54:30 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 18:54:30 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 18:54:30 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1327ms (Views: 44.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 18:54:31 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 18:54:31 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:58:25 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 2087ms (Views: 9.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 18:58:27 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 18:58:27 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 18:58:27 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 18:58:27 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 18:58:27 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 18:58:27 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 18:58:27 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 18:58:27 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 18:58:27 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 18:58:27 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 18:58:27 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1011ms (Views: 43.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 18:58:28 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 18:58:28 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 18:58:28 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 18:58:28 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 18:58:41 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 2609ms (Views: 8.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 18:58:44 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1225ms (Views: 37.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-22 18:58:48 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 4040ms (Views: 7.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 18:58:53 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1124ms (Views: 324.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/592578945/favicon.ico" for 127.0.0.1 at 2013-06-22 18:58:54 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"592578945", "name"=>"favicon"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 5343ms (Views: 11.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-22 18:59:24 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5309ms (Views: 153.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 18:59:30 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 18:59:30 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 18:59:30 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 18:59:30 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 18:59:30 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 18:59:30 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 18:59:30 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 18:59:30 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 18:59:30 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 18:59:30 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 18:59:30 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1277ms (Views: 48.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 18:59:31 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 18:59:31 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 18:59:31 +0200
+
+
+Started GET "/592578945/favicon.ico" for 127.0.0.1 at 2013-06-22 18:59:31 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"592578945", "name"=>"favicon"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 4979ms (Views: 10.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-22 18:59:36 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 5043ms (Views: 323.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 18:59:42 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 18:59:42 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 18:59:42 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 18:59:42 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 18:59:42 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 18:59:42 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 18:59:42 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 18:59:42 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 18:59:42 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 18:59:42 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 18:59:42 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1283ms (Views: 38.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/592578945/favicon.ico" for 127.0.0.1 at 2013-06-22 18:59:43 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"592578945", "name"=>"favicon"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 5041ms (Views: 10.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-22 19:00:35 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 4810ms (Views: 41.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 19:00:40 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 19:00:40 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 19:00:40 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 19:00:40 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 19:00:40 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 19:00:40 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 19:00:40 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 19:00:40 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 19:00:40 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 19:00:40 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1279ms (Views: 56.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 19:00:41 +0200
+
+
+Started GET "/592578945/favicon.ico" for 127.0.0.1 at 2013-06-22 19:00:41 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"592578945", "name"=>"favicon"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 4470ms (Views: 11.7ms | ActiveRecord: 0.6ms)

@@ -78,7 +78,7 @@ $.getJSON('/user/getData',function(friends){
 			$searchInput.val(text);
 			$resultsContainer.hide();
 			$('.player').slideUp();
-			$('.blueLine').width(0).animate({width: '80%'},5000,function(){$(this).animate({width: '98%'},5000);});
+			$('.blueLine').width(0).animate({width: '90%'},5000,function(){$(this).animate({width: '98%'},5000);});
 		}
 	});
 });

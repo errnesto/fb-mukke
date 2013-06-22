@@ -26,7 +26,6 @@ FbMukke::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
-  config.threadsafe!
 
   ENV['FACEBOOK_APP_ID'] = "508198249241730";
   ENV['FACEBOOK_SECRET'] = "f46bf41be7ee4e8de0c8269079e68a85";
