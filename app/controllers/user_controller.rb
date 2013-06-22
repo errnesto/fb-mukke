@@ -1,4 +1,6 @@
 class UserController < ApplicationController
+	after_filter :allow_iframe
+	
 	def show
 		#try to select user from database by given userID
 		user = User.where("uid = ?", params[:uid]).first

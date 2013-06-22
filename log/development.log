@@ -60177,3 +60177,367 @@ Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-23 01:21:57 +0200
 
 
 Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-23 01:21:57 +0200
+
+
+Started POST "/" for 127.0.0.1 at 2013-06-23 01:31:10 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"signed_request"=>"3GG7jVtjzit4gzJS6o3vAgaIOrnAICiUYcjd_qDyRrE.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEzNzE5NDkyMDAsImlzc3VlZF9hdCI6MTM3MTk0Mzg3MCwib2F1dGhfdG9rZW4iOiJDQUFIT05DQWZISUlCQUhUM1lUNkF0TGF3RGR0QlJQWDBJc3B0RGhkVzBsSTh0MW51cVBSSWdRWXVoZGNIc0VCYXNscHdSbnpDajZVVmhVUmhvOGdIcEpEdzdFVVdpMmFsSkRlNGtyN09ua2xDVmN4Y2c1OGZKcFBIWkN0WkFWOXEzazR5Rk5ZdWt5Z2pwT2JzWkJkeFpBNkRKTVAwWkJlVFlXRVpBbW1FUlVMUVpEWkQiLCJ1c2VyIjp7ImNvdW50cnkiOiJkZSIsImxvY2FsZSI6ImRlX0RFIiwiYWdlIjp7Im1pbiI6MjF9fSwidXNlcl9pZCI6IjEwMDAwMzU2MjYzMzIyNiJ9"}
+Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/auth/facebook/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook/" for 127.0.0.1 at 2013-06-23 01:31:10 +0200
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQBY6cRPpwQj26LQc_p1FmqCDMuyAzE74tV8HEAIDAjmlDQM_o-H3nifZSt9bK9sDayeP-8wDeYvuCPTV7IlIJG6HMZvZlGt9iMwCqho9KbeHurw6FWwvUKoji7gR2uOieSRrYxCFfmywt4X_UBuh4b88kD3TGFGgOjxzgmazvs4wLEMSrkH0X31t8OIWojeBxEmtojBeoT_aDMUp5WXEHIFwMPyPVqhCVZbrH1zEbwVzcHamy5qZLg9nx7DBhVKVOuL5kXVTLnNkIXZgRk4gU1Gyn45FPMaaJqJIOh45Nac1iETp7SPDDthDcWiXGvc6F8&state=45e1a78b16b99b7f06d5c60103cec3b93cb9e3b79ae34f50" for 127.0.0.1 at 2013-06-23 01:31:10 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBY6cRPpwQj26LQc_p1FmqCDMuyAzE74tV8HEAIDAjmlDQM_o-H3nifZSt9bK9sDayeP-8wDeYvuCPTV7IlIJG6HMZvZlGt9iMwCqho9KbeHurw6FWwvUKoji7gR2uOieSRrYxCFfmywt4X_UBuh4b88kD3TGFGgOjxzgmazvs4wLEMSrkH0X31t8OIWojeBxEmtojBeoT_aDMUp5WXEHIFwMPyPVqhCVZbrH1zEbwVzcHamy5qZLg9nx7DBhVKVOuL5kXVTLnNkIXZgRk4gU1Gyn45FPMaaJqJIOh45Nac1iETp7SPDDthDcWiXGvc6F8", "state"=>"45e1a78b16b99b7f06d5c60103cec3b93cb9e3b79ae34f50", "provider"=>"facebook"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "users" SET "oauth_token" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["oauth_token", "CAAHONCAfHIIBAOT8oZAeXsSNPSBhJVF9REtZB6acEmYB67CP7pX9bEEqrBqVDDLk4VwVmmOMyBEWpurNvp6gEfCDhTdWlStyCZAJC9x1MfbR4suwvDrY36yaXRXv5CS5zNbVRoKqvXlGT3PVfvGa2MZALyBxfJQZD"], ["updated_at", Sat, 22 Jun 2013 23:31:11 UTC +00:00]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 153ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-23 01:31:11 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1105ms (Views: 5.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-23 01:31:13 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-23 01:31:13 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-23 01:31:13 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-23 01:31:13 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-23 01:31:13 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-23 01:31:13 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-23 01:31:13 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-23 01:31:13 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1249ms (Views: 123.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-23 01:31:14 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-23 01:31:14 +0200
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-23 01:31:24 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 4196ms (Views: 8.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-06-23 01:33:17 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"signed_request"=>"aCDKjkSGetOqGtv8-YF6_jNWKyBzzgbk7B6jd1mjyqg.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEzNzE5NDkyMDAsImlzc3VlZF9hdCI6MTM3MTk0Mzk5Nywib2F1dGhfdG9rZW4iOiJDQUFIT05DQWZISUlCQURpaUJNUVVOcUZaQ1pCb0o4QmVzdzJxZFhsVERpZUNIWkJoQTBnckNBb2dFV3NIYjF1S2hjNDhBNHU4MVNyZ2Z2MGtzRGtHMkRkak1scnVaQUFpWFFaQlpDZGh2elpBUkhNRmg3YlBpdWVwYjdDQVU4dDZSZEdnbUV0Z3praERmUjdBa2dSb0lHNnFSWkNHNnZESG5wbHJHeXhYUUZJRzNBWkRaRCIsInVzZXIiOnsiY291bnRyeSI6ImRlIiwibG9jYWxlIjoiZGVfREUiLCJhZ2UiOnsibWluIjoyMX19LCJ1c2VyX2lkIjoiMTAwMDAzNTYyNjMzMjI2In0"}
+Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/auth/facebook/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook/" for 127.0.0.1 at 2013-06-23 01:33:17 +0200
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQCLIplTKteb-CS8b63uzVdffq00vABtVmBI3vXO5e3MmyF4lxat8D41NAaEHNUf818bcmkS-RRXi7fLShKwtKuHVDCGbLdxmgQwz8KxUA3CBFiTBuVYFCkNSNUr1sTEvNMqUP3MOoD2VcHqgdZTqfNAA0U_fMKmvRSpWV3x0iClOlEM3CMqmkgZnJ1Yh1Pd72nXON55LrBzUe2kn-rQXoSrF-dGyhJeaK2tbxzXEbkGcYjc__7ZG4qDZkMFRC_0MKrXOwjv3rfpzdedWd78hb1QB0gylYwMCpU9FwzJvJtFkt1ZBQlN-SrQR3FcPqVB7is&state=57dbb30b644cd1599d7e860cb6e2fbbe5b57bfb8eebfa482" for 127.0.0.1 at 2013-06-23 01:33:18 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQCLIplTKteb-CS8b63uzVdffq00vABtVmBI3vXO5e3MmyF4lxat8D41NAaEHNUf818bcmkS-RRXi7fLShKwtKuHVDCGbLdxmgQwz8KxUA3CBFiTBuVYFCkNSNUr1sTEvNMqUP3MOoD2VcHqgdZTqfNAA0U_fMKmvRSpWV3x0iClOlEM3CMqmkgZnJ1Yh1Pd72nXON55LrBzUe2kn-rQXoSrF-dGyhJeaK2tbxzXEbkGcYjc__7ZG4qDZkMFRC_0MKrXOwjv3rfpzdedWd78hb1QB0gylYwMCpU9FwzJvJtFkt1ZBQlN-SrQR3FcPqVB7is", "state"=>"57dbb30b644cd1599d7e860cb6e2fbbe5b57bfb8eebfa482", "provider"=>"facebook"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "users" SET "oauth_token" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["oauth_token", "CAAHONCAfHIIBAG3CTYNYmIzzwZBmzn3kOjH7ksjMZAaAtty3zENvE1PHZCX0bf7Dvx3DV1VGOA7lNkKFKmdFpgJl0NZB8VUbYLlvLZAJjBByIMZB0C2V0wfZAFU2V5144kFwtkubyTHTl5RK7cvJCafuPELj8Gim5EZD"], ["updated_at", Sat, 22 Jun 2013 23:33:18 UTC +00:00]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-23 01:33:19 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1867ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-23 01:33:20 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-23 01:33:20 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-23 01:33:20 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-23 01:33:20 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-23 01:33:20 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-23 01:33:20 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-23 01:33:20 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-23 01:33:20 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-23 01:33:21 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 925ms (Views: 175.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-23 01:33:21 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-23 01:33:21 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-23 01:33:21 +0200
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-23 01:33:28 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 4466ms (Views: 10.8ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-06-23 01:34:16 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"signed_request"=>"QezIRDzUCCzg5WpWcEXIbXNOuFqlNjAK3TtLoOsV1kE.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEzNzE5NDkyMDAsImlzc3VlZF9hdCI6MTM3MTk0NDA1NSwib2F1dGhfdG9rZW4iOiJDQUFIT05DQWZISUlCQUxmWkNaQzV5ZEx2Z3AxanlwWE40QkdBOXo4empueHZScDdqRFpCSDRFMElWNEN6dHE3YlNHdDRqN05wb0kyamhiRDFJMUl1SXF6YXhkb3QzWkNvUzNvSkdTMkpFV1U0ZHlVbEp5ekhLRzdLM2xTSzdaQ3hJN0d2ZHlFWkFnY1hGV3dJRUFjMWt3YldYQTUzU1dPRjJKWkNVMFBMcFhrT0FaRFpEIiwidXNlciI6eyJjb3VudHJ5IjoiZGUiLCJsb2NhbGUiOiJkZV9ERSIsImFnZSI6eyJtaW4iOjIxfX0sInVzZXJfaWQiOiIxMDAwMDM1NjI2MzMyMjYifQ"}
+Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/auth/facebook/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook/" for 127.0.0.1 at 2013-06-23 01:34:16 +0200
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQArNbf-pxNHezGjsFRXVEQSoJSqTfdc7wk5Q4Vhg6VZR_QQex8mBhaT1wv9_iFF9qWCM8dWkESo1GBi_xP1dWSws6QWO3bWfFrNxFzdmkY0a_oVLrw4-Xk9PV5swoihr9JmSRnZtrWEmg5raMbi4Wxn3jriV9MeCdjkppkti-lJesj99IQ_Nh7HdlqTdiyMN2TYoYVx0-F36nNTkliUn5vXNguob9kiR3adE0dpQ7j6KBhRpwFwDHl21S3yAk0zSP6HwkdyzzRvHagnF6rPmWqXfD9tjBMfxKRKJzx1gxVDjFFm8Xpy6bYgzts-MkTA94w&state=5ec8e396376334d863b0a782f0cd23f9dda8e7a5412f6725" for 127.0.0.1 at 2013-06-23 01:34:17 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQArNbf-pxNHezGjsFRXVEQSoJSqTfdc7wk5Q4Vhg6VZR_QQex8mBhaT1wv9_iFF9qWCM8dWkESo1GBi_xP1dWSws6QWO3bWfFrNxFzdmkY0a_oVLrw4-Xk9PV5swoihr9JmSRnZtrWEmg5raMbi4Wxn3jriV9MeCdjkppkti-lJesj99IQ_Nh7HdlqTdiyMN2TYoYVx0-F36nNTkliUn5vXNguob9kiR3adE0dpQ7j6KBhRpwFwDHl21S3yAk0zSP6HwkdyzzRvHagnF6rPmWqXfD9tjBMfxKRKJzx1gxVDjFFm8Xpy6bYgzts-MkTA94w", "state"=>"5ec8e396376334d863b0a782f0cd23f9dda8e7a5412f6725", "provider"=>"facebook"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "users" SET "oauth_token" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["oauth_token", "CAAHONCAfHIIBAEqZBZCheLJx5Yx9bVCdiuY7E80sJEEZCBrlHedZAb7ozBFgIVIT0DiEtXfcSxw4aTQJoe9mZBsXlDupgw5j4Opn4XiAxVg3dNlv8VF6l14s5uwdxrBRNjQ188KXhHlZCdUrLNIAtcvZBi4Nmv0nXoZD"], ["updated_at", Sat, 22 Jun 2013 23:34:18 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 33ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-23 01:34:18 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1746ms (Views: 6.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-23 01:34:19 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-23 01:34:19 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-23 01:34:19 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-23 01:34:19 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-23 01:34:19 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-23 01:34:19 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-23 01:34:19 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-23 01:34:19 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-23 01:34:19 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 969ms (Views: 153.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-23 01:34:20 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-23 01:34:20 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-23 01:34:20 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-23 01:34:20 +0200
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-23 01:34:24 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 4870ms (Views: 9.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-23 01:34:29 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-23 01:34:29 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-23 01:34:29 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-23 01:34:29 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-23 01:34:29 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-23 01:34:29 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-23 01:34:29 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-23 01:34:29 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-23 01:34:29 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1316ms (Views: 42.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-06-23 01:34:55 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"signed_request"=>"ihH5G78dV56wPZ40yY1MuCjiHnDqnx7PubZk3GiH9Kw.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEzNzE5NDkyMDAsImlzc3VlZF9hdCI6MTM3MTk0NDA5NCwib2F1dGhfdG9rZW4iOiJDQUFIT05DQWZISUlCQUlpVVRHTlJsc3U5dGZUTXVRZ2pERGxoNlNENk9TMUFvNkE1dTNMVHM4SzdSZnpVaFZBVmxQS09IbnhmSldaQTl0OEYzM0luaE5aQnkxc0FNSTM4YWNoUGNHZXNaQ0hYRHhFeElaQ1daQ1lOSmdMODlSbWs3UVhFYUhmUjhjRkxxeFpCMzNMeHN0N1VhSmtsS0ZuTW9UWUk5SkVGWGZzZ1pEWkQiLCJ1c2VyIjp7ImNvdW50cnkiOiJkZSIsImxvY2FsZSI6ImRlX0RFIiwiYWdlIjp7Im1pbiI6MjF9fSwidXNlcl9pZCI6IjEwMDAwMzU2MjYzMzIyNiJ9"}
+Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/auth/facebook/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook/" for 127.0.0.1 at 2013-06-23 01:34:55 +0200
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQDPP0YLyrsFCkkHqO7sW9cTOP2NHzzEMcvS5VQE2MSHQ1AGp2CUuVQGdBKq9tLEdOcV1YkaftVmBtIAFa28qrwwrv538-BM1MNdoAQfFLVOyncdJ78XdDnTqiJjf5EBd1YWNuXKQfLIUrzeU7GQSTSGahbylGYxUwXP1KgCxloYuPWT-ftNQ5PNlw0EKm0Dqy_T1FAbeQ9IVvA6bDHjvLhQFRKhVkXXvIBBrmVkMkkDj5RNrgKhF0uhw4anb-U3ADU5meljw12rgQrWIcuGU_crj6AWLNVNdApOt4tK8AQffJWxBSl45Q246SPR_CED4PU&state=4d869f28ac81c364ba716b9e103a5c94f995cf1dc310686c" for 127.0.0.1 at 2013-06-23 01:34:55 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDPP0YLyrsFCkkHqO7sW9cTOP2NHzzEMcvS5VQE2MSHQ1AGp2CUuVQGdBKq9tLEdOcV1YkaftVmBtIAFa28qrwwrv538-BM1MNdoAQfFLVOyncdJ78XdDnTqiJjf5EBd1YWNuXKQfLIUrzeU7GQSTSGahbylGYxUwXP1KgCxloYuPWT-ftNQ5PNlw0EKm0Dqy_T1FAbeQ9IVvA6bDHjvLhQFRKhVkXXvIBBrmVkMkkDj5RNrgKhF0uhw4anb-U3ADU5meljw12rgQrWIcuGU_crj6AWLNVNdApOt4tK8AQffJWxBSl45Q246SPR_CED4PU", "state"=>"4d869f28ac81c364ba716b9e103a5c94f995cf1dc310686c", "provider"=>"facebook"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "oauth_token" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["oauth_token", "CAAHONCAfHIIBAPekvzXIL1BMf7fp8f7JRAgDKf9DoQO0YNdbzRJhrQyOK6pQaZA2lNlALlMmSmQQZBBKJRdAXgfaJDiGA0qZCDpsWrDcb2dF6mHCGErUVPdZAdONCocKKQhKH2D45apM4jFYKxZAojHymoEDabZCMZD"], ["updated_at", Sat, 22 Jun 2013 23:34:56 UTC +00:00]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-23 01:34:56 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1463ms (Views: 5.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-23 01:34:58 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-23 01:34:58 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-23 01:34:58 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-23 01:34:58 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-23 01:34:58 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-23 01:34:58 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-23 01:34:58 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-23 01:34:58 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-23 01:34:58 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 889ms (Views: 43.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-23 01:35:03 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 4668ms (Views: 9.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-23 01:35:07 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-23 01:35:07 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-23 01:35:08 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-23 01:35:08 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-23 01:35:08 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-23 01:35:08 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-23 01:35:08 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-23 01:35:08 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-23 01:35:08 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1134ms (Views: 52.6ms | ActiveRecord: 0.2ms)
