@@ -4,6 +4,7 @@ FbMukke::Application.routes.draw do
   root :to => 'home#index', :via => :all
   
   get "home/index"
+  get "home/facebookLogIn"
   get "song/star"
   get "song/unstar"
   get "user/getData"
