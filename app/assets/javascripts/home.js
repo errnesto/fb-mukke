@@ -65,6 +65,7 @@ function loadSong(trigger_number){
 	//set bufferd bar to 0 fade out the playedBar then show it with 0 width
 	bufferdBar.width(0);
 	playedBar.fadeOut(1000,function(){playedBar.width(0).show();});
+	trigger.addClass('nowPlaying');
 
 	//play the song depending on the source
 	if(song.source == 'youtube'){
@@ -175,6 +176,7 @@ function resetPlayer(i){
 		});
 		playlist[i].find('.play').addClass('show');
 		playlist[i].find('.pause').removeClass('show');
+		playlist[i].removeClass('nowPlaying');
 		//clear timeout for ytPlay next on restricted
 		window.clearTimeout(isStarting);
 	}
