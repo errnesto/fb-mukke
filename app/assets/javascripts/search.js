@@ -1,27 +1,29 @@
 $.getJSON('/user/getData',function(friends){
 	$(function() { //document is ready		
 		//the behavior of the search panel
-		var $searchbar =  $('#searchFriend');
+		var $searchInput =  $('#searchFriend');
+		var $searchBar =  $('#searchbar');
 		var $resultsContainer = $('.searchresults');
-		var orgVal = $searchbar.val();
+		var orgVal = $searchInput.val();
 
+		var selected = -1;
 		//empty input onClick
-		$searchbar.focus(function(){
-			$searchbar.val('');
+		$searchInput.focus(function(){
+			$searchInput.val('');
 			selected = 0;
 		});
 		//clear search bar on click outside
-		$('.searchbar').blur(function(){
+		$searchInput.blur(function(){
 			//restore user name in input //hide results //set selected to first element
-			$searchbar.val(orgVal);
-			$resultsContainer.hide();
 			selected = -1;
+			$searchInput.val(orgVal);
+			//nedd some delay to trigger click event
+			$resultsContainer.slideUp('fast');
 		});
 		//on user Input
-		var selected = -1;
 		var $results, foundFriends, input;
-		$searchbar.keyup(function(key){
-			input = $searchbar.val();
+		$searchInput.keyup(function(key){
+			input = $searchInput.val();
 			if(input.length > 0){
 				//user input exist empty the results from before
 				$resultsContainer.empty();
@@ -57,7 +59,7 @@ $.getJSON('/user/getData',function(friends){
 						break;
 					case 27: //escape key
 						//remove focus and hide results Container
-						$searchbar.blur();
+						$searchInput.blur();
 						$resultsContainer.hide();
 					}
 				}
@@ -72,11 +74,11 @@ $.getJSON('/user/getData',function(friends){
 		$resultsContainer.click(function(e){loadAnimation(e.target.outerText);});
 		$('.logo').click(function(){loadAnimation(friends[friends.length-1].name);});
 		function loadAnimation(text){
-			//write the name of the selected friend in searchbar
-			$searchbar.val(text);
+			//write the name of the selected friend in searchInput
+			$searchInput.val(text);
 			$resultsContainer.hide();
 			$('.player').slideUp();
-			$('.blueLine').width(0).animate({width: '80%'},10000,function(){$(this).animate({width: '95%'},10000);});
+			$('.blueLine').width(0).animate({width: '80%'},5000,function(){$(this).animate({width: '98%'},5000);});
 		}
 	});
 });

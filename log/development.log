@@ -44958,3 +44958,4888 @@ Processing by UserController#show as */*
   [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
   Rendered home/index.html.erb within layouts/application (2.8ms)
 Completed 200 OK in 13057ms (Views: 10.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 04:00:25 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 5143ms (Views: 103.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:00:31 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:00:31 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:00:31 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:00:31 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:00:31 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:00:31 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:00:31 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:00:31 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:00:31 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 04:00:31 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 04:00:31 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:00:31 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 887ms (Views: 56.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:00:32 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:00:32 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 04:00:32 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 04:00:32 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 04:01:50 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4934ms (Views: 39.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:01:55 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:01:55 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:01:55 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:01:55 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:01:55 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:01:55 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:01:55 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:01:55 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:01:55 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 04:01:55 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 04:01:55 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:01:55 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1000ms (Views: 67.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:01:56 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:01:56 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 04:01:56 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 04:01:56 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 04:02:30 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4252ms (Views: 35.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:02:34 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:02:34 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:02:34 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:02:34 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:02:34 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:02:34 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:02:34 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:02:34 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:02:34 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 04:02:34 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 04:02:34 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:02:34 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1195ms (Views: 47.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:02:36 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:02:36 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 04:02:36 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 04:02:36 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 04:06:13 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4559ms (Views: 155.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:06:18 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:06:18 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:06:18 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:06:18 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:06:18 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:06:18 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:06:18 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:06:18 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:06:18 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 04:06:18 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 04:06:18 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:06:18 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 896ms (Views: 60.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:06:19 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:06:19 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 04:06:19 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 04:06:19 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 04:10:39 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4721ms (Views: 148.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:10:44 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:10:44 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:10:44 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:10:44 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:10:44 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:10:44 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:10:44 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:10:44 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:10:44 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 04:10:44 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 04:10:44 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:10:44 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1066ms (Views: 57.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:10:45 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:10:46 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 04:10:46 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 04:10:46 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 04:13:27 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4397ms (Views: 146.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:13:32 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:13:32 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:13:32 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:13:32 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:13:32 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:13:32 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:13:32 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:13:32 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:13:32 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 04:13:32 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 04:13:32 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:13:32 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 789ms (Views: 52.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:13:33 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:13:33 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 04:13:33 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 04:13:33 +0200
+
+
+Started GET "/1021463574/Karim_El-Habibi" for 127.0.0.1 at 2013-06-22 04:13:40 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1021463574", "name"=>"Karim_El-Habibi"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1021463574') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1654ms (Views: 6.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:13:42 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:13:42 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:13:42 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:13:42 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:13:42 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:13:42 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:13:42 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:13:42 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:13:42 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:13:42 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 3851ms (Views: 52.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:13:46 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:13:46 +0200
+
+
+Started GET "/1021463574/favicon.ico" for 127.0.0.1 at 2013-06-22 04:13:46 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1021463574", "name"=>"favicon"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1021463574') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2967ms (Views: 7.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 04:16:04 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4617ms (Views: 177.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:16:08 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:16:08 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:16:08 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:16:08 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:16:08 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:16:08 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:16:08 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:16:08 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:16:09 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 04:16:09 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 04:16:09 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:16:09 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 935ms (Views: 58.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:16:10 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:16:10 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 04:16:10 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 04:16:10 +0200
+
+
+Started GET "/660837496/Fee_Braun" for 127.0.0.1 at 2013-06-22 04:16:14 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"660837496", "name"=>"Fee_Braun"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '660837496') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 4272ms (Views: 6.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:16:19 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:16:19 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:16:19 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:16:19 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:16:19 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:16:19 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:16:19 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:16:19 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:16:19 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:16:19 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1424ms (Views: 36.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:16:21 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:16:21 +0200
+
+
+Started GET "/660837496/favicon.ico" for 127.0.0.1 at 2013-06-22 04:16:21 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"660837496", "name"=>"favicon"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '660837496') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3631ms (Views: 8.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/660837496/Fee_Braun" for 127.0.0.1 at 2013-06-22 04:17:06 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"660837496", "name"=>"Fee_Braun"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '660837496') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2796ms (Views: 30.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:09 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:17:09 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:09 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:09 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:09 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:09 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:17:09 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:09 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:09 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:17:09 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 896ms (Views: 58.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:17:10 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:17:10 +0200
+
+
+Started GET "/660837496/favicon.ico" for 127.0.0.1 at 2013-06-22 04:17:10 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"660837496", "name"=>"favicon"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '660837496') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3555ms (Views: 8.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 04:17:14 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3843ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:17:18 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:18 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:18 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:17:18 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:18 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:18 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:18 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:18 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:18 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 04:17:18 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 04:17:18 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:17:18 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 949ms (Views: 40.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:17:19 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:17:19 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 04:17:19 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 04:17:19 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 04:17:43 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 3978ms (Views: 157.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:47 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:47 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:17:47 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:47 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:17:47 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:47 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:47 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:47 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:17:47 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 04:17:47 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 04:17:47 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:17:47 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1671ms (Views: 40.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:17:49 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:17:49 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 04:17:49 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 04:17:49 +0200
+
+
+Started GET "/1283200285/Bine_Ehtog" for 127.0.0.1 at 2013-06-22 04:17:59 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1283200285", "name"=>"Bine_Ehtog"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1283200285') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4918ms (Views: 5.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:04 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:18:04 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:18:04 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:04 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:04 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:04 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:04 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:04 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:04 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 04:18:04 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:18:04 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 998ms (Views: 47.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:18:05 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:18:05 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 04:18:05 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 04:18:05 +0200
+
+
+Started GET "/1283200285/favicon.ico" for 127.0.0.1 at 2013-06-22 04:18:05 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1283200285", "name"=>"favicon"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1283200285') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3967ms (Views: 8.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/782685180/Jules_M._Kolm" for 127.0.0.1 at 2013-06-22 04:18:10 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"782685180", "name"=>"Jules_M"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '782685180') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3913ms (Views: 8.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:18:14 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:14 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:14 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:14 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:18:14 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:14 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:14 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:14 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:14 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:18:14 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 844ms (Views: 58.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:18:15 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:18:15 +0200
+
+
+Started GET "/782685180/favicon.ico" for 127.0.0.1 at 2013-06-22 04:18:15 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"782685180", "name"=>"favicon"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '782685180') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2547ms (Views: 7.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/771769987/Konstantin_Mercks" for 127.0.0.1 at 2013-06-22 04:18:32 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"771769987", "name"=>"Konstantin_Mercks"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '771769987') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1898ms (Views: 92.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:18:34 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:18:34 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:34 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:34 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:34 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:34 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:34 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:34 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:18:34 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:18:34 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 819ms (Views: 35.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:18:35 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:18:35 +0200
+
+
+Started GET "/771769987/favicon.ico" for 127.0.0.1 at 2013-06-22 04:18:35 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"771769987", "name"=>"favicon"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '771769987') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1771ms (Views: 9.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 04:19:28 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4312ms (Views: 34.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:19:33 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:19:33 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:19:33 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:19:33 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:19:33 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:19:33 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:19:33 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:19:33 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:19:33 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:19:33 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 886ms (Views: 68.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:19:34 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:19:34 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 04:19:34 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 04:19:34 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 04:19:34 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 04:19:34 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 04:19:59 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 4046ms (Views: 58.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:20:04 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:20:04 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:20:04 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:20:04 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:20:04 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:20:04 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:20:04 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:20:04 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:20:04 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:20:04 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1098ms (Views: 38.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 04:20:05 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 04:20:05 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:20:05 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:20:05 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 04:20:06 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 04:20:06 +0200
+
+
+Started GET "/1579426973/F%C3%A9e_de_l'Orient" for 127.0.0.1 at 2013-06-22 04:20:11 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1579426973", "name"=>"Fée_de_l'Orient"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 20342ms (Views: 11.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:20:32 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:20:32 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:20:32 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:20:32 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:20:32 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:20:32 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:20:32 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:20:32 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:20:32 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 04:20:32 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 04:20:32 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:20:32 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1120ms (Views: 76.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:20:33 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:20:33 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 04:20:33 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 04:20:33 +0200
+
+
+Started GET "/1579426973/favicon.ico" for 127.0.0.1 at 2013-06-22 04:20:34 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1579426973", "name"=>"favicon"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 19305ms (Views: 12.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/1579426973/F%C3%A9e_de_l'Orient" for 127.0.0.1 at 2013-06-22 04:21:53 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1579426973", "name"=>"Fée_de_l'Orient"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 18986ms (Views: 43.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:22:12 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:22:12 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:22:13 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:22:13 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:22:13 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:22:13 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:22:13 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:22:13 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:22:13 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 04:22:13 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 04:22:13 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:22:13 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1048ms (Views: 74.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:22:14 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:22:14 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 04:22:14 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 04:22:14 +0200
+
+
+Started GET "/1579426973/favicon.ico" for 127.0.0.1 at 2013-06-22 04:22:14 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1579426973", "name"=>"favicon"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 16451ms (Views: 12.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 04:22:34 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4522ms (Views: 6.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:22:39 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:22:39 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:22:39 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:22:39 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:22:39 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:22:39 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:22:39 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:22:39 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:22:39 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 04:22:39 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 04:22:39 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:22:39 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1119ms (Views: 62.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 04:22:40 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 04:22:40 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 04:22:40 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 04:22:40 +0200
+
+
+Started GET "/1579426973/F%C3%A9e_de_l'Orient" for 127.0.0.1 at 2013-06-22 04:23:00 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1579426973", "name"=>"Fée_de_l'Orient"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 16077ms (Views: 13.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:23:16 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:23:16 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:23:16 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:23:16 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:23:16 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:23:16 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:23:16 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:23:16 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:23:17 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:23:17 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1192ms (Views: 35.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 04:23:18 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 04:23:18 +0200
+
+
+Started GET "/1579426973/favicon.ico" for 127.0.0.1 at 2013-06-22 04:23:18 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1579426973", "name"=>"favicon"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 13971ms (Views: 13.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/1579426973/F%C3%A9e_de_l'Orient" for 127.0.0.1 at 2013-06-22 04:23:33 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1579426973", "name"=>"Fée_de_l'Orient"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 14264ms (Views: 11.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 04:23:47 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 04:23:47 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 04:23:47 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 04:23:47 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 04:23:47 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 04:23:47 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 04:23:47 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 04:23:47 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 04:23:47 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 04:23:47 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 04:23:47 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 04:23:47 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1435ms (Views: 36.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/1579426973/favicon.ico" for 127.0.0.1 at 2013-06-22 04:23:49 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1579426973", "name"=>"favicon"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 14484ms (Views: 13.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 11:52:02 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 5715ms (Views: 33.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 11:52:08 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 11:52:08 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 11:52:08 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 11:52:08 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 11:52:08 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 11:52:08 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 11:52:08 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 11:52:08 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 11:52:08 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 11:52:08 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 11:52:08 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 11:52:08 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1045ms (Views: 36.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 11:52:09 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 11:52:09 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 11:52:13 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 11:52:13 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 11:52:13 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 11:52:49 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4808ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 11:52:54 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 11:52:54 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 11:52:54 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 11:52:54 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 11:52:54 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 11:52:54 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 11:52:54 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 11:52:54 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 11:52:54 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 11:52:54 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 11:52:54 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 11:52:54 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1217ms (Views: 66.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/617924206/Konstantin_Porr" for 127.0.0.1 at 2013-06-22 11:54:09 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"617924206", "name"=>"Konstantin_Porr"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '617924206') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 5435ms (Views: 7.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 11:54:14 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 11:54:14 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 11:54:14 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 11:54:14 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 11:54:14 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 11:54:14 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 11:54:14 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 11:54:14 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 11:54:14 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 11:54:14 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 11:54:14 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1177ms (Views: 233.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/617924206/favicon.ico" for 127.0.0.1 at 2013-06-22 11:54:16 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"617924206", "name"=>"favicon"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '617924206') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 4549ms (Views: 9.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 11:55:37 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 5167ms (Views: 7.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 11:55:42 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 11:55:42 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 11:55:42 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 11:55:42 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 11:55:42 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 11:55:42 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 11:55:42 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 11:55:42 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 11:55:42 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 11:55:42 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 11:55:42 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 11:55:43 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1423ms (Views: 41.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 11:55:44 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 11:55:44 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 11:55:44 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 11:55:44 +0200
+
+
+Started GET "/782685180/Jules_M._Kolm" for 127.0.0.1 at 2013-06-22 11:56:12 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"782685180", "name"=>"Jules_M"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '782685180') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3169ms (Views: 9.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 11:56:15 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 11:56:15 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 11:56:15 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 11:56:15 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 11:56:15 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 11:56:15 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 11:56:15 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 11:56:15 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 11:56:15 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 11:56:15 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 971ms (Views: 39.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/782685180/favicon.ico" for 127.0.0.1 at 2013-06-22 11:56:16 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"782685180", "name"=>"favicon"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '782685180') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2480ms (Views: 7.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/1021463574/Karim_El-Habibi" for 127.0.0.1 at 2013-06-22 11:57:39 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1021463574", "name"=>"Karim_El-Habibi"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1021463574') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1834ms (Views: 5.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 11:57:41 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 11:57:41 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 11:57:41 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 11:57:41 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 11:57:41 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 11:57:41 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 11:57:41 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 11:57:41 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 11:57:41 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 11:57:41 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 880ms (Views: 39.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/1021463574/favicon.ico" for 127.0.0.1 at 2013-06-22 11:57:42 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1021463574", "name"=>"favicon"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1021463574') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1527ms (Views: 7.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/617924206/Konstantin_Porr" for 127.0.0.1 at 2013-06-22 11:57:46 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"617924206", "name"=>"Konstantin_Porr"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '617924206') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 5204ms (Views: 7.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 11:57:52 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 11:57:52 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 11:57:52 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 11:57:52 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 11:57:52 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 11:57:52 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 11:57:52 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 11:57:52 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 11:57:52 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 11:57:52 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 11:57:52 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1117ms (Views: 62.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/617924206/favicon.ico" for 127.0.0.1 at 2013-06-22 11:57:53 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"617924206", "name"=>"favicon"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '617924206') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4421ms (Views: 8.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/617924206/Konstantin_Porr" for 127.0.0.1 at 2013-06-22 12:01:11 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"617924206", "name"=>"Konstantin_Porr"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '617924206') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4979ms (Views: 6.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 12:01:17 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 12:01:17 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 12:01:17 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 12:01:17 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 12:01:17 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 12:01:17 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 12:01:17 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 12:01:17 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 12:01:17 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 12:01:17 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 12:01:17 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1071ms (Views: 222.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 12:01:18 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 12:01:18 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 12:01:18 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 12:01:18 +0200
+
+
+Started GET "/617924206/favicon.ico" for 127.0.0.1 at 2013-06-22 12:01:18 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"617924206", "name"=>"favicon"}
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '617924206') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6033ms (Views: 9.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-22 12:06:40 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 7464ms (Views: 9.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 12:06:48 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 12:06:48 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 12:06:48 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 12:06:48 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 12:06:48 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 12:06:48 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 12:06:48 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 12:06:48 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 12:06:48 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 12:06:48 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 12:06:48 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 12:06:48 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1225ms (Views: 229.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/592578945/favicon.ico" for 127.0.0.1 at 2013-06-22 12:06:49 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"592578945", "name"=>"favicon"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5985ms (Views: 8.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-22 12:07:24 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2934ms (Views: 5.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 12:07:27 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 12:07:27 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 12:07:27 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 12:07:27 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 12:07:27 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 12:07:27 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 12:07:27 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 12:07:27 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 12:07:27 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 12:07:27 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1027ms (Views: 35.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/592578945/favicon.ico" for 127.0.0.1 at 2013-06-22 12:07:28 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"592578945", "name"=>"favicon"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2599ms (Views: 9.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-22 12:07:51 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 22602ms (Views: 8.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 12:08:14 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 12:08:14 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 12:08:14 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 12:08:14 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 12:08:14 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 12:08:14 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 12:08:14 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 12:08:14 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 12:08:14 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 12:08:14 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 12:08:14 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 12:08:14 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1075ms (Views: 68.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/592578945/favicon.ico" for 127.0.0.1 at 2013-06-22 12:08:15 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"592578945", "name"=>"favicon"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 21278ms (Views: 11.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/1579426973/F%C3%A9e_de_l'Orient" for 127.0.0.1 at 2013-06-22 12:08:46 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1579426973", "name"=>"Fée_de_l'Orient"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 27721ms (Views: 11.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 12:09:14 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 12:09:14 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 12:09:14 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 12:09:14 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 12:09:14 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 12:09:14 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 12:09:14 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 12:09:14 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 12:09:14 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 12:09:14 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 12:09:14 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 12:09:14 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1672ms (Views: 236.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/1579426973/favicon.ico" for 127.0.0.1 at 2013-06-22 12:09:15 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1579426973", "name"=>"favicon"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 25823ms (Views: 18.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/1579426973/F%C3%A9e_de_l'Orient" for 127.0.0.1 at 2013-06-22 12:09:41 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1579426973", "name"=>"Fée_de_l'Orient"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 23351ms (Views: 12.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 12:10:05 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 12:10:05 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 12:10:05 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 12:10:05 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 12:10:05 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 12:10:05 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 12:10:05 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 12:10:05 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 12:10:05 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 12:10:05 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 12:10:05 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 12:10:05 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1736ms (Views: 38.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 12:10:07 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 12:10:07 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 12:10:07 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 12:10:07 +0200
+
+
+Started GET "/1579426973/favicon.ico" for 127.0.0.1 at 2013-06-22 12:10:07 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1579426973", "name"=>"favicon"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 4105203ms (Views: 14.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 13:51:08 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 5449ms (Views: 53.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 13:51:14 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 13:51:14 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 13:51:14 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 13:51:14 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 13:51:14 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 13:51:14 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 13:51:14 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 13:51:14 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 13:51:14 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 13:51:14 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 13:51:14 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 13:51:14 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1318ms (Views: 191.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 13:51:16 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 13:51:16 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 13:51:16 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 13:51:16 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 13:51:22 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4860ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 13:51:27 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 13:51:27 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 13:51:27 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 13:51:27 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 13:51:27 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 13:51:27 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 13:51:27 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 13:51:27 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 13:51:27 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 13:51:27 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 13:51:27 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 13:51:27 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1248ms (Views: 40.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 13:51:28 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 13:51:28 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 13:51:29 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 13:51:29 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 13:52:25 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4017ms (Views: 271.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 13:52:29 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 13:52:29 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 13:52:29 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 13:52:29 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 13:52:29 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 13:52:29 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 13:52:29 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 13:52:29 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 13:52:29 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 13:52:29 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 13:52:29 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 13:52:29 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1300ms (Views: 149.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 13:52:35 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 4712ms (Views: 7.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 13:52:40 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 13:52:40 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 13:52:40 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 13:52:40 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 13:52:40 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 13:52:40 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 13:52:40 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 13:52:40 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 13:52:40 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 13:52:40 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 13:52:40 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 13:52:40 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1396ms (Views: 41.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 13:52:41 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 13:52:42 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 13:52:42 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 13:52:42 +0200
+
+
+Started GET "/1420599494/Desiree_Sp%C3%A4th" for 127.0.0.1 at 2013-06-22 13:53:08 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1420599494", "name"=>"Desiree_Späth"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1420599494') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 14579ms (Views: 9.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 13:53:22 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 13:53:22 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 13:53:22 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 13:53:22 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 13:53:22 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 13:53:22 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 13:53:22 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 13:53:22 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 13:53:22 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 13:53:22 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 13:53:22 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1469ms (Views: 35.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/1420599494/favicon.ico" for 127.0.0.1 at 2013-06-22 13:53:24 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1420599494", "name"=>"favicon"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1420599494') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 14191ms (Views: 10.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/1579426973/F%C3%A9e_de_l'Orient" for 127.0.0.1 at 2013-06-22 13:53:42 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1579426973", "name"=>"Fée_de_l'Orient"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 22215ms (Views: 10.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 13:54:04 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 13:54:04 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 13:54:04 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 13:54:04 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 13:54:05 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 13:54:05 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 13:54:05 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 13:54:05 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 13:54:05 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 13:54:05 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 13:54:05 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 13:54:05 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1592ms (Views: 37.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/1579426973/favicon.ico" for 127.0.0.1 at 2013-06-22 13:54:06 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1579426973", "name"=>"favicon"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 19931ms (Views: 12.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 14:12:33 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1595ms (Views: 55.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 14:12:35 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 14:12:35 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 14:12:35 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 14:12:35 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 14:12:35 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 14:12:35 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 14:12:35 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 14:12:35 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 14:12:35 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 14:12:35 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1514ms (Views: 155.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 14:12:37 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 14:12:37 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 14:12:40 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1550ms (Views: 102.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 14:12:42 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 14:12:42 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 14:12:42 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 14:12:42 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 14:12:42 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 14:12:42 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 14:12:42 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 14:12:42 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 14:12:42 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 14:12:42 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1126ms (Views: 165.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 14:14:48 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1472ms (Views: 44.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 14:14:49 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 14:14:49 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 14:14:49 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 14:14:49 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 14:14:49 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 14:14:49 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 14:14:49 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 14:14:49 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 14:14:49 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 14:14:49 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1384ms (Views: 111.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 14:16:38 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 4993ms (Views: 9.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 14:16:44 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 14:16:44 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 14:16:44 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 14:16:44 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 14:16:44 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 14:16:44 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 14:16:44 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 14:16:44 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 14:16:44 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 14:16:44 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 14:16:44 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 14:16:44 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1332ms (Views: 41.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 14:16:45 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 14:16:45 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 14:16:45 +0200
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-22 14:16:50 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 20165ms (Views: 10.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 14:17:11 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 14:17:11 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 14:17:11 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 14:17:11 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 14:17:11 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 14:17:11 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 14:17:11 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 14:17:11 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 14:17:11 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 14:17:11 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1291ms (Views: 57.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 14:17:12 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 14:17:12 +0200
+
+
+Started GET "/592578945/favicon.ico" for 127.0.0.1 at 2013-06-22 14:17:12 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"592578945", "name"=>"favicon"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 16671ms (Views: 9.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 14:23:34 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 5199ms
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    26: 			</div>
+    27: 			<h2 class="name"><%= song.name %></h2>
+    28: 		</a>
+    29: 		<a class="sourceLink" href="<%= song.url %>" target="_blank"><img src="<%=asset_path song.source+'_logo.png' %>"></a>
+    30: 		<div class="seekBar">
+    31: 			<div class="waiting"></div>
+    32: 			<div class="bufferd"></div>
+  app/views/home/index.html.erb:29:in `block in _app_views_home_index_html_erb___2075564572934664483_70119104546200'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `each_with_index'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb___2075564572934664483_70119104546200'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 14:25:14 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 5174ms
+
+NameError (undefined local variable or method `bindings' for #<User:0x007f8bc0a39730>):
+  app/models/user.rb:41:in `getSongsFromFacebook'
+  app/controllers/home_controller.rb:8:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 14:25:53 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed   in 55356ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 14:28:00 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (3.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 14:36:02 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (2.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed   in 133580ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 14:43:33 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (2.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 1242ms
+
+ActiveRecord::AssociationTypeMismatch (Song(#70269299879120) expected, got NilClass(#70269293500300)):
+  app/models/user.rb:33:in `getSongsFromFacebook'
+  app/controllers/home_controller.rb:8:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (57.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (82.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 14:44:06 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 1504ms
+
+ActionView::Template::Error (undefined method `source' for nil:NilClass):
+    18: 	</div>
+    19: </header>
+    20: <% @songs.each_with_index do |song, i| %>
+    21: 	<div class="player from_<%= song.source %>">
+    22: 		<a class="trigger" name="<%= song.source %>" href="<%= song.identifier %>">
+    23: 			<div class="artwork" style="background-image: url('<%= song.image %>;')">
+    24: 				<p class="show play">play</p>
+  app/views/home/index.html.erb:21:in `block in _app_views_home_index_html_erb__1674516742684298897_70269300288400'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `each_with_index'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb__1674516742684298897_70269300288400'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 14:44:32 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 1860ms
+
+ActionView::Template::Error (undefined method `source' for nil:NilClass):
+    18: 	</div>
+    19: </header>
+    20: <% @songs.each_with_index do |song, i| %>
+    21: 	<div class="player from_<%= song.source %>">
+    22: 		<a class="trigger" name="<%= song.source %>" href="<%= song.identifier %>">
+    23: 			<div class="artwork" style="background-image: url('<%= song.image %>;')">
+    24: 				<p class="show play">play</p>
+  app/views/home/index.html.erb:21:in `block in _app_views_home_index_html_erb__1674516742684298897_70269300288400'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `each_with_index'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb__1674516742684298897_70269300288400'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 14:44:44 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 2026ms (Views: 251.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 14:44:46 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 14:44:46 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 14:44:46 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 14:44:46 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 14:44:46 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 14:44:46 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 14:44:46 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 14:44:46 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 14:44:46 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 14:44:46 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 14:44:46 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1447ms (Views: 112.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 14:44:48 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 14:44:48 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 14:44:48 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 14:44:48 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 14:47:36 +0200
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/Users/Ernesto/Sites/fb-mukke/app/models/user.rb:77: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/controllers/home_controller.rb:4:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 14:47:45 +0200
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/Users/Ernesto/Sites/fb-mukke/app/models/user.rb:77: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/controllers/home_controller.rb:4:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 14:48:16 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1442ms (Views: 6.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 14:48:17 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 14:48:17 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 14:48:17 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 14:48:17 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 14:48:17 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 14:48:17 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 14:48:17 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 14:48:17 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 14:48:17 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 14:48:17 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 14:48:18 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 979ms (Views: 39.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 14:48:19 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 14:48:19 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 14:48:19 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 14:48:19 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 14:48:32 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2628ms (Views: 5.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 14:48:35 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 14:48:35 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 14:48:35 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 14:48:35 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 14:48:35 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 14:48:35 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 14:48:35 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 14:48:35 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 14:48:35 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 14:48:35 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1434ms (Views: 135.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 14:48:36 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 14:48:36 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 14:51:04 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 5915ms (Views: 28.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 14:51:10 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 14:51:10 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 14:51:10 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 14:51:10 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 14:51:10 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 14:51:10 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 14:51:10 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 14:51:10 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 14:51:10 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 14:51:10 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 14:51:10 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 14:51:11 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1222ms (Views: 60.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 14:51:12 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 14:51:12 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 14:51:12 +0200
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-22 14:51:19 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 18429ms (Views: 7.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 14:51:37 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 14:51:37 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 14:51:38 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 14:51:38 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 14:51:38 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 14:51:38 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 14:51:38 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 14:51:38 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 14:51:38 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 14:51:38 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 14:51:38 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 14:51:38 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1863ms (Views: 36.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 14:51:40 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 14:51:40 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 14:51:40 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 14:51:40 +0200
+
+
+Started GET "/592578945/favicon.ico" for 127.0.0.1 at 2013-06-22 14:51:40 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"592578945", "name"=>"favicon"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 17207ms (Views: 20.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 14:59:02 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5403ms (Views: 5.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 14:59:07 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 14:59:07 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 14:59:07 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 14:59:07 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 14:59:07 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 14:59:07 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 14:59:07 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 14:59:07 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 14:59:07 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 14:59:07 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1289ms (Views: 100.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 14:59:09 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 14:59:09 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:08:23 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 2033ms
+
+ActionView::Template::Error (undefined method `source' for #<FbGraph::Link:0x007fd1b56e5008>):
+    18: 	</div>
+    19: </header>
+    20: <% @songs.each_with_index do |song, i| %>
+    21: 	<div class="player from_<%= song.source %>">
+    22: 		<a class="trigger" name="<%= song.source %>" href="<%= song.identifier %>">
+    23: 			<div class="artwork" style="background-image: url('<%= song.image %>;')">
+    24: 				<p class="show play">play</p>
+  app/views/home/index.html.erb:21:in `block in _app_views_home_index_html_erb__1674516742684298897_70269300288400'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `each_with_index'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb__1674516742684298897_70269300288400'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:08:55 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 2107ms
+
+ActionView::Template::Error (undefined method `source' for #<FbGraph::Link:0x007fd1b15d7d18>):
+    18: 	</div>
+    19: </header>
+    20: <% @songs.each_with_index do |song, i| %>
+    21: 	<div class="player from_<%= song.source %>">
+    22: 		<a class="trigger" name="<%= song.source %>" href="<%= song.identifier %>">
+    23: 			<div class="artwork" style="background-image: url('<%= song.image %>;')">
+    24: 				<p class="show play">play</p>
+  app/views/home/index.html.erb:21:in `block in _app_views_home_index_html_erb__1674516742684298897_70269300288400'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `each_with_index'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb__1674516742684298897_70269300288400'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (83.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:14:09 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4839ms
+
+ActionView::Template::Error (undefined method `source' for #<FbGraph::Link:0x007fd1b5707630>):
+    18: 	</div>
+    19: </header>
+    20: <% @songs.each_with_index do |song, i| %>
+    21: 	<div class="player from_<%= song.source %>">
+    22: 		<a class="trigger" name="<%= song.source %>" href="<%= song.identifier %>">
+    23: 			<div class="artwork" style="background-image: url('<%= song.image %>;')">
+    24: 				<p class="show play">play</p>
+  app/views/home/index.html.erb:21:in `block in _app_views_home_index_html_erb__1674516742684298897_70269300288400'
+  app/views/home/index.html.erb:20:in `each'
+  app/views/home/index.html.erb:20:in `each_with_index'
+  app/views/home/index.html.erb:20:in `_app_views_home_index_html_erb__1674516742684298897_70269300288400'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:15:02 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4735ms (Views: 6.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 15:15:07 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 15:15:07 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:07 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:07 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:07 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:07 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:07 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:07 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:07 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 15:15:07 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1395ms (Views: 46.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 15:15:08 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 15:15:08 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 15:15:08 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 15:15:08 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 15:15:08 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:15:12 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3760ms (Views: 6.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:15 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 15:15:16 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:16 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:16 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:16 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 15:15:16 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:16 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:16 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:16 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 15:15:16 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1237ms (Views: 198.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 15:15:17 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 15:15:17 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:15:18 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3521ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 15:15:22 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 15:15:22 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:22 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:22 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:22 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:22 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:22 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:22 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:22 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 15:15:22 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 791ms (Views: 48.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 15:15:23 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 15:15:23 +0200
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-22 15:15:27 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 17754ms (Views: 9.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 15:15:45 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:45 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:45 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:45 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 15:15:45 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:45 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:45 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:45 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 15:15:45 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 15:15:45 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 15:15:45 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 15:15:45 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1344ms (Views: 54.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/592578945/favicon.ico" for 127.0.0.1 at 2013-06-22 15:15:47 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"592578945", "name"=>"favicon"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 15999ms (Views: 11.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:21:49 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 1310ms
+
+SystemExit (exit):
+  app/models/user.rb:37:in `exit'
+  app/models/user.rb:37:in `block in getSongsFromFacebook'
+  app/models/user.rb:24:in `each'
+  app/models/user.rb:24:in `getSongsFromFacebook'
+  app/controllers/home_controller.rb:8:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:22:04 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 1503ms
+
+RuntimeError (Circular dependency detected while autoloading constant Song):
+  app/models/user.rb:27:in `block (2 levels) in getSongsFromFacebook'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (48.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:28:16 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed   in 156670ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:31:14 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (2.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed   in 1466ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:31:44 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (2.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed   in 2305ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:34:05 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (2.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (94.5ms)
+Completed 200 OK in 2258ms (Views: 237.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 15:34:07 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 15:34:07 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 15:34:07 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 15:34:07 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 15:34:07 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 15:34:08 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 15:34:08 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 15:34:08 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 15:34:08 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 15:34:08 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 15:34:08 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1523ms (Views: 147.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 15:34:09 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 15:34:09 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 15:34:09 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 15:34:09 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:34:39 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1915ms (Views: 6.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 15:34:41 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 15:34:41 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 15:34:41 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 15:34:41 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 15:34:41 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 15:34:41 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 15:34:41 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 15:34:41 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 15:34:41 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 15:34:41 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 15:34:41 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1642ms (Views: 35.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:36:09 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 2390ms (Views: 10.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 15:36:12 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 15:36:12 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 15:36:12 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 15:36:12 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 15:36:12 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 15:36:12 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 15:36:12 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 15:36:12 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 15:36:12 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 15:36:12 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1314ms (Views: 36.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 15:36:13 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 15:36:13 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 15:36:13 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 15:36:13 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 15:36:13 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:39:40 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2397ms (Views: 5.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 15:39:43 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 15:39:43 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 15:39:43 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 15:39:43 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 15:39:43 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 15:39:43 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 15:39:43 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 15:39:43 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 15:39:43 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 15:39:43 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1492ms (Views: 110.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 15:39:45 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 15:39:45 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:40:01 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed   in 130498ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:42:50 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (3.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 2199ms (Views: 106.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 15:42:53 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 15:42:53 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 15:42:53 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 15:42:53 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:43:22 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (2.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 2298ms (Views: 120.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 15:43:24 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 15:43:24 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 15:43:24 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 15:43:24 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 15:43:24 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 15:43:24 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 15:43:25 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 15:43:25 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 15:43:25 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 15:43:25 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 2036ms (Views: 105.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 15:43:27 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 15:43:27 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:43:51 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1857ms (Views: 6.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 15:43:53 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 15:43:53 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 15:43:53 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 15:43:53 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 15:43:53 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 15:43:53 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 15:43:53 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 15:43:53 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 15:43:53 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 15:43:53 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1232ms (Views: 52.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:44:57 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed   in 17029ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:47:15 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (2.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed   in 185684ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:53:32 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (2.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 2311ms (Views: 141.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 15:53:35 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 15:53:35 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 15:53:35 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 15:53:35 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 15:53:35 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 15:53:35 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 15:53:35 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 15:53:35 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 15:53:35 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 15:53:35 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1036ms (Views: 118.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:53:44 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 2139ms (Views: 9.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 15:53:46 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 15:53:46 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 15:53:46 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 15:53:46 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 15:53:46 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 15:53:46 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 15:53:46 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 15:53:46 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 15:53:46 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 15:53:47 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 2582ms (Views: 45.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 15:53:49 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 15:53:49 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 15:53:49 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 15:53:49 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 15:55:10 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2143ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 15:55:12 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 15:55:12 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 15:55:12 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 15:55:12 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 15:55:12 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 15:55:12 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 15:55:12 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 15:55:12 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 15:55:12 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 15:55:12 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 15:55:12 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1317ms (Views: 36.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 16:02:24 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed   in 940108ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 16:18:17 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (4.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 1699ms
+
+RuntimeError (Circular dependency detected while autoloading constant Song):
+  app/models/user.rb:27:in `block (2 levels) in getSongsFromFacebook'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 16:19:00 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 2694ms (Views: 271.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 16:19:03 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 16:19:03 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 16:19:03 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 16:19:03 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 16:19:03 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 16:19:03 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 16:19:03 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 16:19:03 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 16:19:03 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 16:19:03 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1441ms (Views: 53.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 16:19:05 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 16:19:05 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 16:19:12 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1792ms (Views: 6.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 16:19:14 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 16:19:14 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 16:19:14 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 16:19:14 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 16:19:14 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 16:19:14 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 16:19:14 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 16:19:14 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 16:19:14 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 16:19:14 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 16:19:14 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1890ms (Views: 37.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 16:19:16 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 16:20:20 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3002ms (Views: 8.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 16:20:23 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:23 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:23 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:23 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:23 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:23 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:23 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:23 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 16:20:23 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 16:20:23 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 16:20:23 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 16:20:23 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 991ms (Views: 179.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-22 16:20:27 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 5402ms (Views: 12.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:33 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 16:20:33 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:33 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:33 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 16:20:33 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:33 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:33 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:33 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:33 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 16:20:33 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1446ms (Views: 43.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 16:20:35 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 16:20:35 +0200
+
+
+Started GET "/592578945/favicon.ico" for 127.0.0.1 at 2013-06-22 16:20:35 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"592578945", "name"=>"favicon"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 4710ms (Views: 14.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-22 16:20:50 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 5579ms (Views: 9.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 16:20:56 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:56 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 16:20:56 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:56 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:56 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:56 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:56 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:56 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 16:20:56 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 16:20:56 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 16:20:56 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 16:20:56 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1255ms (Views: 234.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 16:20:58 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 16:20:58 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 16:20:58 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 16:20:58 +0200
+
+
+Started GET "/592578945/favicon.ico" for 127.0.0.1 at 2013-06-22 16:20:58 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"592578945", "name"=>"favicon"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 4897ms (Views: 10.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-22 16:23:16 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 3036ms
+
+RuntimeError (Circular dependency detected while autoloading constant Song):
+  app/models/user.rb:27:in `block (2 levels) in getSongsFromFacebook'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 16:23:27 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2004ms (Views: 6.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 16:23:30 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 16:23:30 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 16:23:30 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 16:23:30 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 16:23:30 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 16:23:30 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 16:23:30 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 16:23:30 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 16:23:30 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 16:23:30 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 16:23:30 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 16:23:30 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1198ms (Views: 43.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 16:23:31 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 16:23:31 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 16:23:31 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 16:23:31 +0200
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-22 16:23:34 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 5007ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/models/user.rb:35:in `kill'
+  app/models/user.rb:35:in `rescue in block (2 levels) in getSongsFromFacebook'
+  app/models/user.rb:28:in `block (2 levels) in getSongsFromFacebook'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.2ms)
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-22 16:23:55 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6234ms (Views: 9.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 16:24:02 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 16:24:02 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 16:24:02 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 16:24:02 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 16:24:02 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 16:24:02 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 16:24:02 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 16:24:02 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 16:24:02 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 16:24:02 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 16:24:02 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 16:24:02 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1378ms (Views: 173.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 16:24:03 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 16:24:03 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 16:24:03 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 16:24:03 +0200
+
+
+Started GET "/592578945/favicon.ico" for 127.0.0.1 at 2013-06-22 16:24:03 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"592578945", "name"=>"favicon"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 4937ms (Views: 15.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-22 16:28:46 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 4006ms
+
+RuntimeError (Circular dependency detected while autoloading constant Song):
+  app/models/user.rb:27:in `block (2 levels) in getSongsFromFacebook'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.5ms)
+
+
+Started GET "/592578945/Philipp_Ververis" for 127.0.0.1 at 2013-06-22 16:32:43 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"592578945", "name"=>"Philipp_Ververis"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 4421ms (Views: 8.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 16:32:48 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 16:32:48 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 16:32:48 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 16:32:48 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 16:32:48 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 16:32:48 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 16:32:48 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 16:32:48 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 16:32:48 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 16:32:48 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 16:32:48 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 16:32:48 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1956ms (Views: 37.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 16:32:50 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 16:32:50 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 16:32:50 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 16:32:50 +0200
+
+
+Started GET "/592578945/favicon.ico" for 127.0.0.1 at 2013-06-22 16:32:50 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"592578945", "name"=>"favicon"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '592578945') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 5451ms (Views: 10.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 16:33:00 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2294ms (Views: 8.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 16:33:02 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 16:33:02 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 16:33:02 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 16:33:02 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 16:33:02 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 16:33:02 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 16:33:02 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 16:33:02 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 16:33:02 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 16:33:02 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1307ms (Views: 67.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 16:33:04 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 16:33:04 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 16:33:24 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 1617ms
+
+RuntimeError (Circular dependency detected while autoloading constant Song):
+  app/models/user.rb:27:in `block (2 levels) in getSongsFromFacebook'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 16:36:19 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 1336ms
+
+NoMethodError (undefined method `join' for nil:NilClass):
+  app/models/user.rb:40:in `block in getSongsFromFacebook'
+  app/models/user.rb:39:in `each'
+  app/models/user.rb:39:in `getSongsFromFacebook'
+  app/controllers/home_controller.rb:8:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (59.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (74.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 16:36:26 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 1014ms
+
+NoMethodError (undefined method `join' for nil:NilClass):
+  app/models/user.rb:40:in `block in getSongsFromFacebook'
+  app/models/user.rb:39:in `each'
+  app/models/user.rb:39:in `getSongsFromFacebook'
+  app/controllers/home_controller.rb:8:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 16:36:47 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 1654ms
+
+RuntimeError (Circular dependency detected while autoloading constant Song):
+  app/models/user.rb:28:in `block (2 levels) in getSongsFromFacebook'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 16:37:12 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2114ms (Views: 6.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 16:37:14 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 16:37:14 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 16:37:14 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 16:37:14 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 16:37:14 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 16:37:14 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 16:37:14 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 16:37:14 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 16:37:14 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 16:37:14 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 16:37:14 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 16:37:14 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1307ms (Views: 55.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/1579426973/F%C3%A9e_de_l'Orient" for 127.0.0.1 at 2013-06-22 16:37:54 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1579426973", "name"=>"Fée_de_l'Orient"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 5745ms (Views: 11.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 16:38:00 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 16:38:00 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:00 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:00 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:00 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:00 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:00 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:00 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:00 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 16:38:00 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1812ms (Views: 36.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 16:38:02 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 16:38:02 +0200
+
+
+Started GET "/1579426973/favicon.ico" for 127.0.0.1 at 2013-06-22 16:38:02 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1579426973", "name"=>"favicon"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 4786ms (Views: 13.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/1579426973/F%C3%A9e_de_l'Orient" for 127.0.0.1 at 2013-06-22 16:38:39 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1579426973", "name"=>"Fée_de_l'Orient"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 5471ms (Views: 43.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 16:38:45 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:45 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 16:38:45 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:45 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:45 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:45 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:45 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:45 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:45 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 16:38:45 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 884ms (Views: 61.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 16:38:46 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 16:38:46 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 16:38:46 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 16:38:46 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 16:38:46 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 16:38:46 +0200
+
+
+Started GET "/1579426973/favicon.ico" for 127.0.0.1 at 2013-06-22 16:38:47 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1579426973", "name"=>"favicon"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 5474ms (Views: 11.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/1579426973/F%C3%A9e_de_l'Orient" for 127.0.0.1 at 2013-06-22 16:38:53 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1579426973", "name"=>"Fée_de_l'Orient"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 4511ms (Views: 9.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 16:38:57 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 16:38:57 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:57 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:57 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:57 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:57 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:57 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:57 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 16:38:57 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 16:38:57 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 16:38:57 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 16:38:58 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1613ms (Views: 60.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/1579426973/favicon.ico" for 127.0.0.1 at 2013-06-22 16:38:59 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1579426973", "name"=>"favicon"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 5294ms (Views: 16.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/1579426973/F%C3%A9e_de_l'Orient" for 127.0.0.1 at 2013-06-22 16:39:57 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1579426973", "name"=>"Fée_de_l'Orient"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 5710ms (Views: 13.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 16:40:03 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 16:40:03 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 16:40:03 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 16:40:03 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 16:40:03 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 16:40:03 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 16:40:03 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 16:40:03 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 16:40:03 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 16:40:03 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 16:40:03 +0200
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 16:40:04 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 16:40:04 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 16:40:04 +0200
+Processing by UserController#getData as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1333ms (Views: 46.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/1579426973/favicon.ico" for 127.0.0.1 at 2013-06-22 16:40:05 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1579426973", "name"=>"favicon"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 5739ms (Views: 12.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 16:40:11 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 16:40:11 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 16:40:11 +0200
+
+
+Started GET "/1579426973/F%C3%A9e_de_l'Orient" for 127.0.0.1 at 2013-06-22 16:40:55 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"1579426973", "name"=>"Fée_de_l'Orient"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 4535ms (Views: 11.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 16:40:59 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 16:40:59 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 16:40:59 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 16:40:59 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 16:40:59 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 16:40:59 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 16:40:59 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 16:40:59 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 16:40:59 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 16:40:59 +0200
+
+
+Started GET "/assets/soundcloud_logo.png" for 127.0.0.1 at 2013-06-22 16:40:59 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 16:41:00 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1374ms (Views: 189.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/1579426973/favicon.ico" for 127.0.0.1 at 2013-06-22 16:41:01 +0200
+Processing by UserController#show as 
+  Parameters: {"uid"=>"1579426973", "name"=>"favicon"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1579426973') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 4972ms (Views: 11.1ms | ActiveRecord: 0.7ms)

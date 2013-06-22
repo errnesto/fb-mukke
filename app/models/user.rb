@@ -20,19 +20,25 @@ class User < ActiveRecord::Base
 		user = @fbUser||callFbApi(oauth_token)
 		all_links = user.links(:fields => 'link', :limit => 100)
 		songs = []
-		all_links.each do |url|
-			#when url is a song add it to output
-			song = Song.new(:url => url.link)
-			begin
-				if (song.isSong?)
-					song.set_atributes
-					songs.push(song)
+		threads = []
+		all_links.each_with_index do |url,i|
+			threads << Thread.new do
+				#when url is a song add it to output
+				song = Song.new(:url => url.link)
+				begin
+					if (song.isSong?)
+						song.set_atributes
+						songs.fill(song,i,1)
+					end
+				rescue
+					#cant creata valid song: ignore it
 				end
-			rescue
-				#cant creata valid song: ignore it
 			end
 		end
-		songs
+		threads.each do |thr|
+			thr.join
+		end
+		songs.compact!
 	end
 
 	def getFriends
