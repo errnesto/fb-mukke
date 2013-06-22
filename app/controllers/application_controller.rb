@@ -7,4 +7,8 @@ class ApplicationController < ActionController::Base
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
   end
   helper_method :current_user
+
+  def allow_iframe
+	response.headers["X-Frame-Options"] = "ALLOW-FROM https://apps.facebook.com"
+  end
 end

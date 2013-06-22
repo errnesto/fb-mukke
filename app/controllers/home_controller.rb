@@ -11,10 +11,4 @@ class HomeController < ApplicationController
 		end
 	end
 	
-	private
-	
-	def allow_iframe
-	  response.headers["X-Frame-Options"] = "ALLOW-FROM https://apps.facebook.com"
-	end
-
 end
