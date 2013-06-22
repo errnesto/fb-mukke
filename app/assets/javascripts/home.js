@@ -93,10 +93,7 @@ function loadSong(trigger_number){
 		soundManager.play('nowPlaying');
 	}
 	//songs might wont start just play the next song and grey thiss one out after a timeout
-	isStarting = window.setTimeout(function(){
-		playlist[nowPlaying].parent().addClass('restricted');
-		loadSong(nowPlaying+1);
-	},5000);
+	isStarting = window.setTimeout(isPlayingTest,5000);
 
 
 	//switch to pause button
@@ -110,6 +107,11 @@ function loadSong(trigger_number){
 		pause(trigger,song.source);
 		return false;
 	});
+}
+
+function isPlayingTest(){
+	playlist[nowPlaying].parent().addClass('restricted');
+	loadSong(nowPlaying+1);
 }
 
 function pause(trigger,source){
@@ -144,6 +146,7 @@ function play(trigger,source){
 	else if (source == 'soundcloud') {
 		soundManager.play('nowPlaying');
 	}
+	isStarting = window.setTimeout(isPlayingTest,5000);
 	//switch play icon for pause icon
 	trigger.find('.pause').addClass('show');
 	trigger.find('.play').removeClass('show');

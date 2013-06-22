@@ -1,39 +1,38 @@
 $.getJSON('/user/getData',function(friends){
-	$(function() { //document is ready
-		foundFriends = searchFriends('eim',friends);
-		
+	$(function() { //document is ready		
 		//the behavior of the search panel
 		var $searchbar =  $('#searchFriend');
 		var $resultsContainer = $('.searchresults');
 		var orgVal = $searchbar.val();
 
 		//empty input onClick
-		$searchbar.click(function(){
+		$searchbar.focus(function(){
 			$searchbar.val('');
-			return false;
+			selected = 0;
 		});
 		//clear search bar on click outside
-		$(window).click(function(){
+		$('.searchbar').blur(function(){
 			//restore user name in input //hide results //set selected to first element
 			$searchbar.val(orgVal);
 			$resultsContainer.hide();
-			selected = 0;
+			selected = -1;
 		});
 		//on user Input
-		var selected = 0;
+		var selected = -1;
+		var $results, foundFriends, input;
 		$searchbar.keyup(function(key){
-			var input = $searchbar.val();
+			input = $searchbar.val();
 			if(input.length > 0){
 				//user input exist empty the results from before
 				$resultsContainer.empty();
 				$resultsContainer.show();
 				//search friends matching the user input
-				var foundFriends = searchFriends(input,friends);
+				foundFriends = searchFriends(input,friends);
 				if(foundFriends.length > 0){
 					//list result in searchresults tag
 					listFriends(foundFriends,$resultsContainer);
 
-					var $results = $resultsContainer.children('a');
+					$results = $resultsContainer.children('a');
 					$results[selected].className ='focus';
 					//respond to the follwing keys
 					switch (key.which){
@@ -54,6 +53,7 @@ $.getJSON('/user/getData',function(friends){
 					case 13: //enter key
 						var link = $($results[selected]).attr('href');
 						location.href = link;
+						loadAnimation($($results[selected]).text());
 						break;
 					case 27: //escape key
 						//remove focus and hide results Container
@@ -68,6 +68,16 @@ $.getJSON('/user/getData',function(friends){
 				selected = 0;
 			}
 		});
+		//do some completly made up animations to make the loading time feel shorter
+		$resultsContainer.click(function(e){loadAnimation(e.target.outerText);});
+		$('.logo').click(function(){loadAnimation(friends[friends.length-1].name);});
+		function loadAnimation(text){
+			//write the name of the selected friend in searchbar
+			$searchbar.val(text);
+			$resultsContainer.hide();
+			$('.player').slideUp();
+			$('.blueLine').width(0).animate({width: '80%'},10000,function(){$(this).animate({width: '95%'},10000);});
+		}
 	});
 });
 

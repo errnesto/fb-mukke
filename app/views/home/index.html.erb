@@ -1,5 +1,4 @@
 
-<p>your user id: <%= @user.uid %></p>
 <iframe id="ytPlayer" type="text/html" width="0" height="0"
 	  	src="https://www.youtube.com/embed/?enablejsapi=1" 
 	  	frameborder="0"></iframe><!-- add &origin=https://fb-mukke.herokuapp.com to url -->
@@ -13,6 +12,7 @@
 			<p class="searchresults"></p>
 		</div>
 		<div class="headerLine">
+			<div class="blueLine"></div>
 			<div class="mask"></div>
 		</div>
 	</div>
@@ -26,6 +26,7 @@
 			</div>
 			<h2 class="name"><%= song.name %></h2>
 		</a>
+		<a class="sourceLink" href="<%= song.url %>" target="_blank"><img src="<%=asset_path song.source+'_logo.png' %>"></a>
 		<div class="seekBar">
 			<div class="waiting"></div>
 			<div class="bufferd"></div>

@@ -18,7 +18,7 @@ class User < ActiveRecord::Base
 	def getSongsFromFacebook(oauth_token = self.oauth_token)
 		#if we already have the user data use it elese get them from facebook
 		user = @fbUser||callFbApi(oauth_token)
-		all_links = user.links(:fields => 'link', :limit => 200)
+		all_links = user.links(:fields => 'link', :limit => 100)
 		songs = []
 		all_links.each do |url|
 			#when url is a song add it to output
