@@ -30,7 +30,7 @@
 $mukke_blau: #0071BC;
 
 $player_w: 90%;
-$player_leftspace: 20%;
+$player_leftspace: 18%;
 $line_h: 5px;
 .player{
 	width: $player_w; height: 180px;
@@ -71,7 +71,7 @@ $line_h: 5px;
 		}
 		.name{
 			padding: 10px 0px 50px 40px;
-			width: 40%; height: 80px;
+			width: 45%; height: 80px;
 			overflow: hidden;
 			font-size: 30px;
 			color: #534741; text-decoration: none;
@@ -79,7 +79,7 @@ $line_h: 5px;
 	}
 
 	.sourceLink{
- 		position: absolute; right:28%; bottom: 30 + $line_h * 3;
+ 		position: absolute; left:80%; bottom: 30 + $line_h * 3;
 		img{
 			width: 69px;
 		}
@@ -111,6 +111,7 @@ $line_h: 5px;
 		}
 	}
 }
+//states
 .nowPlaying{
 	&:before{
 		z-index: -10;
@@ -184,8 +185,8 @@ $line_h: 5px;
 }
 .searchbar{
 	height:75px; padding-top: 5px;
-	width: 32%; display: inline-block;
-	margin-left: 30px;
+	width: 40%; display: inline-block;
+	margin-left: 40px;
 	position: relative;
 	z-index: 200;
 	#searchFriend{
