@@ -57089,3 +57089,80 @@ Processing by UserController#show as
   [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
   Rendered home/index.html.erb within layouts/application (3.9ms)
 Completed 200 OK in 4729ms (Views: 11.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 21:23:36 +0200
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/auth/facebook/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook/" for 127.0.0.1 at 2013-06-22 21:23:36 +0200
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQDJ82HIpybnT3V0S04xl07pRb2ecJvo6Y_86HboJ0wJXt_ZrUOjwk4p2SphpPszgT88Ah1VDOM9fDTwY4XaC9i6MhMuI61hM9VAdP97mmgs3Y23Kur6vHkwzWP29J3137xC3P-IlLysl3g9eG8EojptpoHD_GPe5bw-iJFq4XrpRYgpCB4YB70_fB8rfZgQ625zkOs8CiO5H6mDMwm_q2m33mTmK223agmln1Yz4yfkBc0Guj2L24Y1ycXcY_GpgwNkd6hxkg5EjZmo9sFRkipT1jBRe63s3ieTKHsAJLgBcBqxGWFSROx289zWjAFXRwE&state=257cdfd0501e241332c8bb17c3370e2d17008e389bb34426" for 127.0.0.1 at 2013-06-22 21:23:37 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDJ82HIpybnT3V0S04xl07pRb2ecJvo6Y_86HboJ0wJXt_ZrUOjwk4p2SphpPszgT88Ah1VDOM9fDTwY4XaC9i6MhMuI61hM9VAdP97mmgs3Y23Kur6vHkwzWP29J3137xC3P-IlLysl3g9eG8EojptpoHD_GPe5bw-iJFq4XrpRYgpCB4YB70_fB8rfZgQ625zkOs8CiO5H6mDMwm_q2m33mTmK223agmln1Yz4yfkBc0Guj2L24Y1ycXcY_GpgwNkd6hxkg5EjZmo9sFRkipT1jBRe63s3ieTKHsAJLgBcBqxGWFSROx289zWjAFXRwE", "state"=>"257cdfd0501e241332c8bb17c3370e2d17008e389bb34426", "provider"=>"facebook"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (92.7ms)[0m  UPDATE "users" SET "oauth_token" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["oauth_token", "CAAHONCAfHIIBADoaIQnGCsM7YLtQwpaumd8v36y1FkKn6omXeGO0RSqTgoojrGS1cjTxo4jlwsmYwwINNm4ggZA4QE8x8hJ1pIEyyhSkXNLxswZB1wmEurOUoruSrHdCnqhhrFvzogXHmgwOVKWDY3PTdmfzkZD"], ["oauth_expires_at", Wed, 21 Aug 2013 19:23:36 UTC +00:00], ["updated_at", Sat, 22 Jun 2013 19:23:38 UTC +00:00]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 140ms (ActiveRecord: 95.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-22 21:23:38 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2237ms (Views: 50.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-22 21:23:40 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-06-22 21:23:40 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-06-22 21:23:40 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-22 21:23:40 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-06-22 21:23:40 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-22 21:23:40 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-06-22 21:23:40 +0200
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-06-22 21:23:40 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-22 21:23:40 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-06-22 21:23:40 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-06-22 21:23:40 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1267ms (Views: 187.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-06-22 21:23:42 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-06-22 21:23:42 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-06-22 21:23:42 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-06-22 21:23:42 +0200
