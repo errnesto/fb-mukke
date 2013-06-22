@@ -16,11 +16,13 @@ $(function() {
 //make Youtube Iframe Acissible via API
 var ytPlayer;
 function onYouTubeIframeAPIReady() {
-	ytPlayer = new YT.Player('ytPlayer', {
-		events: {
-			'onReady': onPlayerReady
-			//'onStateChange': updateYTSeekBar
-		}
+	$(function() { //dom needs to be ready to create youtube player
+		ytPlayer = new YT.Player('ytPlayer', {
+			events: {
+				'onReady': onPlayerReady
+				//'onStateChange': updateYTSeekBar
+			}
+		});
 	});
 }
 function onPlayerReady(){

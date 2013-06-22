@@ -22,23 +22,27 @@ class User < ActiveRecord::Base
 		songs = []
 		threads = []
 		all_links.each_with_index do |url,i|
+			#song makes calls to youtube and sounfclod apis use threads to make them asyconus
 			threads << Thread.new do
 				#when url is a song add it to output
 				song = Song.new(:url => url.link)
 				begin
 					if (song.isSong?)
 						song.set_atributes
-						songs.fill(song,i,1)
+						#store songs in array by index so wee keep the order indepent of the server response time
+						songs[i] = song
 					end
 				rescue
 					#cant creata valid song: ignore it
 				end
 			end
 		end
+		#wait for each thread to finish before continue
 		threads.each do |thr|
 			thr.join
 		end
-		songs.compact!
+		#remove all nil elements from the song array
+		songs.compact! || songs
 	end
 
 	def getFriends
