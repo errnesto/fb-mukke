@@ -21,8 +21,8 @@ where we're at
   * __check youtube metadata for cathegory music__
   * __built players__
   
-  * Add search for Users
-* Invite friends
+  * __Add search for Users__
+* __Invite friends__
 * save and name lists
 * view and search for lists
 * beatiful design
