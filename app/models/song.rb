@@ -31,10 +31,16 @@ class Song < ActiveRecord::Base
 	  	elsif(url.include? 'soundcloud')
 	  		song['source'] = 'soundcloud'
 	  		#get metadata from soundcloud api
-	  		json = open('https://api.soundcloud.com/resolve.json?url='+self.url+'&client_id=978f352c112cb02aa31166a4824dd0da')
+	  		json = open('https://api.soundcloud.com/resolve.json?url='+song['url']+'&client_id=978f352c112cb02aa31166a4824dd0da')
 	  		metadata = JSON.parse(json.read)
+	  		#if soundcloud link is a playlist add the first song
+	  		if (metadata['kind'] == 'playlist')
+	  			playlistName = ' | from Playlist: '+metadata['title']
+	  			json = open('https://api.soundcloud.com/tracks/'+metadata['tracks'][0]['id'].to_s+'.json?client_id=978f352c112cb02aa31166a4824dd0da')
+	  			metadata = JSON.parse(json.read)
+	  		end 
 	  		song['identifier'] = metadata['stream_url']
-	  		song['name'] = metadata['title']
+	  		song['name'] = metadata['title']+ playlistName
 	  		song['image'] = metadata['artwork_url']
 	  		#replace small artwork image url with bigger one
 	  		song['image'].sub!('large','t300x300')

@@ -26,8 +26,7 @@ class User < ActiveRecord::Base
 			threads << Thread.new do
 				#when try to fetch song atributes from the link if not possible it will be nil
 				begin
-					song = Song.fetch_atributes(url.link)
-					songs[i] = song
+					songs[i] = Song.fetch_atributes(url.link)
 				rescue
 					#cant create valid song: ignore it
 				end
