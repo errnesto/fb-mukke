@@ -18,7 +18,7 @@ $.getJSON('/user/getData',function(friends){
 			selected = -1;
 			$searchInput.val(orgVal);
 			//nedd some delay to trigger click event
-			$resultsContainer.slideUp('fast');
+			$resultsContainer.slideUp('slow');
 		});
 		//on user Input
 		var $results, foundFriends, input;

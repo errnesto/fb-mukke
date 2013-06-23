@@ -2,6 +2,12 @@ class UserController < ApplicationController
 	after_filter :allow_iframe
 
 	def show
+		#if visitor is not logged in open facebook login dialog
+		if(!current_user)			
+			redirect_to('/auth/facebook/')
+			return
+		end
+
 		#try to select user from database by given userID
 		user = User.where("uid = ?", params[:uid]).first
 		#TODO check if AuthToken has expired
