@@ -34,6 +34,7 @@ class Song < ActiveRecord::Base
 	  		json = open('https://api.soundcloud.com/resolve.json?url='+song['url']+'&client_id=978f352c112cb02aa31166a4824dd0da')
 	  		metadata = JSON.parse(json.read)
 	  		#if soundcloud link is a playlist add the first song
+	  		playlistName = ''
 	  		if (metadata['kind'] == 'playlist')
 	  			playlistName = ' | from Playlist: '+metadata['title']
 	  			json = open('https://api.soundcloud.com/tracks/'+metadata['tracks'][0]['id'].to_s+'.json?client_id=978f352c112cb02aa31166a4824dd0da')
