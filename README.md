@@ -16,7 +16,7 @@ We do have a working version online on:
 where we're at
 ---
 …and what we plan to do (completed tasks are __bold__)
-* Port exiting features to Rails
+* __Port exiting features to Rails__
   * __Log in with facebook and store Access Token__
   * __get links (url to youtube soundcloud songs) from user__
   * __check youtube metadata for cathegory music__
