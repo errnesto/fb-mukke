@@ -1,22 +1,21 @@
+<% if flash[:error] %>
+	<div class="error">
+		<p>
+			<% if flash[:error] == "notAuser" %>
 
-<iframe id="ytPlayer" type="text/html" width="0" height="0"
-	  	src="https://www.youtube.com/embed/?enablejsapi=1" 
-	  	frameborder="0"></iframe><!-- add &origin=https://fb-mukke.herokuapp.com to url -->
-<header class="header">
-	<div class="hBox">
-		<a href="/">
-			<h1 class="logo">fb-mukke</h1>
-		</a>
-		<div class="searchbar">
-			<input type="text" id="searchFriend" value="<%= @user.name %>"></input>
-			<p class="searchresults"></p>
-		</div>
-		<div class="headerLine">
-			<div class="blueLine"></div>
-			<div class="mask"></div>
-		</div>
+				<% if params['request'] %>
+					<span class="good"><%= @user.name %> wurde eingeladen. Vielden Dank!</span>
+				<% else %>
+					<%= @user.name %> ist nicht bei fb-mukke angemeldet. Es werden nur öffentliche Songs angezeigt.<br />
+					<a href="https://www.facebook.com/dialog/apprequests?app_id=<%= ENV['FACEBOOK_APP_ID'] %>&message=Ich möchte mir deine Musik anhören!&to=<%= @user.uid %>&redirect_uri=http://fb-mukke.herokuapp.com/<%= @user.uid %>/<%= @user.name %>"><%= @user.name %> jetzt zu fb-mukke einladen </a>
+				<% end %>
+
+			<% elsif flash[:error] == "oAuthExpired" %>
+				erinnern
+			<% end %>
+		</p>
 	</div>
-</header>
+<% end %>
 <% @songs.each do |song| %>
 	<div class="player from_<%= song['source'] %>">
 		<a class="trigger" name="<%= song['source'] %>" href="<%= song['identifier'] %>">

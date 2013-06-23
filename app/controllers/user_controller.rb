@@ -1,6 +1,6 @@
 class UserController < ApplicationController
 	after_filter :allow_iframe
-	
+
 	def show
 		#try to select user from database by given userID
 		user = User.where("uid = ?", params[:uid]).first
@@ -12,13 +12,13 @@ class UserController < ApplicationController
 				@songs = user.getSongsFromFacebook
 			else
 				#user exist in database but oauth_token is expired
-				flash[:error] = "oAuthExpired"
+				flash.now[:error] = "oAuthExpired"
 				#get songs with oauth_token from current_user
 				@songs = user.getSongsFromFacebook(current_user.oauth_token)
 			end
 		else
 			#user does not exist in database and therefore has no oauth_token
-			flash[:error] = "notAuser"
+			flash.now[:error] = "notAuser"
 			#replace underscores with whitespace
 			name = params[:name].gsub(/_/,' ')
 			#create a tempprayry user

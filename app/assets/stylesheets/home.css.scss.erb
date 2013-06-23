@@ -11,7 +11,6 @@
 @mixin mask{
 	width: 100%; height: 100%;
 	position: absolute; top: 0; left:0;
-	z-index: 20;
 	background-image: url(<%=asset_path 'mask.png' %>);
 	background-size: 100% 100%;
 }
@@ -30,7 +29,7 @@
 $mukke_blau: #0071BC;
 
 $player_w: 90%;
-$player_leftspace: 18%;
+$player_leftspace: 15%;
 $line_h: 5px;
 .player{
 	width: $player_w; height: 180px;
@@ -148,6 +147,44 @@ $line_h: 5px;
 		}
 	}
 }
+
+
+//error mesaage
+.error{
+	margin: -32px auto 35px auto;
+	width: $player_w;
+	p{
+		padding: 10px 0;
+		text-align: center;
+		font-size: 21px;
+		line-height: 1.3em;
+		color: #CE2052;
+		@include mask;
+		position: relative;
+
+		&:before{
+			position: absolute;
+			left: 0; top: 0;
+			width: 100%; height: 100%;
+			background-color: #FCF8AC;
+			@include linear_gradient(#FCF8AC,#fff);
+			content: ' '; z-index: -20;
+		}
+		.good{
+			color: #005B02;
+		}
+	}
+	a{
+		font-size: 1.1em;
+		color: $mukke_blau;
+		font-weight: bold;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+
+
 .header{
 	position: fixed; top: 0;
 	background-color: #fff;
@@ -167,20 +204,25 @@ $line_h: 5px;
 			background-repeat: no-repeat;
 			background-position: center;
 		}
-		.headerLine{
-			clear: both;
-			position: relative;
-			width: 100%; height: $line_h;
-			background-color: #ccc;
-			.blueLine{
-				width: 100%; height: $line_h;
-				background-color: $mukke_blau;
-				@include linear_gradient(#29ABE2,$mukke_blau);
-			}
-			.mask{
-				@include mask;
-			}
-		}
+	}
+}
+.headerLine{
+	clear: both;
+	position: relative;
+	width: 100%; height: $line_h;
+	background-color: #ccc;
+	.blueLine{
+		width: 100%; height: $line_h;
+		background-color: $mukke_blau;
+		@include linear_gradient(#29ABE2,$mukke_blau);
+	}
+	.errorLine{
+		width: 100%; height: $line_h;
+		background-color: #FFD400;
+		@include linear_gradient(#FFAA00,#FFD400);
+	}
+	.mask{
+		@include mask;
 	}
 }
 .searchbar{

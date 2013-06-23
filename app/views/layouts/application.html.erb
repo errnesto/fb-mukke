@@ -9,6 +9,24 @@
   <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
 </head>
 <body>
+	<iframe id="ytPlayer" type="text/html" width="0" height="0"
+		  	src="https://www.youtube.com/embed/?enablejsapi=1" 
+		  	frameborder="0"></iframe><!-- add &origin=https://fb-mukke.herokuapp.com to url -->
+	<header class="header">
+		<div class="hBox">
+			<a href="/">
+				<h1 class="logo">fb-mukke</h1>
+			</a>
+			<div class="searchbar">
+				<input type="text" id="searchFriend" value="<%= @user.name %>"></input>
+				<p class="searchresults"></p>
+			</div>
+			<div class="headerLine">
+				<div class="blueLine"></div>
+				<div class="mask"></div>
+			</div>
+		</div>
+	</header>
 
 <%= yield %>
 
