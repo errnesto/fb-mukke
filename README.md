@@ -9,9 +9,9 @@ fb-mukke started as a simple jquery application built in two days that did run f
 We now are working on fb-mukke as a project for our university class so we are rewriting it  
 (nicer and better with more features) in ruby on rails
 
-We do have a working version online on:
-[fb-mukke on heroku](https://fb-mukke.herokuapp.com)
-[fb-mukke embedded in facebook](https://apps.facebook.com/fbmukke)
+We do have a working version online on:  
+[fb-mukke on heroku](https://fb-mukke.herokuapp.com)  
+[fb-mukke embedded in facebook](https://apps.facebook.com/fbmukke)  
 
 where we're at
 ---
