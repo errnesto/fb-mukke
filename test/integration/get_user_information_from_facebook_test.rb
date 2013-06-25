@@ -9,12 +9,12 @@ describe "Get User Information from fabebook Test" do
     end
 
     it "has the right header" do
-      page.must_have_content('fb-mukke')
+      page.html.must_have_content('fb-mukke')
     end
 
-    it "displays the correct user id" do
+    it "displays the correct user name" do
       #change this test later so it just checks the user is logged in
-      page.must_have_content('your user id:100003562633226')
+      find("#searchFriend")[:value].must_equal 'Wunderundfitzig'
     end
   end
 end
