@@ -1,5 +1,8 @@
 fb-mukke
 ===
+
+[![Build Status](https://travis-ci.org/errnesto/fb-mukke.png?branch=master)](https://travis-ci.org/errnesto/fb-mukke)
+
 fb-mukke will let you explore songs you and others have posted to facebook.  
 You can also save songs in lits and explore the lists your frinds have created.
 
