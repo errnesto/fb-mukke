@@ -2,7 +2,6 @@ require "test_helper"
 
 describe "Display A List Of Songs Test" do
 
-  describe "the list of your own songs" do
     #these test would rely on real facebook responeses
     #we have to look into facebooktest users if they can make these tests more reliable
 
@@ -16,5 +15,4 @@ describe "Display A List Of Songs Test" do
       page.must_have_css('.from_youtube')
       page.must_have_css('.from_soundcloud')
     end
-  end
 end
