@@ -15605,3 +15605,995 @@ UserController: test_0001_should return Data from a user in json
 Processing by UserController#getData as HTML
 Completed 500 Internal Server Error in 0ms
   [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (3.5ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "image" varchar(255), "url" varchar(255), "source" varchar(255), "identifier" varchar(255), "user_id" integer, "list_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255), "uid" integer(8)) 
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619225246')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130601155619')[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130603205044')
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130619224252')[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619224314')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Started GET "/100001114200099/Tini_Waitforit_Ziminzke" for 127.0.0.1 at 2013-06-25 14:47:07 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100001114200099", "name"=>"Tini_Waitforit_Ziminzke"}
+Redirected to http://www.example.com/auth/facebook/
+Completed 302 Found in 26ms (ActiveRecord: 0.0ms)
+Started GET "/auth/facebook/" for 127.0.0.1 at 2013-06-25 14:47:07 +0200
+Started GET "/auth/facebook/callback" for 127.0.0.1 at 2013-06-25 14:47:07 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"provider"=>"facebook"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.7ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "oauth_expires_at", "oauth_token", "picture", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Jun 2013 12:47:07 UTC +00:00], ["name", "Wunderundfitzig"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["oauth_token", "CAAHONCAfHIIBAJRLmroOYudfZCWRDnKktde73YYNNCooHZCMqHfuTvi6sylmKOPbgseXQZBSAprXz7w2yxFB9ZA36elbR0RgOggp741rZBCeMn8Er1dMI4NmZCaymVJC22bc8UcT1KlIKJ2LZBdy3SISvJqbU1wFREZD"], ["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["uid", 100003562633226], ["updated_at", Tue, 25 Jun 2013 12:47:07 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Redirected to http://www.example.com/
+Completed 302 Found in 39ms (ActiveRecord: 6.5ms)
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:47:07 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 2115ms (Views: 28.4ms | ActiveRecord: 0.3ms)
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:47:09 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 2068ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:47:11 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1955ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:47:13 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 2211ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.8ms)[0m  DELETE FROM "songs"
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES (100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAJRLmroOYudfZCWRDnKktde73YYNNCooHZCMqHfuTvi6sylmKOPbgseXQZBSAprXz7w2yxFB9ZA36elbR0RgOggp741rZBCeMn8Er1dMI4NmZCaymVJC22bc8UcT1KlIKJ2LZBdy3SISvJqbU1wFREZD', '2013-06-01 17:56:19.000000', '2013-06-25 12:47:15', '2013-06-25 12:47:15', 980190962)
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+HomeController: test_0001_should get the index
+----------------------------------------------
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1802ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------------------
+SessionsController: test_0001_creates a session and redirects to root
+---------------------------------------------------------------------
+Processing by SessionsController#create as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962[0m  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:47:17 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------------
+SessionsController: test_0002_destroys a session and redirects to root
+----------------------------------------------------------------------
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+Song: test_0001_can tell when a youtube link is a song
+------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------
+Song: test_0002_can tell that a soundcloud link is a song
+---------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------
+Song: test_0003_can tell when a youtube link is not a song
+----------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------
+Song: test_0004_can tell that a any other link is not a song
+------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------
+Song: test_0005_can find out the source of its soundcloud url
+-------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------
+Song: test_0006_can find out the source of its youtube url
+----------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+--------------------------------------------------------------------------------
+Song::metadata of the song: test_0001_can find out its name from its youtube url
+--------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------------------------------------------
+Song::metadata of the song: test_0002_can find out its name from its soundcloud url
+-----------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------------------------
+Song::metadata of the song: test_0003_can get an image from its youtube url
+---------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------------------------
+Song::metadata of the song: test_0004_can get an image from its soundcloud url
+------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------------------------------
+SongController: test_0001_should add a song to a list and save it to the database
+---------------------------------------------------------------------------------
+Processing by SongController#star as HTML
+  Parameters: {"url"=>"http://www.youtube.com/watch?v=9PnOG67flRA", "list_id"=>"1"}
+Completed 500 Internal Server Error in 4ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------------
+SongController: test_0002_delete a song from the list and the database
+----------------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "songs" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Tue, 25 Jun 2013 12:47:21 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:47:21 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SongController#unstar as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------
+SongController: test_0003_should always redirect to root
+--------------------------------------------------------
+Processing by SongController#star as HTML
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+User: test_0001_stores user information
+---------------------------------------
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:47:21 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+User: test_0002_gets links from facebook
+----------------------------------------
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962[0m  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:47:21 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------
+UserController: test_0001_should return Data from a user in json
+----------------------------------------------------------------
+Processing by UserController#getData as HTML
+Completed 500 Internal Server Error in 0ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (3.4ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "image" varchar(255), "url" varchar(255), "source" varchar(255), "identifier" varchar(255), "user_id" integer, "list_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255), "uid" integer(8)) 
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619225246')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130601155619')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130603205044')
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130619224252')[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619224314')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Started GET "/Tini_Waitforit_Ziminzke" for 127.0.0.1 at 2013-06-25 14:47:55 +0200
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:47:55 +0200
+Processing by HomeController#index as HTML
+Redirected to http://www.example.com/auth/facebook/
+Completed 302 Found in 24ms (ActiveRecord: 0.0ms)
+Started GET "/auth/facebook/" for 127.0.0.1 at 2013-06-25 14:47:55 +0200
+Started GET "/auth/facebook/callback" for 127.0.0.1 at 2013-06-25 14:47:55 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"provider"=>"facebook"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "oauth_expires_at", "oauth_token", "picture", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Jun 2013 12:47:55 UTC +00:00], ["name", "Wunderundfitzig"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["oauth_token", "CAAHONCAfHIIBAJRLmroOYudfZCWRDnKktde73YYNNCooHZCMqHfuTvi6sylmKOPbgseXQZBSAprXz7w2yxFB9ZA36elbR0RgOggp741rZBCeMn8Er1dMI4NmZCaymVJC22bc8UcT1KlIKJ2LZBdy3SISvJqbU1wFREZD"], ["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["uid", 100003562633226], ["updated_at", Tue, 25 Jun 2013 12:47:55 UTC +00:00]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://www.example.com/
+Completed 302 Found in 38ms (ActiveRecord: 6.2ms)
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:47:55 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 3149ms (Views: 141.2ms | ActiveRecord: 0.3ms)
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:47:58 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 2680ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:48:01 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2066ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "songs"[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES (100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAJRLmroOYudfZCWRDnKktde73YYNNCooHZCMqHfuTvi6sylmKOPbgseXQZBSAprXz7w2yxFB9ZA36elbR0RgOggp741rZBCeMn8Er1dMI4NmZCaymVJC22bc8UcT1KlIKJ2LZBdy3SISvJqbU1wFREZD', '2013-06-01 17:56:19.000000', '2013-06-25 12:48:03', '2013-06-25 12:48:03', 980190962)[0m
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------
+HomeController: test_0001_should get the index
+----------------------------------------------
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1992ms (Views: 3.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------------------
+SessionsController: test_0001_creates a session and redirects to root
+---------------------------------------------------------------------
+Processing by SessionsController#create as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:48:05 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------
+SessionsController: test_0002_destroys a session and redirects to root
+----------------------------------------------------------------------
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------------
+Song: test_0001_can tell when a youtube link is a song
+------------------------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------
+Song: test_0002_can tell that a soundcloud link is a song
+---------------------------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------
+Song: test_0003_can tell when a youtube link is not a song
+----------------------------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------------------
+Song: test_0004_can tell that a any other link is not a song
+------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+Song: test_0005_can find out the source of its soundcloud url
+-------------------------------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------
+Song: test_0006_can find out the source of its youtube url
+----------------------------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------------
+Song::metadata of the song: test_0001_can find out its name from its youtube url
+--------------------------------------------------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Song::metadata of the song: test_0002_can find out its name from its soundcloud url
+-----------------------------------------------------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------------------------
+Song::metadata of the song: test_0003_can get an image from its youtube url
+---------------------------------------------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------------------------------------
+Song::metadata of the song: test_0004_can get an image from its soundcloud url
+------------------------------------------------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------------------------------
+SongController: test_0001_should add a song to a list and save it to the database
+---------------------------------------------------------------------------------
+Processing by SongController#star as HTML
+  Parameters: {"url"=>"http://www.youtube.com/watch?v=9PnOG67flRA", "list_id"=>"1"}
+Completed 500 Internal Server Error in 4ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------
+SongController: test_0002_delete a song from the list and the database
+----------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "songs" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Tue, 25 Jun 2013 12:48:10 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:48:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SongController#unstar as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------------
+SongController: test_0003_should always redirect to root
+--------------------------------------------------------
+Processing by SongController#star as HTML
+Completed 500 Internal Server Error in 1ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------
+User: test_0001_stores user information
+---------------------------------------
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mUPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962[0m  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:48:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+User: test_0002_gets links from facebook
+----------------------------------------
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:48:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------
+UserController: test_0001_should return Data from a user in json
+----------------------------------------------------------------
+Processing by UserController#getData as HTML
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (3.7ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "image" varchar(255), "url" varchar(255), "source" varchar(255), "identifier" varchar(255), "user_id" integer, "list_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255), "uid" integer(8)) 
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619225246')
+  [1m[36m (1.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130601155619')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130603205044')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130619224252')[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619224314')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Started GET "/100001114200099/Tini_Waitforit_Ziminzke" for 127.0.0.1 at 2013-06-25 14:48:50 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100001114200099", "name"=>"Tini_Waitforit_Ziminzke"}
+Redirected to http://www.example.com/auth/facebook/
+Completed 302 Found in 26ms (ActiveRecord: 0.0ms)
+Started GET "/auth/facebook/" for 127.0.0.1 at 2013-06-25 14:48:50 +0200
+Started GET "/auth/facebook/callback" for 127.0.0.1 at 2013-06-25 14:48:50 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"provider"=>"facebook"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.7ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "oauth_expires_at", "oauth_token", "picture", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Jun 2013 12:48:50 UTC +00:00], ["name", "Wunderundfitzig"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["oauth_token", "CAAHONCAfHIIBAJRLmroOYudfZCWRDnKktde73YYNNCooHZCMqHfuTvi6sylmKOPbgseXQZBSAprXz7w2yxFB9ZA36elbR0RgOggp741rZBCeMn8Er1dMI4NmZCaymVJC22bc8UcT1KlIKJ2LZBdy3SISvJqbU1wFREZD"], ["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["uid", 100003562633226], ["updated_at", Tue, 25 Jun 2013 12:48:50 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to http://www.example.com/
+Completed 302 Found in 37ms (ActiveRecord: 5.8ms)
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:48:50 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 3915ms (Views: 137.8ms | ActiveRecord: 0.3ms)
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:48:54 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 2193ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:48:56 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 3069ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:48:59 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 2446ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "songs"
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES (100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAJRLmroOYudfZCWRDnKktde73YYNNCooHZCMqHfuTvi6sylmKOPbgseXQZBSAprXz7w2yxFB9ZA36elbR0RgOggp741rZBCeMn8Er1dMI4NmZCaymVJC22bc8UcT1KlIKJ2LZBdy3SISvJqbU1wFREZD', '2013-06-01 17:56:19.000000', '2013-06-25 12:49:02', '2013-06-25 12:49:02', 980190962)
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+HomeController: test_0001_should get the index
+----------------------------------------------
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 2652ms (Views: 3.5ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------------------
+SessionsController: test_0001_creates a session and redirects to root
+---------------------------------------------------------------------
+Processing by SessionsController#create as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962[0m  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:49:05 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------------
+SessionsController: test_0002_destroys a session and redirects to root
+----------------------------------------------------------------------
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+Song: test_0001_can tell when a youtube link is a song
+------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------
+Song: test_0002_can tell that a soundcloud link is a song
+---------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------
+Song: test_0003_can tell when a youtube link is not a song
+----------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------
+Song: test_0004_can tell that a any other link is not a song
+------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------
+Song: test_0005_can find out the source of its soundcloud url
+-------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------
+Song: test_0006_can find out the source of its youtube url
+----------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------------------------------------
+Song::metadata of the song: test_0001_can find out its name from its youtube url
+--------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------------------------------------------
+Song::metadata of the song: test_0002_can find out its name from its soundcloud url
+-----------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------------------------
+Song::metadata of the song: test_0003_can get an image from its youtube url
+---------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------------------------
+Song::metadata of the song: test_0004_can get an image from its soundcloud url
+------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------------------------------
+SongController: test_0001_should add a song to a list and save it to the database
+---------------------------------------------------------------------------------
+Processing by SongController#star as HTML
+  Parameters: {"url"=>"http://www.youtube.com/watch?v=9PnOG67flRA", "list_id"=>"1"}
+Completed 500 Internal Server Error in 4ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------------
+SongController: test_0002_delete a song from the list and the database
+----------------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "songs" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Tue, 25 Jun 2013 12:49:09 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:49:09 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SongController#unstar as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------
+SongController: test_0003_should always redirect to root
+--------------------------------------------------------
+Processing by SongController#star as HTML
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+User: test_0001_stores user information
+---------------------------------------
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:49:09 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+User: test_0002_gets links from facebook
+----------------------------------------
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962[0m  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:49:09 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------
+UserController: test_0001_should return Data from a user in json
+----------------------------------------------------------------
+Processing by UserController#getData as HTML
+Completed 500 Internal Server Error in 0ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "image" varchar(255), "url" varchar(255), "source" varchar(255), "identifier" varchar(255), "user_id" integer, "list_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255), "uid" integer(8)) 
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619225246')
+  [1m[36m (1.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130601155619')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130603205044')
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130619224252')[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619224314')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:49:38 +0200
+Processing by HomeController#index as HTML
+Redirected to http://www.example.com/auth/facebook/
+Completed 302 Found in 25ms (ActiveRecord: 0.0ms)
+Started GET "/auth/facebook/" for 127.0.0.1 at 2013-06-25 14:49:38 +0200
+Started GET "/auth/facebook/callback" for 127.0.0.1 at 2013-06-25 14:49:38 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"provider"=>"facebook"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.7ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "oauth_expires_at", "oauth_token", "picture", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Jun 2013 12:49:38 UTC +00:00], ["name", "Wunderundfitzig"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["oauth_token", "CAAHONCAfHIIBAJRLmroOYudfZCWRDnKktde73YYNNCooHZCMqHfuTvi6sylmKOPbgseXQZBSAprXz7w2yxFB9ZA36elbR0RgOggp741rZBCeMn8Er1dMI4NmZCaymVJC22bc8UcT1KlIKJ2LZBdy3SISvJqbU1wFREZD"], ["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["uid", 100003562633226], ["updated_at", Tue, 25 Jun 2013 12:49:38 UTC +00:00]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://www.example.com/
+Completed 302 Found in 38ms (ActiveRecord: 6.0ms)
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:49:38 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 2704ms (Views: 141.4ms | ActiveRecord: 0.3ms)
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:49:41 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1801ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:49:43 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 2227ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "image" varchar(255), "url" varchar(255), "source" varchar(255), "identifier" varchar(255), "user_id" integer, "list_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255), "uid" integer(8)) 
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619225246')
+  [1m[36m (2.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130601155619')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130603205044')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130619224252')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619224314')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "songs"
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES (100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAJRLmroOYudfZCWRDnKktde73YYNNCooHZCMqHfuTvi6sylmKOPbgseXQZBSAprXz7w2yxFB9ZA36elbR0RgOggp741rZBCeMn8Er1dMI4NmZCaymVJC22bc8UcT1KlIKJ2LZBdy3SISvJqbU1wFREZD', '2013-06-01 17:56:19.000000', '2013-06-25 12:50:02', '2013-06-25 12:50:02', 980190962)
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+HomeController: test_0001_should get the index
+----------------------------------------------
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered home/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 2082ms (Views: 27.1ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------------------
+SessionsController: test_0001_creates a session and redirects to root
+---------------------------------------------------------------------
+Processing by SessionsController#create as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.7ms)[0m  [1mUPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962[0m  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:50:04 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 11ms (ActiveRecord: 2.2ms)
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------------
+SessionsController: test_0002_destroys a session and redirects to root
+----------------------------------------------------------------------
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------------------------------
+SongController: test_0001_should add a song to a list and save it to the database
+---------------------------------------------------------------------------------
+Processing by SongController#star as HTML
+  Parameters: {"url"=>"http://www.youtube.com/watch?v=9PnOG67flRA", "list_id"=>"1"}
+Completed 500 Internal Server Error in 3ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------------
+SongController: test_0002_delete a song from the list and the database
+----------------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "songs" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Tue, 25 Jun 2013 12:50:04 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:50:04 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SongController#unstar as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------
+SongController: test_0003_should always redirect to root
+--------------------------------------------------------
+Processing by SongController#star as HTML
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------
+UserController: test_0001_should return Data from a user in json
+----------------------------------------------------------------
+Processing by UserController#getData as HTML
+Completed 500 Internal Server Error in 0ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (2.2ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "image" varchar(255), "url" varchar(255), "source" varchar(255), "identifier" varchar(255), "user_id" integer, "list_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255), "uid" integer(8)) 
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619225246')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130601155619')[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130603205044')
+  [1m[36m (1.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130619224252')[0m
+  [1m[35m (1.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619224314')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "songs"
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES (100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAJRLmroOYudfZCWRDnKktde73YYNNCooHZCMqHfuTvi6sylmKOPbgseXQZBSAprXz7w2yxFB9ZA36elbR0RgOggp741rZBCeMn8Er1dMI4NmZCaymVJC22bc8UcT1KlIKJ2LZBdy3SISvJqbU1wFREZD', '2013-06-01 17:56:19.000000', '2013-06-25 12:50:41', '2013-06-25 12:50:41', 980190962)
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+HomeController: test_0001_should get the index
+----------------------------------------------
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered home/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 2594ms (Views: 28.8ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------------------
+SessionsController: test_0001_creates a session and redirects to root
+---------------------------------------------------------------------
+Processing by SessionsController#create as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.7ms)[0m  [1mUPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962[0m  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:50:44 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 11ms (ActiveRecord: 2.1ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------------
+SessionsController: test_0002_destroys a session and redirects to root
+----------------------------------------------------------------------
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------
+UserController: test_0001_should return Data from a user in json
+----------------------------------------------------------------
+Processing by UserController#getData as HTML
+Completed 500 Internal Server Error in 1ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (3.1ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "image" varchar(255), "url" varchar(255), "source" varchar(255), "identifier" varchar(255), "user_id" integer, "list_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255), "uid" integer(8)) 
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619225246')
+  [1m[36m (1.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130601155619')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130603205044')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130619224252')[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619224314')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "songs"
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES (100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAJRLmroOYudfZCWRDnKktde73YYNNCooHZCMqHfuTvi6sylmKOPbgseXQZBSAprXz7w2yxFB9ZA36elbR0RgOggp741rZBCeMn8Er1dMI4NmZCaymVJC22bc8UcT1KlIKJ2LZBdy3SISvJqbU1wFREZD', '2013-06-01 17:56:19.000000', '2013-06-25 12:52:08', '2013-06-25 12:52:08', 980190962)
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+HomeController: test_0001_should get the index
+----------------------------------------------
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered home/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 2141ms (Views: 140.9ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------------------
+SessionsController: test_0001_creates a session and redirects to root
+---------------------------------------------------------------------
+Processing by SessionsController#create as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.7ms)[0m  [1mUPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962[0m  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:52:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 11ms (ActiveRecord: 2.1ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------------
+SessionsController: test_0002_destroys a session and redirects to root
+----------------------------------------------------------------------
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------
+UserController: test_0001_should return Data from a user in json
+----------------------------------------------------------------
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+Processing by UserController#getData as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+Completed 200 OK in 948ms (Views: 106.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (4.2ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "image" varchar(255), "url" varchar(255), "source" varchar(255), "identifier" varchar(255), "user_id" integer, "list_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255), "uid" integer(8)) 
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619225246')
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130601155619')[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130603205044')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130619224252')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619224314')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "songs"
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES (100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAJRLmroOYudfZCWRDnKktde73YYNNCooHZCMqHfuTvi6sylmKOPbgseXQZBSAprXz7w2yxFB9ZA36elbR0RgOggp741rZBCeMn8Er1dMI4NmZCaymVJC22bc8UcT1KlIKJ2LZBdy3SISvJqbU1wFREZD', '2013-06-01 17:56:19.000000', '2013-06-25 12:53:39', '2013-06-25 12:53:39', 980190962)
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+HomeController: test_0001_should get the index
+----------------------------------------------
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered home/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 2022ms (Views: 27.3ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------------------
+SessionsController: test_0001_creates a session and redirects to root
+---------------------------------------------------------------------
+Processing by SessionsController#create as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.0ms)[0m  [1mUPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962[0m  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:53:41 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 12ms (ActiveRecord: 2.5ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------------
+SessionsController: test_0002_destroys a session and redirects to root
+----------------------------------------------------------------------
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------
+UserController: test_0001_should return Data from a user in json
+----------------------------------------------------------------
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+Processing by UserController#getData as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+Completed 200 OK in 947ms (Views: 37.0ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (4.7ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "image" varchar(255), "url" varchar(255), "source" varchar(255), "identifier" varchar(255), "user_id" integer, "list_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255), "uid" integer(8)) 
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619225246')
+  [1m[36m (1.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130601155619')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130603205044')
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130619224252')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619224314')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:53:52 +0200
+Processing by HomeController#index as HTML
+Redirected to http://www.example.com/auth/facebook/
+Completed 302 Found in 25ms (ActiveRecord: 0.0ms)
+Started GET "/auth/facebook/" for 127.0.0.1 at 2013-06-25 14:53:52 +0200
+Started GET "/auth/facebook/callback" for 127.0.0.1 at 2013-06-25 14:53:52 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"provider"=>"facebook"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.7ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "oauth_expires_at", "oauth_token", "picture", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Jun 2013 12:53:52 UTC +00:00], ["name", "Wunderundfitzig"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["oauth_token", "CAAHONCAfHIIBAJRLmroOYudfZCWRDnKktde73YYNNCooHZCMqHfuTvi6sylmKOPbgseXQZBSAprXz7w2yxFB9ZA36elbR0RgOggp741rZBCeMn8Er1dMI4NmZCaymVJC22bc8UcT1KlIKJ2LZBdy3SISvJqbU1wFREZD"], ["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["uid", 100003562633226], ["updated_at", Tue, 25 Jun 2013 12:53:52 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://www.example.com/
+Completed 302 Found in 38ms (ActiveRecord: 5.6ms)
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:53:52 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 2157ms (Views: 27.1ms | ActiveRecord: 0.4ms)
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:53:55 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1875ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+Started GET "/" for 127.0.0.1 at 2013-06-25 14:53:57 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1717ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "songs"[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES (100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAJRLmroOYudfZCWRDnKktde73YYNNCooHZCMqHfuTvi6sylmKOPbgseXQZBSAprXz7w2yxFB9ZA36elbR0RgOggp741rZBCeMn8Er1dMI4NmZCaymVJC22bc8UcT1KlIKJ2LZBdy3SISvJqbU1wFREZD', '2013-06-01 17:56:19.000000', '2013-06-25 12:53:58', '2013-06-25 12:53:58', 980190962)[0m
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------
+HomeController: test_0001_should get the index
+----------------------------------------------
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 2112ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------------------
+SessionsController: test_0001_creates a session and redirects to root
+---------------------------------------------------------------------
+Processing by SessionsController#create as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:54:01 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------
+SessionsController: test_0002_destroys a session and redirects to root
+----------------------------------------------------------------------
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------------
+Song: test_0001_can tell when a youtube link is a song
+------------------------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------
+Song: test_0002_can tell that a soundcloud link is a song
+---------------------------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------
+Song: test_0003_can tell when a youtube link is not a song
+----------------------------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------------------
+Song: test_0004_can tell that a any other link is not a song
+------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+Song: test_0005_can find out the source of its soundcloud url
+-------------------------------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------
+Song: test_0006_can find out the source of its youtube url
+----------------------------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------------
+Song::metadata of the song: test_0001_can find out its name from its youtube url
+--------------------------------------------------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+Song::metadata of the song: test_0002_can find out its name from its soundcloud url
+-----------------------------------------------------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------------------------
+Song::metadata of the song: test_0003_can get an image from its youtube url
+---------------------------------------------------------------------------
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------------------------------------
+Song::metadata of the song: test_0004_can get an image from its soundcloud url
+------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+User: test_0001_stores user information
+---------------------------------------
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:54:05 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+User: test_0002_gets links from facebook
+----------------------------------------
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962[0m  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:54:05 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------
+UserController: test_0001_should return Data from a user in json
+----------------------------------------------------------------
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1
+Processing by UserController#getData as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Completed 200 OK in 1176ms (Views: 161.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
