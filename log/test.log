@@ -14488,3 +14488,438 @@ User: test_0002_gets links from facebook
   [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
   [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
   [1m[36m (1.8ms)[0m  [1mrollback transaction[0m
+  [1m[36m (3.4ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "image" varchar(255), "url" varchar(255), "source" varchar(255), "identifier" varchar(255), "user_id" integer, "list_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255), "uid" integer(8)) 
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619225246')
+  [1m[36m (1.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130601155619')[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130603205044')
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130619224252')[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619224314')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "songs"
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES (100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAJRLmroOYudfZCWRDnKktde73YYNNCooHZCMqHfuTvi6sylmKOPbgseXQZBSAprXz7w2yxFB9ZA36elbR0RgOggp741rZBCeMn8Er1dMI4NmZCaymVJC22bc8UcT1KlIKJ2LZBdy3SISvJqbU1wFREZD', '2013-06-01 17:56:19.000000', '2013-06-25 12:03:46', '2013-06-25 12:03:46', 980190962)
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+Song: test_0001_can tell when a youtube link is a song
+------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------
+Song: test_0002_can tell that a soundcloud link is a song
+---------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------
+Song: test_0003_can tell when a youtube link is not a song
+----------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------
+Song: test_0004_can tell that a any other link is not a song
+------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------
+Song: test_0005_can find out the source of its soundcloud url
+-------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------
+Song: test_0006_can find out the source of its youtube url
+----------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------------------------------------
+Song::metadata of the song: test_0001_can find out its name from its youtube url
+--------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------------------------------------------
+Song::metadata of the song: test_0002_can find out its name from its soundcloud url
+-----------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------------------------
+Song::metadata of the song: test_0003_can get an image from its youtube url
+---------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------------------------
+Song::metadata of the song: test_0004_can get an image from its soundcloud url
+------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------
+User: test_0001_stores user information
+---------------------------------------
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.0ms)[0m  [1mUPDATE "users" SET "name" = ?, "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962[0m  [["name", "Joe Bloggs"], ["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:03:49 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+User: test_0002_gets links from facebook
+----------------------------------------
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "name" = ?, "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962  [["name", "Joe Bloggs"], ["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:03:49 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "image" varchar(255), "url" varchar(255), "source" varchar(255), "identifier" varchar(255), "user_id" integer, "list_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255), "uid" integer(8)) 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619225246')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130601155619')[0m
+  [1m[35m (1.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130603205044')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130619224252')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619224314')
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "songs"
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES (100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAJRLmroOYudfZCWRDnKktde73YYNNCooHZCMqHfuTvi6sylmKOPbgseXQZBSAprXz7w2yxFB9ZA36elbR0RgOggp741rZBCeMn8Er1dMI4NmZCaymVJC22bc8UcT1KlIKJ2LZBdy3SISvJqbU1wFREZD', '2013-06-01 17:56:19.000000', '2013-06-25 12:04:13', '2013-06-25 12:04:13', 980190962)
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+------------------------------------------------------
+Song: test_0001_can tell when a youtube link is a song
+------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------
+Song: test_0002_can tell that a soundcloud link is a song
+---------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------
+Song: test_0003_can tell when a youtube link is not a song
+----------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------
+Song: test_0004_can tell that a any other link is not a song
+------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------
+Song: test_0005_can find out the source of its soundcloud url
+-------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------
+Song: test_0006_can find out the source of its youtube url
+----------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------------------------------------
+Song::metadata of the song: test_0001_can find out its name from its youtube url
+--------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------------------------------------------
+Song::metadata of the song: test_0002_can find out its name from its soundcloud url
+-----------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------------------------
+Song::metadata of the song: test_0003_can get an image from its youtube url
+---------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------------------------
+Song::metadata of the song: test_0004_can get an image from its soundcloud url
+------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------
+User: test_0001_stores user information
+---------------------------------------
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.9ms)[0m  [1mUPDATE "users" SET "name" = ?, "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962[0m  [["name", "Joe Bloggs"], ["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:04:16 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+User: test_0002_gets links from facebook
+----------------------------------------
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "name" = ?, "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962  [["name", "Joe Bloggs"], ["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:04:16 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[36m (3.4ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "image" varchar(255), "url" varchar(255), "source" varchar(255), "identifier" varchar(255), "user_id" integer, "list_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255), "uid" integer(8)) 
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619225246')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130601155619')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130603205044')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130619224252')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619224314')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "songs"
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES (100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAJRLmroOYudfZCWRDnKktde73YYNNCooHZCMqHfuTvi6sylmKOPbgseXQZBSAprXz7w2yxFB9ZA36elbR0RgOggp741rZBCeMn8Er1dMI4NmZCaymVJC22bc8UcT1KlIKJ2LZBdy3SISvJqbU1wFREZD', '2013-06-01 17:56:19.000000', '2013-06-25 12:05:13', '2013-06-25 12:05:13', 980190962)
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+Song: test_0001_can tell when a youtube link is a song
+------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------
+Song: test_0002_can tell that a soundcloud link is a song
+---------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------
+Song: test_0003_can tell when a youtube link is not a song
+----------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------
+Song: test_0004_can tell that a any other link is not a song
+------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------
+Song: test_0005_can find out the source of its soundcloud url
+-------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------
+Song: test_0006_can find out the source of its youtube url
+----------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------------------------------------
+Song::metadata of the song: test_0001_can find out its name from its youtube url
+--------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------------------------------------------
+Song::metadata of the song: test_0002_can find out its name from its soundcloud url
+-----------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------------------------
+Song::metadata of the song: test_0003_can get an image from its youtube url
+---------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------------------------
+Song::metadata of the song: test_0004_can get an image from its soundcloud url
+------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------
+User: test_0001_stores user information
+---------------------------------------
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.3ms)[0m  [1mUPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962[0m  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:05:16 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+User: test_0002_gets links from facebook
+----------------------------------------
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:05:16 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36m (3.5ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "image" varchar(255), "url" varchar(255), "source" varchar(255), "identifier" varchar(255), "user_id" integer, "list_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255), "uid" integer(8)) 
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619225246')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130601155619')[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130603205044')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130619224252')[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619224314')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "songs"
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES (100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAJRLmroOYudfZCWRDnKktde73YYNNCooHZCMqHfuTvi6sylmKOPbgseXQZBSAprXz7w2yxFB9ZA36elbR0RgOggp741rZBCeMn8Er1dMI4NmZCaymVJC22bc8UcT1KlIKJ2LZBdy3SISvJqbU1wFREZD', '2013-06-01 17:56:19.000000', '2013-06-25 12:06:44', '2013-06-25 12:06:44', 980190962)
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+Song: test_0001_can tell when a youtube link is a song
+------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------
+Song: test_0002_can tell that a soundcloud link is a song
+---------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------
+Song: test_0003_can tell when a youtube link is not a song
+----------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------
+Song: test_0004_can tell that a any other link is not a song
+------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------
+Song: test_0005_can find out the source of its soundcloud url
+-------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------
+Song: test_0006_can find out the source of its youtube url
+----------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------------------------------------
+Song::metadata of the song: test_0001_can find out its name from its youtube url
+--------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------------------------------------------
+Song::metadata of the song: test_0002_can find out its name from its soundcloud url
+-----------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------------------------
+Song::metadata of the song: test_0003_can get an image from its youtube url
+---------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------------------------
+Song::metadata of the song: test_0004_can get an image from its soundcloud url
+------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------
+User: test_0001_stores user information
+---------------------------------------
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.9ms)[0m  [1mUPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962[0m  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:06:46 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+User: test_0002_gets links from facebook
+----------------------------------------
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:06:46 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36m (4.5ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "image" varchar(255), "url" varchar(255), "source" varchar(255), "identifier" varchar(255), "user_id" integer, "list_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime, "updated_at" datetime, "picture" varchar(255), "uid" integer(8)) 
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619225246')
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130601155619')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130603205044')
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130619224252')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130619224314')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "songs"
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES (100003562633226, 'Wunderundfitzig', 'CAAHONCAfHIIBAJRLmroOYudfZCWRDnKktde73YYNNCooHZCMqHfuTvi6sylmKOPbgseXQZBSAprXz7w2yxFB9ZA36elbR0RgOggp741rZBCeMn8Er1dMI4NmZCaymVJC22bc8UcT1KlIKJ2LZBdy3SISvJqbU1wFREZD', '2013-06-01 17:56:19.000000', '2013-06-25 12:07:04', '2013-06-25 12:07:04', 980190962)
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+Song: test_0001_can tell when a youtube link is a song
+------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------
+Song: test_0002_can tell that a soundcloud link is a song
+---------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------
+Song: test_0003_can tell when a youtube link is not a song
+----------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------
+Song: test_0004_can tell that a any other link is not a song
+------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------
+Song: test_0005_can find out the source of its soundcloud url
+-------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------
+Song: test_0006_can find out the source of its youtube url
+----------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------------------------------------
+Song::metadata of the song: test_0001_can find out its name from its youtube url
+--------------------------------------------------------------------------------
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------------------------------------------
+Song::metadata of the song: test_0002_can find out its name from its soundcloud url
+-----------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------------------------------
+Song::metadata of the song: test_0003_can get an image from its youtube url
+---------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------------------------------
+Song::metadata of the song: test_0004_can get an image from its soundcloud url
+------------------------------------------------------------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------
+User: test_0001_stores user information
+---------------------------------------
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.9ms)[0m  [1mUPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962[0m  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:07:07 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+User: test_0002_gets links from facebook
+----------------------------------------
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "picture" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 980190962  [["picture", "http://graph.facebook.com/1234567/picture?type=square"], ["oauth_expires_at", Sun, 20 Nov 2011 00:00:05 UTC +00:00], ["updated_at", Tue, 25 Jun 2013 12:07:07 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m

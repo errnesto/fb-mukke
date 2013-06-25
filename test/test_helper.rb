@@ -20,7 +20,7 @@ class ActiveSupport::TestCase
     :info => {
       :nickname => 'jbloggs',
       :email => 'joe@bloggs.com',
-      :name => 'Joe Bloggs',
+      :name => 'Wunderundfitzig',
       :first_name => 'Wunderundfitzig',
       :last_name => 'Bloggs',
       :image => 'http://graph.facebook.com/1234567/picture?type=square',
