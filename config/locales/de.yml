@@ -1,0 +1,7 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+de:
+  invited: "%{name} wurde eingeladen. Vielen Dank!"
+  notLoggedIn: "%{name} ist nicht bei fb-mukke angemeldet. Es werden nur öffentliche Songs angezeigt."
+  invite_now: "%{name} jetzt zu fb-mukke einladen"
