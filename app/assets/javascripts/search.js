@@ -10,17 +10,18 @@ $.getJSON('/user/getData',function(friends){
 
 		var selected = -1;
 		//empty input onClick
-		$searchInput.focus(function(){
+		$searchInput.click(function(){
 			$searchInput.val('');
 			selected = 0;
+			return false;
 		});
 		//clear search bar on click outside
-		$searchInput.blur(function(){
+		$(document).click(function(){
 			//restore user name in input //hide results //set selected to first element
 			selected = -1;
 			$searchInput.val(orgVal);
 			//nedd some delay to trigger click event
-			$resultsContainer.slideUp('slow');
+			$resultsContainer.hide();
 		});
 		//on user Input
 		var $results, foundFriends, input;
@@ -86,10 +87,12 @@ $.getJSON('/user/getData',function(friends){
 		function loadUser(user_identifier){
 			var user_name = user_identifier.split('/')[2].replace(/_/g,' '); //identifier format: /uid/name
 			$searchInput.val(user_name);
+			orgVal = user_name;
 			$.get(user_identifier+'.content', function(data) {
 				$blueLine.stop().width('100%');
 				$songs.html(data);
 				$('.player').slideDown();
+				updatePlaylist();
 				window.history.pushState('Object', user_name, user_identifier);
 			});
 		}

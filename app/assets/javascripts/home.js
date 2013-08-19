@@ -3,7 +3,8 @@ $.getScript('https://www.youtube.com/iframe_api');
 
 //save PLaylist when document is ready
 var playlist = [];
-$(function() {
+function updatePlaylist(){
+	playlist = [];	
 	$('.trigger').each(function(i){
 		playlist[i] = $(this);
 		$(this).click(function(e){
@@ -12,6 +13,9 @@ $(function() {
 			return false;
 		});
 	});
+}
+$(function(){
+	updatePlaylist();
 });
 //make Youtube Iframe Acissible via API
 var ytPlayer;
