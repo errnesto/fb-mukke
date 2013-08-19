@@ -5,6 +5,10 @@ gem 'rails', '4.0.0.rc2'
 
 group :development, :test do
   gem 'sqlite3'
+  # To use debugger
+  gem 'pry'
+  gem 'debugger'
+  gem 'pry-debugger'
 end
 group :production do
   gem 'pg'
@@ -48,11 +52,6 @@ end
 
 # Deploy with Capistrano
 # gem 'capistrano'
-
-# To use debugger
-gem 'pry'
-gem 'debugger'
-gem 'pry-debugger'
 
 # gems to work with facebook api
 gem 'omniauth-facebook'
