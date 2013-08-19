@@ -31,7 +31,11 @@ class UserController < ApplicationController
 			@songs = user.getSongsFromFacebook(current_user.oauth_token)
 		end
 		@user = user;
-		render template: "home/index", layout: false
+		if params[:format] == 'content'
+			render "home/index", layout: false
+		else
+			render "home/index"
+		end
 	end
 	def getData
 		#always get the friends of the current user

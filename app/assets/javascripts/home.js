@@ -47,7 +47,7 @@ soundManager.onready(function() {
 //play a song based on its numer in the playlist no matter where its from
 var playedBar,bufferdBar, nowPlaying = -1, isStarting;
 function loadSong(trigger_number){
-	resetPlayer(nowPlaying); //skip the state of the previous player
+	resetPlayer(nowPlaying); //reset the state of the previous player
 	nowPlaying = trigger_number;
 	//get the correct trigger and extract information from it if trigger_number does not exist get the first one
 	var trigger = playlist[trigger_number] ? playlist[trigger_number] : playlist[0];
@@ -89,7 +89,7 @@ function loadSong(trigger_number){
 			},
 			//when song is finished Play the next one
 			onfinish: function(){
-				loadSong(nowPlaying+1);
+				loadNext();
 			}
 		});
 		//start playing
@@ -114,7 +114,7 @@ function loadSong(trigger_number){
 
 function isPlayingTest(){
 	playlist[nowPlaying].parent().addClass('restricted');
-	loadSong(nowPlaying+1);
+	loadNext();
 }
 
 function pause(trigger,source){
@@ -162,6 +162,9 @@ function play(trigger,source){
 		return false;
 	});
 }
+function loadNext(){
+	loadSong((nowPlaying+1)%playlist.length);
+}
 
 function resetPlayer(i){
 	if(typeof(playlist[i]) !== 'undefined'){
@@ -202,7 +205,7 @@ function updateYTSeekBar(){
 	//when song is finished play next //youtoube stachange may fires twice check for that 
 	if (ytPlayer.getPlayerState() === 0 && prevState != ytState) {
 		window.clearTimeout(t);
-		loadSong(nowPlaying+1);
+		loadNext();
 	}
 	prevState = ytState;
 }

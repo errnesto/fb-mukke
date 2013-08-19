@@ -4,6 +4,8 @@ $.getJSON('/user/getData',function(friends){
 		var $searchInput =  $('#searchFriend');
 		var $searchBar =  $('#searchbar');
 		var $resultsContainer = $('.searchresults');
+		var $blueLine = $('.blueLine');
+		var $songs = $('.songs')
 		var orgVal = $searchInput.val();
 
 		var selected = -1;
@@ -54,8 +56,8 @@ $.getJSON('/user/getData',function(friends){
 						break;
 					case 13: //enter key
 						var link = $($results[selected]).attr('href');
-						location.href = link;
 						loadAnimation($($results[selected]).text());
+						loadUser($($results[selected]).attr('href'));
 						break;
 					case 27: //escape key
 						//remove focus and hide results Container
@@ -71,13 +73,30 @@ $.getJSON('/user/getData',function(friends){
 			}
 		});
 		//do some completly made up animations to make the loading time feel shorter
-		$resultsContainer.click(function(e){loadAnimation(e.target.outerText);});
-		$('.logo').click(function(){loadAnimation(friends[friends.length-1].name);});
-		function loadAnimation(text){
-			//write the name of the selected friend in searchInput
-			$searchInput.val(text);
+		$resultsContainer.click(function(e){
+			e.preventDefault();
+			loadAnimation();
+			//get user from clickevent (self or parent)
+			loadUser($(e.target).attr('href') || $(e.target).parent().attr('href'));
+		});
+		$('.logo').click(function(){
+			$searchInput.val(friends[friends.length-1].name); //last entry is current user
+			loadAnimation();
+		});
+		function loadUser(user_identifier){
+			var user_name = user_identifier.split('/')[2].replace(/_/g,' '); //identifier format: /uid/name
+			$searchInput.val(user_name);
+			$.get(user_identifier+'.content', function(data) {
+				$blueLine.stop().width('100%');
+				$songs.html(data);
+				$('.player').slideDown();
+				window.history.pushState('Object', user_name, user_identifier);
+			});
+		}
+		function loadAnimation(){			
 			$resultsContainer.hide();
 			$('.player').slideUp();
+			$songs.empty();
 			$('.blueLine').width(0).animate({width: '90%'},5000,function(){$(this).animate({width: '98%'},5000);});
 		}
 	});
