@@ -69521,3 +69521,84 @@ Processing by UserController#show as
   [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (uid = '1791807186') ORDER BY "users"."id" ASC LIMIT 1
   Rendered home/index.html.erb within layouts/application (0.5ms)
 Completed 200 OK in 977ms (Views: 8.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-19 14:02:24 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/auth/facebook/
+Completed 302 Found in 40ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook/" for 127.0.0.1 at 2013-08-19 14:02:24 +0200
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQCe6syrr-d3NXoGmq8j6MRYO5Z8hKlVob8xZpTao4Dwz1jIpl3Cd6VqPYNJhdpatQk0nGQw-bynXWZ-GxOOam1vWDu1zTKdQ3iXMcl41EJ3A1XjvS1aYspuWUmQ4Cl6s0GuwRaCpuJdFOzVQZZp23Isda_SnYJhgipMG6a7EycO1ePW48-LMhqJoeJX8wog_PAXlrHV0fQBWWZpkB7Un7gkPZZOKksalzuKeB8lxsHe_i4ajJyBRvNc0O8mUKE-pQ2B-qguilfzfMhNq02njPnhyP4BcRWFkRXl9h8vOVIbjF2IJ3H58l_O-DLeYhziRio&state=a53ec482d50fc04ef45d8df973c21e7169018c0f7f69b88c" for 127.0.0.1 at 2013-08-19 14:02:25 +0200
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQCe6syrr-d3NXoGmq8j6MRYO5Z8hKlVob8xZpTao4Dwz1jIpl3Cd6VqPYNJhdpatQk0nGQw-bynXWZ-GxOOam1vWDu1zTKdQ3iXMcl41EJ3A1XjvS1aYspuWUmQ4Cl6s0GuwRaCpuJdFOzVQZZp23Isda_SnYJhgipMG6a7EycO1ePW48-LMhqJoeJX8wog_PAXlrHV0fQBWWZpkB7Un7gkPZZOKksalzuKeB8lxsHe_i4ajJyBRvNc0O8mUKE-pQ2B-qguilfzfMhNq02njPnhyP4BcRWFkRXl9h8vOVIbjF2IJ3H58l_O-DLeYhziRio", "state"=>"a53ec482d50fc04ef45d8df973c21e7169018c0f7f69b88c", "provider"=>"facebook"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 100003562633226 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (64.6ms)[0m  UPDATE "users" SET "oauth_token" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["oauth_token", "CAAHONCAfHIIBAKw3JDzINFtDrFUkPZB0ZCQ6rv6cQaIC04nzcPD4KpwDLPqWuU3LGtTdiC2pwzXyb1zpB7SCz9jj4USiDGZBwUn4tVG6S8RrYgj7syqLuWaf8uqZCiSX7pygZARaFRT2ZBnYephtkB2e9gKoZBHEkEZD"], ["oauth_expires_at", Fri, 18 Oct 2013 12:02:26 UTC +00:00], ["updated_at", Mon, 19 Aug 2013 12:02:27 UTC +00:00]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 159ms (ActiveRecord: 67.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-19 14:02:27 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 3032ms (Views: 372.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-19 14:02:30 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-19 14:02:30 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-08-19 14:02:30 +0200
+
+
+Started GET "/assets/soundmanager2-nodebug-jsmin.js?body=1" for 127.0.0.1 at 2013-08-19 14:02:30 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-08-19 14:02:30 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-19 14:02:30 +0200
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2013-08-19 14:02:30 +0200
+
+
+Started GET "/assets/youtube_logo.png" for 127.0.0.1 at 2013-08-19 14:02:30 +0200
+
+
+Started GET "/user/getData" for 127.0.0.1 at 2013-08-19 14:02:30 +0200
+Processing by UserController#getData as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 913ms (Views: 50.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/fb-mukke-logo.svg" for 127.0.0.1 at 2013-08-19 14:02:31 +0200
+
+
+Started GET "/assets/mask.png" for 127.0.0.1 at 2013-08-19 14:02:31 +0200
+
+
+Started GET "/assets/play.png" for 127.0.0.1 at 2013-08-19 14:02:31 +0200
+
+
+Started GET "/assets/pause.png" for 127.0.0.1 at 2013-08-19 14:02:31 +0200
+
+
+Started GET "/100000908077154/David_Cibis" for 127.0.0.1 at 2013-08-19 14:02:43 +0200
+Processing by UserController#show as HTML
+  Parameters: {"uid"=>"100000908077154", "name"=>"David_Cibis"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (uid = '100000908077154') ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb (193.3ms)
+Completed 200 OK in 3583ms (Views: 194.8ms | ActiveRecord: 0.5ms)

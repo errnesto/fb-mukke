@@ -1,5 +1,4 @@
 class HomeController < ApplicationController
-	after_filter :allow_iframe
 
 	def index
 		#if user is not logged in open facebook login dialog

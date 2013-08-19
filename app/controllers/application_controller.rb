@@ -8,7 +8,4 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_user
 
-  def allow_iframe
-	response.headers["X-Frame-Options"] = "ALLOW-FROM https://apps.facebook.com"
-  end
 end

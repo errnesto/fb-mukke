@@ -1,5 +1,4 @@
 class UserController < ApplicationController
-	after_filter :allow_iframe
 
 	def show
 		#if visitor is not logged in open facebook login dialog
@@ -32,7 +31,7 @@ class UserController < ApplicationController
 			@songs = user.getSongsFromFacebook(current_user.oauth_token)
 		end
 		@user = user;
-		render "home/index"
+		render template: "home/index", layout: false
 	end
 	def getData
 		#always get the friends of the current user
