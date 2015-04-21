@@ -1,10 +1,10 @@
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './app/clinet.js',
+  entry: ['webpack/hot/dev-server', './app/clinet.js'],
   output: {
-    path:     __dirname + '/public',
-    filename: 'bundle.js'
+    path:       __dirname + '/public',
+    filename:   'bundle.js'
   },
 
   module: {
@@ -15,8 +15,7 @@ module.exports = {
       { test: /\.svg$/, loader: 'file-loader' }
     ]
   },
-  devServer: {
-    contentBase: './public'
-  }
+
+  plugins: [new webpack.HotModuleReplacementPlugin()],
 }
 
