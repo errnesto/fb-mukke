@@ -1,8 +1,18 @@
 # fb-mukke
 
-fb-mukke will let you explore songs you and others have posted to facebook.
+fb-mukke lets you explore songs you and others have posted on their facebook walls.
 
-###development run:
+## Development
+To start a development server run
+```
+$ gulp
+```
 
+## Build
+To pack together modules and minify them run
+```
+$ gulp build
+```
 
-    gulp
+## Todos
+- Write adapters for youtube and soundcloud to have one unified player interface
