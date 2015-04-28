@@ -1,5 +1,9 @@
 'use strict'
-var riot = require('riot')
+
+import riot from 'riot'
+import Youtube from '../../adapters/Youtube'
+
+// uses webpack loaders
 require('./main.styl')
 require('../player/player.tag')
 
@@ -9,4 +13,6 @@ require('../player/player.tag')
   <player />
 
   this.logo = require('./fb-mukke-logo.svg')
+  var ytPlayer = Youtube.createFromURL()
+  ytPlayer.stop()
 </main>
