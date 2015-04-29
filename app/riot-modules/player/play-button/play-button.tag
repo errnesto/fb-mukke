@@ -1,5 +1,5 @@
 'use strict'
-var riot = require('riot')
+import riot from 'riot'
 
 <play-button>
   <p>Play</p>

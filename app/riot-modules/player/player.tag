@@ -1,5 +1,5 @@
 'use strict'
-var riot = require('riot')
+import riot from 'riot'
 require('./player.styl')
 // require('./play-button/play-button.tag')
 

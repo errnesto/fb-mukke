@@ -11,7 +11,7 @@ export default class PlayerModel {
     console.log('stop')
   }
 
-  playNext() {
-    console.log('playNext')
+  finished() {
+    console.log('send finished event')
   }
 }
