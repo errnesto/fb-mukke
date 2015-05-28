@@ -1,7 +1,7 @@
 var webpack = require('webpack')
 
 module.exports = {
-  entry: ['webpack/hot/dev-server', './app/clinet.js'],
+  entry: ['webpack/hot/dev-server', './app/client.js'],
   output: {
     path:       __dirname + '/public',
     filename:   'bundle.js'
